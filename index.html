@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=yes,minimal-ui">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <title>Notas para el curso Matemáticas para las Ciencias 1</title>
+
+  <!-- configuración del libro -->
+  <script>
+  window.book_config = {
+    remember_last_page: true,
+    auto_numerate_sections_and_figures: true,
+  }
+  </script>
+
+  <!-- núcleo del libro interactivo -->
+  <link rel="stylesheet" href="book/css/style.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="book/css/style_print.css" type="text/css" media="print">
+  <script type="text/javascript" src="book/js/book.js" charset="utf-8"></script>
+  
+  <!-- personalización del usuario -->
+  <link rel="stylesheet" href="extra/fonts.css" type="text/css">
+  <link rel="stylesheet" href="extra/style.css" type="text/css">
+
+  <!-- inclusión de la biblioteca KaTex -->
+  <link rel="stylesheet" type="text/css" href="extra/katex/katex.min.css" />
+  <script src="extra/katex/katex.min.js"></script>
+  <script src="extra/katex/auto-render.min.js" ></script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+      delimiters: [ {left: "$$", right: "$$", display: true}, {left: "$", right: "$", display: false}, {left: "\\[", right: "\\]", display: true}, {left: "\\(", right: "\\)", display: false} ]
+    });
+  });
+  </script>
+</head>
+
+<body>
+  <div id="book_loader_container"><div id="book_loader"></div></div>
+
+  <div id="book_container" remember_last_page="true">
+    <div id="btn_back_page"></div>
+    <div id="btn_next_page"></div>
+    <button id="go_to_table_of_content"></button>
+
+    <div id="table_of_content"></div>
+
+    <div id="pages_container">
+
+      <div class="page" style="background-color:transparent;"></div>
+
+      <!--  -->
+      <div class="page" style="margin:0; padding:0; background-size:contain; background-image:url(images/general/portada.svg);">
+        <div class="cover_title" style="font-size:220%; top: 700px; left: 0px;">Notas para el curso Matemáticas para las Ciencias 1</div>
+
+        <!-- <div class="cover_subtitle">Libro interactivo</div> -->
+      </div>
+
+      <!--  -->
+      <div class="page" style="display:flex; align-items:center; justify-content:center;">
+        <a style="width:50%" target="_blank" href="http://descartes.matem.unam.mx/"><img src="images/general/logo_descartes.svg" width="100%"></a>
+      </div>
+
+      <!--  -->
+      <div class="page" style="text-align:center; font-size:120%;" init-page-num="true" num="">
+        <br><br><br><br><br><br>
+        <p><b style="font-size:180%;">Notas para el curso Matemáticas para las Ciencias 1</b></p>
+
+        <br><br><br><br><br><br><br><br><br>
+        <img src="images/general/logo_UNAM.svg" height="75px" style="float:right;padding-top:0.5em;">
+        <p style="text-align:left; margin:0;">
+          <br>
+          Hugo Alexis Hérnandez Austria<br>
+          <b>Universidad Nacional Autónoma de México</b>
+        </p>
+      </div>
+
+      <!--  -->
+      <div class="page" num="">
+        <p>
+          Título de la obra:
+          <br> 
+          Notas para el curso Matemáticas para las Ciencias 1
+        </p>
+        <br>
+
+        <p>
+          Autor:
+          <br> 
+          <b>Hugo Alexis Hérnandez Austria</b>
+        </p>
+        <br>
+
+        <p>
+          Código JavaScript para el libro: <a href="https://github.com/jlongi/libro_interactivo" target="_blank">Joel Espinosa Longi</a>, <a href="https://www.matem.unam.mx/" target="_blank">IMATE</a>, UNAM.
+          <br> 
+          Fuentes: <a href="https://fonts.google.com/specimen/Nunito" target="_blank">Nunito</a> y <a href="https://fonts.google.com/specimen/Ubuntu+Mono" target="_blank">UbuntuMono</a>
+          <br>
+          Fórmulas matemáticas: <a href="https://katex.org/" target="_blank">$\KaTeX$</a>
+        </p>
+        
+        <div style="margin-bottom:20em;"></div>
+
+        <p style="font-size:80%;">
+          <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es" target="_blank"><img src="images/general/by-nc-sa.svg" style="height:3em; margin-right:0.75em; float:left;"></a>
+          Esta obra está bajo una <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es" target="_blank">Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional</a>.
+        </p>
+      </div>
+
+      <!--  -->
+      <div class="page">
+        <h2>Tabla de contenido</h2>
+
+        <div class="toc_link" href="#cap_prefacio"></div>
+        
+        <div class="toc_link" href="#cap_funciones_gráficas"></div>
+        <div class="toc_link" href="#sec_c1_funciones_ejemplos"></div>
+        <div class="toc_link" href="#sec_c1_coordenadas"></div>
+        <div class="toc_link" href="#sec_c1_representación_gráfica"></div>
+        <div class="toc_link" href="#sec_c1_cónicas"></div>
+        <div class="toc_link" href="#sec_c1_polinomios"></div>
+        <div class="toc_link" href="#sec_c1_función_inversa"></div>
+        <div class="toc_link" href="#sec_c1_composición_de_funciones"></div>
+        <div class="toc_link" href="#sec_c1_curvas"></div>
+        
+        <div class="toc_link" href="#cap_derivada_reales"></div>
+        <div class="toc_link" href="#sec_c2_razón_de_cambio_promedio"></div>
+        <div class="toc_link" href="#sec_c2_límites"></div>
+        <div class="toc_link" href="#sec_c2_razón_de_cambio_en_la_naturaleza"></div>
+        <div class="toc_link" href="#sec_c2_tangente_a_una_curva"></div>
+        <div class="toc_link" href="#sec_c2_derivada_funciones_simples"></div>
+        <div class="toc_link" href="#sec_c2_propiedades_de_la_derivada"></div>
+
+      </div>
+
+      <div class="page">
+        <div class="toc_link" href="#sec_c2_crecimiento_y_decrecimiento_de_una_función"></div>
+        <div class="toc_link" href="#sec_c2_derivadas_de_orden_superior"></div>
+
+        <div class="toc_link" href="#cap_integrales_reales"></div>
+        <div class="toc_link" href="#sec_c3_distancia_y_área"></div>
+        <div class="toc_link" href="#sec_c3_integral_definida"></div>
+        <div class="toc_link" href="#sec_c3_teorema_fundamental_del_cálculo"></div>
+        <div class="toc_link" href="#sec_c3_integral_indefinida"></div>
+        <div class="toc_link" href="#sec_c3_propiedades_de_la_integral"></div>
+        <div class="toc_link" href="#sec_c3_trabajo_y_distribución_de_probabilidad"></div>
+
+        <div class="toc_link" href="#cap_calculo_de_derivadas"></div>
+        <div class="toc_link" href="#sec_c4_diferencial"></div>
+        <div class="toc_link" href="#sec_c4_regla_de_la_cadena"></div>
+        <div class="toc_link" href="#sec_c4_curvas_parametrizadas"></div>
+        <div class="toc_link" href="#sec_c4_polinomios_y_métodos_numéricos"></div>
+        <div class="toc_link" href="#sec_c4_exponencial_y_logaritmo"></div>
+        <div class="toc_link" href="#sec_c4_funciones_trigonométricas"></div>
+        <div class="toc_link" href="#sec_c4_derivada_implícita"></div>
+      </div>
+
+      <div class="page">
+        <div class="toc_link" href="#cap_métodos_de_integración"></div>
+        <div class="toc_link" href="#sec_c5_integración_por_partes_y_por_sustitución"></div>
+        <div class="toc_link" href="#sec_c5_cambio_de_variable"></div>
+        <div class="toc_link" href="#sec_c5_métodos_numéricos"></div>
+
+        <div class="toc_link" href="#cap_series"></div>
+        <div class="toc_link" href="#sec_c6_polinomio_de_taylor"></div>
+        <div class="toc_link" href="#sec_c6_valores_de_una_función_con_series"></div>
+
+        <div class="toc_link" href="#cap_apendice_1"></div>
+
+        <div class="toc_link" href="#cap_bibliografia"></div>
+      </div>
+
+      <!--  -->
+      <div class="page" num=""></div>
+
+      <!--  -->
+      <div class="page" num-type-arabic="true">
+        <h1 id="cap_prefacio">Introducción</h1>
+
+        <p>Información correspondiente al desarrollo de este libro</p>
+      </div>
+
+      <!------------------------------------------------------------>
+      <!-- CAPITULO 1 -->
+      <!------------------------------------------------------------>
+      <div class="page" num=""></div>
+
+      <!--  -->
+      <div class="page">
+        <div class="chap_text">Capítulo I</div>
+        <h1 class="chap_name" id="cap_funciones_gráficas">Funciones gráficas</h1>
+
+        <h2 id="sec_c1_funciones_ejemplos">Funciones. Ejemplos: densidad, presión, velocidad, etc.</h2>
+
+        <p>Para cambiar los estilos o las tipografías hay que modificar los estilos que se encuentra en el directorio <code>extra</code>.</p>
+
+        <p>El código correspondiente al funcionamiento del libro se encuentra en el directorio <code>book</code>, este código lo yo lo voy a modificar, y si tiene sugerencias o cambios los podemos incorporar, pero en general no hay que meterse con lo que hay en este directorio.
+
+        <p>Una organización sugerida es que coloques las imágenes de los capítulos (si es que tienes) en el directorio <code>images/capituloN</code> y los interactivos en el directorio <code>interactivos/capituloN</code>, esto con la finalidad de que sea más fácil organizar los componentes de las notas.</p>
+
+        <h2 id="sec_c1_coordenadas">Coordenadas. Distancia y ángulo.</h2>
+
+        <p>La línea arriba de los números de página va a desaparecer en la versión final, solo está para evitar que el texto por página se salga visualmente. Aunque no prohíbe que se pase del tamaño. Así que hay que tener cuidado con el contenido para no pasarse.</p>
+      </div>
+
+      <!--  -->
+      <div class="page">
+        <h2 id="sec_c1_representación_gráfica">Representación gráfica de funciones. Ecuación de una recta. Proporcionalidad.</h2>
+
+        <h2 id="sec_c1_cónicas">Cónicas: elipse, hipérbola, parábola.</h2>
+
+        <h2 id="sec_c1_polinomios">Polinomios y sus gráficas.</h2>
+
+        <h2 id="sec_c1_función_inversa">Función inversa. Gráfica de una función y su inversa.</h2>
+
+        <h2 id="sec_c1_composición_de_funciones">Composición de funciones. Transformación de gráficas de funciones.</h2>
+
+        <h2 id="sec_c1_curvas">Curvas y su representación paramétrica.</h2>
+      </div>
+
+      <!--  -->
+      <!-- Una página en blanco y sin numeración visible -->
+      <!--  -->
+      <div class="page" num=""></div>
+      <div class="page" num=""></div>
+
+      <!------------------------------------------------------------>
+      <!-- CAPITULO 2 -->
+      <!------------------------------------------------------------>
+      <div class="page">
+        <div class="chap_text">Capítulo II</div>
+        <h1 class="chap_name" id="cap_derivada_reales">“Derivada de funciones reales de una variable real</h1>
+
+        <h2 id="sec_c2_razón_de_cambio_promedio">Razón de cambio promedio.</h2>
+
+        <h2 id="sec_c2_límites">Límites.</h2>
+
+        <h2 id="sec_c2_razón_de_cambio_en_la_naturaleza">Razón de cambio en la naturaleza. Movimiento, velocidad de reacción, capacidad calorífica de un cuerpo, dilatación de un cuerpo por calentamiento, difusión, etc.</h2>
+
+        <h2 id="sec_c2_tangente_a_una_curva">Tangente a una curva. Cónicas.</h2>
+
+        <h2 id="sec_c2_derivada_funciones_simples">Derivada. Cálculo de la derivada de algunas funciones simples.</h2>
+
+        <h2 id="sec_c2_propiedades_de_la_derivada">Propiedades de la derivada.</h2>
+      </div>
+
+      <div class="page">
+          <h2 id="sec_c2_crecimiento_y_decrecimiento_de_una_función">Crecimiento y decrecimiento de una función. Máximos y mínimos.</h2>
+
+          <h2 id="sec_c2_derivadas_de_orden_superior">Derivadas de orden superior. Aceleración. Convexidad y concavidad de una curva. Puntos de inflexión.</h2>
+      </div>
+
+      <div class="page" num=""></div>
+      <div class="page" num=""></div>
+
+      <!------------------------------------------------------------>
+      <!-- CAPITULO 3 -->
+      <!------------------------------------------------------------>
+      <!--  -->
+      <div class="page">
+        <div class="chap_text">Capítulo III</div>
+        <h1 class="chap_name" id="cap_integrales_reales">Integral de funciones reales de una variable real</h1>
+
+        <h2 id="sec_c3_distancia_y_área">Distancia recorrida a partir de la velocidad instantánea. Área de la región limitada por una curva.</h2>
+  
+        <h2 id="sec_c3_integral_definida">Integral definida.</h2>
+
+        <h2 id="sec_c3_teorema_fundamental_del_cálculo">Relación entre la integral y la derivada. Teorema fundamental del cálculo.</h2>
+
+        <h2 id="sec_c3_integral_indefinida">Integral indefinida.</h2>
+
+        <h2 id="sec_c3_propiedades_de_la_integral">Propiedades de la integral.</h2>
+
+        <h2 id="sec_c3_trabajo_y_distribución_de_probabilidad">Ejemplos y aplicaciones. Trabajo. Distribuciones de Probabilidad.</h2>
+      </div>
+
+      <!--  -->
+      <div class="page">
+
+      </div>
+
+
+      <!------------------------------------------------------------>
+      <!-- CAPITULO 4 -->
+      <!------------------------------------------------------------>
+      <div class="page">
+        <div class="chap_text">Capítulo IV</div>
+        <h1 class="chap_name" id="cap_calculo_de_derivadas">Cálculo de las derivadas</h1>
+
+        <h2 id="sec_c4_diferencial">Diferencial, Aproximación por medio de la derivada. Cero de funciones. Método de Newton.</h2>
+
+        <h2 id="sec_c4_regla_de_la_cadena">Regla de la cadena. Derivada de la función inversa.</h2>
+
+        <h2 id="sec_c4_curvas_parametrizadas">Curvas parametrizadas $c(t)=(x(t), y(t))$. Derivadas de $y$ respecto a $x$.</h2>
+
+        <h2 id="sec_c4_polinomios_y_métodos_numéricos">Polinomios. Raíces de polinomios. Métodos numéricos.</h2>
+
+        <h2 id="sec_c4_exponencial_y_logaritmo">Función exponencial. El número e. Logaritmos.</h2>
+
+        <h2 id="sec_c4_funciones_trigonométricas">Funciones trigonométricas y sus inversas.</h2>
+      </div>
+
+      <!--  -->
+      <div class="page">
+        <h2 id="sec_c4_derivada_implícita">Derivación implícita.</h2>
+      </div>
+
+      <div class="page" num=""></div>
+      <div class="page" num=""></div>
+
+      <!------------------------------------------------------------>
+      <!-- CAPITULO 5 -->
+      <!------------------------------------------------------------>
+      <div class="page">
+        <div class="chap_text">Capítulo V</div>
+        <h1 class="chap_name" id="cap_métodos_de_integración">Métodos de integración</h1>
+
+        <h2 id="sec_c5_integración_por_partes_y_por_sustitución">Integración por partes. Integración por substitución.</h2>
+
+        <h2 id="sec_c5_cambio_de_variable">Cambio de variable.</h2>
+
+        <h2 id="sec_c5_métodos_numéricos">Métodos numéricos.</h2>
+      </div>
+
+      <!--  -->
+      <div class="page">
+
+      </div>
+
+
+      <!------------------------------------------------------------>
+      <!-- CAPITULO 6 -->
+      <!------------------------------------------------------------>
+      <div class="page">
+        <div class="chap_text">Capítulo VI</div>
+        <h1 class="chap_name" id="cap_series">Series</h1>
+
+        <h2 id="sec_c6_polinomio_de_taylor">Polinomio de Taylor.</h2>
+
+        <h2 id="sec_c6_valores_de_una_función_con_series">Cálculo de valores de una función con ayuda de las series.</h2>
+      </div>
+
+      <!--  -->
+      <div class="page">
+
+      </div>
+
+      <!------------------------------------------------------------>
+      <!-- Apéndice 1 -->
+      <!------------------------------------------------------------>
+      <div class="page">
+        <div class="chap_text">Apéndice 1</div>
+        <h1 class="chap_name" id="cap_apendice_1" prefix="Apéndice 1:">Cualquier información preliminar que sea necesaria para las notas</h1>
+      </div>
+
+      <!--  -->
+      <div class="page">
+
+      </div>
+
+
+      <!------------------------------------------------------------>
+      <!-- Bibliografía -->
+      <!------------------------------------------------------------>
+      <div class="page">
+        <h1 class="chap_name" id="cap_bibliografia" prefix="">Bibliografía</h1>
+      </div>
+
+      <!--  -->
+      <div class="page">
+
+      </div>
+
+      <!--  -->
+      <div class="page" num="" style="background-image: radial-gradient(white, #ecf0f1, #e3e5e7); display:flex; align-items:center; justify-content:center;"></div>
+
+    <!-- [cierra] pages_container -->
+    </div>
+  <!-- [cierra] book_container -->
+  </div>
+
+</body>
+</html>
