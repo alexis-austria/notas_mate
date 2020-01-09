@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="book/css/style.css" type="text/css" media="screen">
   <link rel="stylesheet" href="book/css/style_print.css" type="text/css" media="print">
   <script type="text/javascript" src="book/js/book.js" charset="utf-8"></script>
-  
+
   <!-- personalización del usuario -->
   <link rel="stylesheet" href="extra/fonts.css" type="text/css">
   <link rel="stylesheet" href="extra/style.css" type="text/css">
@@ -75,7 +75,7 @@
         <img src="images/general/logo_UNAM.svg" height="75px" style="float:right;padding-top:0.5em;">
         <p style="text-align:left; margin:0;">
           <br>
-          Hugo Alexis Hérnandez Austria<br>
+          Hugo Alexis Hernández Austria<br>
           <b>Universidad Nacional Autónoma de México</b>
         </p>
       </div>
@@ -84,26 +84,26 @@
       <div class="page" num="">
         <p>
           Título de la obra:
-          <br> 
+          <br>
           Notas para el curso Matemáticas para las Ciencias 1
         </p>
         <br>
 
         <p>
           Autor:
-          <br> 
-          <b>Hugo Alexis Hérnandez Austria</b>
+          <br>
+          <b>Hugo Alexis Hernández Austria</b>
         </p>
         <br>
 
         <p>
           Código JavaScript para el libro: <a href="https://github.com/jlongi/libro_interactivo" target="_blank">Joel Espinosa Longi</a>, <a href="https://www.matem.unam.mx/" target="_blank">IMATE</a>, UNAM.
-          <br> 
+          <br>
           Fuentes: <a href="https://fonts.google.com/specimen/Nunito" target="_blank">Nunito</a> y <a href="https://fonts.google.com/specimen/Ubuntu+Mono" target="_blank">UbuntuMono</a>
           <br>
           Fórmulas matemáticas: <a href="https://katex.org/" target="_blank">$\KaTeX$</a>
         </p>
-        
+
         <div style="margin-bottom:20em;"></div>
 
         <p style="font-size:80%;">
@@ -117,7 +117,7 @@
         <h2>Tabla de contenido</h2>
 
         <div class="toc_link" href="#cap_prefacio"></div>
-        
+
         <div class="toc_link" href="#cap_funciones_gráficas"></div>
         <div class="toc_link" href="#sec_c1_funciones_ejemplos"></div>
         <div class="toc_link" href="#sec_c1_coordenadas"></div>
@@ -127,7 +127,7 @@
         <div class="toc_link" href="#sec_c1_función_inversa"></div>
         <div class="toc_link" href="#sec_c1_composición_de_funciones"></div>
         <div class="toc_link" href="#sec_c1_curvas"></div>
-        
+
         <div class="toc_link" href="#cap_derivada_reales"></div>
         <div class="toc_link" href="#sec_c2_razón_de_cambio_promedio"></div>
         <div class="toc_link" href="#sec_c2_límites"></div>
@@ -197,16 +197,43 @@
 
         <h2 id="sec_c1_funciones_ejemplos">Funciones. Ejemplos: densidad, presión, velocidad, etc.</h2>
 
-        <p>Para cambiar los estilos o las tipografías hay que modificar los estilos que se encuentra en el directorio <code>extra</code>.</p>
+        <p>La palabra «función» fue introducida en Matemáticas por Leibniz, que utilizaba este término para designar cierto tipo de fórmulas matemáticas.</p>
 
-        <p>El código correspondiente al funcionamiento del libro se encuentra en el directorio <code>book</code>, este código lo yo lo voy a modificar, y si tiene sugerencias o cambios los podemos incorporar, pero en general no hay que meterse con lo que hay en este directorio.
+        <p>Más tarde se vio que la idea de función de Leibniz tenía un alcance muy reducido, y posteriormente el significado de la palabra función fue experimentando generalizaciones progresivas.</p>
 
-        <p>Una organización sugerida es que coloques las imágenes de los capítulos (si es que tienes) en el directorio <code>images/capituloN</code> y los interactivos en el directorio <code>interactivos/capituloN</code>, esto con la finalidad de que sea más fácil organizar los componentes de las notas.</p>
+        <p>Actualmente, la definición de función es esencialmente la siguiente: Dados dos conjuntos de objetos, el conjunto X y el conjunto Y,
+        una función es una ley que asocia a cada objeto de X uno y sólo un objeto en Y.</p>
 
-        <h2 id="sec_c1_coordenadas">Coordenadas. Distancia y ángulo.</h2>
+        <p>El conjunto X se denomina el dominio de la función. Los objetos de Y, asociados con los objetos en X forman otro conjunto denominado el recorrido de la
+          función. reste puede ser todo el conjunto Y, pero no es necesario.)</p>
 
-        <p>La línea arriba de los números de página va a desaparecer en la versión final, solo está para evitar que el texto por página se salga visualmente. Aunque no prohíbe que se pase del tamaño. Así que hay que tener cuidado con el contenido para no pasarse.</p>
-      </div>
+    </div>
+
+    <div class="page">
+
+      <p>Se utilizan letras para denotar funciones, por ejemplo f, g o h. Si f es la función dada y x es un objeto en su dominio, la notación
+      f(x) se utiliza para designar el objeto que en el recorrido corresponde a x, en la función
+      j, y se denomina el valor de la función f en x o la imagen de x por f.</p>
+
+      <p>En Cálculo elemental tiene interés considerar en primer lugar, aquellas
+        funciones en las que el dominio y el recorrido son conjuntos de números reales. Estas funciones se llaman
+        funciones de variable real o más brevemente funciones reales y se pueden representar geométricamente mediante una gráfica en el plano x y.</p>
+
+      <p>Se representa el dominio X en el eje x, y a partir de cada punto x de X se representa el
+        punto (x, y) donde y == f(x). La totalidad de puntos (x, y) se denomina la gráfica de la función.
+        A continuación veremos ejemplos de funciones reales.</p>
+
+    </div>
+
+    <div class="page">
+
+      <div class="interactive" width="819" height="588" src="interactive/cap_1/identidad.html" style="width: 540px; height: 323.82px; overflow: hidden;"></div>
+
+      <h2 id="sec_c1_coordenadas">Coordenadas. Distancia y ángulo.</h2>
+
+      <p>La línea arriba de los números de página va a desaparecer en la versión final, solo está para evitar que el texto por página se salga visualmente. Aunque no prohíbe que se pase del tamaño. Así que hay que tener cuidado con el contenido para no pasarse.</p>
+
+    </div>
 
       <!--  -->
       <div class="page">
@@ -267,7 +294,7 @@
         <h1 class="chap_name" id="cap_integrales_reales">Integral de funciones reales de una variable real</h1>
 
         <h2 id="sec_c3_distancia_y_área">Distancia recorrida a partir de la velocidad instantánea. Área de la región limitada por una curva.</h2>
-  
+
         <h2 id="sec_c3_integral_definida">Integral definida.</h2>
 
         <h2 id="sec_c3_teorema_fundamental_del_cálculo">Relación entre la integral y la derivada. Teorema fundamental del cálculo.</h2>
