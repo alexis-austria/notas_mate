@@ -19,11 +19,11 @@
       <param name="editable" value="no">
       <param name="Idioma" value="español">
       <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=40 ">
-      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='no' escala='48' O.x='0' O.y='0' imagen='img/road.jpg' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' color_borde_texto='0' borderColor='000000' border_radius='0' ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' imagen='img/road.jpg' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' color_borde_texto='0' borderColor='000000' border_radius='0' ">
       <param name="C_01" value="id='v' tipo='numérico' interfaz='barra' región='sur' espacio='E1' nombre='Velocidad' expresión='(0,0,150,40)' valor='0' incr='0.2' min='0' max='2' discreto='no' decimales='2' fijo='sí' visible='no' ">
       <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' ">
       <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
-      <param name="G_01" value="espacio='E1' tipo='imagen' fondo='no' coord_abs='no' expresión='(x,0)' archivo='img/car.svg' rotini='0' opacidad='1' ">
+      <param name="G_01" value="espacio='E1' tipo='imagen' fondo='no' coord_abs='no' expresión='(x,-1)' archivo='img/car.svg' rotini='0' opacidad='1' ">
       <param name="Animación" value="pausa='40' controles='sí' auto='sí' repetir='sí' inicio='x = -8.5; v=0' hacer='x = x + v;x = (x >= 10) ? -8.5 : x' mientras='x < 10' ">
     </ajs>
   </div>
