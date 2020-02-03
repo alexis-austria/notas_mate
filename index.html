@@ -261,11 +261,11 @@
 
       <h2 id="sec_c1_coordenadas">Coordenadas. Distancia y ángulo.</h2>
 
-      <p>En el plano colocamos dos copias de la recta real, una horizontal y la otra vertical, de
-        modo que se intersecten en los puntos cero de las dos rectas. Las dos rectas se denominan ejes coordenados,
-        su intersección se etiqueta con O y se denomina origen. Por convención, la recta horizontal se llama eje x y
-        la recta vertical se llama eje y. La mitad positiva del eje x es hacia la derecha, la mitad positiva del eje
-        y es hacia arriba. Los ejes coordenados dividen al plano en cuatro regiones llamadas cuadrantes, que llevan las marcas I, II, III y IV,
+      <p>El plano cartesiano está formado por dos rectas perpendiculares, una horizontal y la otra vertical, de
+        modo que se intersecten en un punto. Las dos rectas se denominan ejes coordenados,
+        su intersección se etiqueta con $O$ y se denomina origen. La recta horizontal se llama eje $x$ o eje de
+        las abscisas y la recta vertical se llama eje $y$. La mitad positiva del eje $x$ es hacia la derecha, la mitad positiva del eje
+        $y$ es hacia arriba. Los ejes coordenados dividen al plano en cuatro regiones llamadas cuadrantes, que llevan las marcas I, II, III y IV,
         como se muestra en la figura.</p>
 
         <figure>
@@ -277,12 +277,12 @@
 
     <div class="page">
 
-      <p>Ahora, cada punto P en el plano puede asignarse a una pareja de números, llamados coordenadas cartesianas.
-        Si una línea vertical y otra horizontal que pasan por P intersectan los ejes x y y en a y b, respectivamente,
-        entonces P tiene coordenadas (a, b). Llamamos a (a, b) un par ordenado de números debido a que es importante saber
-        cuál número está primero. El primer número, a, es la coordenada x (o abscisa); el segundo número, b, es la coordenada y (u ordenada).
+      <p>Ahora, cada punto $P$ en el plano puede asignarse a una pareja de números, llamados coordenadas cartesianas.
+        Sean $(a,b)$ las coordenadas de un punto, el número $a$ representa la posición en el eje $x$, entre mayor sea
+        el punto se encontrará más a la derecha, y el número $b$ representa la posición en el eje $y$, entre mayor este
+        número el punto estará más arriba.</p>
 
-        En el siguiente interactivo, observa como cambia la posición del punto azul dependiendo de sus coordenadas.
+      <p>En el siguiente interactivo, observa como cambia la posición del punto azul dependiendo de sus coordenadas.
 
         <figure>
           <div class="interactive" width="819" height="588" src="interactive/cap_1/coordenadas.html"></div>
@@ -295,72 +295,76 @@
 
     <div class="page">
 
-      <p>Utilizando las coordenadas, podemos introducir una fórmula sencilla para la distancia entre cualesquiera dos puntos en el plano.
-        Tiene como base el Teorema de Pitágoras, el cual dice que si a y b son las medidas de los dos catetos de un triángulo rectángulo
-        y c es la medida de su hipotenusa, entonces</p>
+      <p>Sean dos puntos, $P_1$ y $P_2$ dos puntos con coordenadas $(x_1, y_1)$ y $(x_2, y_2)$ respectivamente,
+        la distancia entre ellos está definida como la longitud del segmento que los separa. La fórmula para
+        calcular la distancia tiene como base el Teorema de Pitágoras, el cual dice que si $a$ y $b$ son las medidas de los dos catetos de un triángulo rectángulo
+        y $c$ es la medida de su hipotenusa, entonces</p>
 
         $$a^2 + b^2 = c^2$$
 
-      <p>Recíprocamente, la relación entre los tres lados de un triángulo se cumple sólo para un triángulo rectángulo. Ahora
-        considérese cualesquiera dos puntos P y Q, con coordenadas (x1, y1) y (x2, y2), respectivamente. Junto con R, el punto
-        de coordenadas (x2, y1), P y Q son los vértices de un triángulo rectángulo. Las longitudes de PR y RQ son |x2 - x1|
-        y |y2 - y1|, respectivamente. Cuando aplicamos el Teorema de Pitágoras y tomamos la raíz cuadrada principal de ambos
-        lados, obtenemos la expresión siguiente para la fórmula de la distancia</p>
-
-        $$d(P,Q) = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$$
-
-      <p>Mueve los puntos del siguiente interactivo y observa como cambia su distancia dependiendo de sus coordenadas.</p>
+        <figure>
+          <div class="interactive" width="819" height="588" src="interactive/cap_1/pitagoras.html"></div>
+          <figcaption>Utilizando el teorema de Pitágoras para calcular la distancia entre dos puntos</figcaption>
+        </figure>
 
     </div>
 
     <div class="page">
+
+      <p>Como podemos ver en la figura 1.4, al trazar una recta perpendicular al eje $x$ que pasa por el punto $P_1$,
+      y una recta perpendicular al eje $y$ que pasa por el punto $P_2$ estas se intersectan en el punto $Q$. Con esto
+      tenemos el tirángulo rectanglo $P_1 Q P_2$, siendo la hipotenusa la distancia entre $P_1$ y $P_2$, a partir de esto obtenemos la fórmula</p>
+
+      $$d(P_1,P_2) = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$$
+
+      <p>Mueve los puntos del siguiente interactivo y observa como cambia su distancia dependiendo de sus coordenadas.</p>
 
       <figure>
         <div class="interactive" width="819" height="588" src="interactive/cap_1/distancia.html"></div>
         <figcaption>Distancia entre dos puntos</figcaption>
       </figure>
-
-      <p>Las coordenadas de un punto en el plano también se pueden establecer fijando un punto O, llamado polo u origen y
-      construyendo un eje con punto inicial O. Este eje lo llamamos Eje Polar. Este nuevo sistema de coordendas se llama
-      “sistema de coordenadas polares”.</p>
-
-      <p>A cada punto P en el plano se le pueden asignar las coordenadas (r,θ) (llamadas coordenadas polares del punto).</p>
-
     </div>
 
     <div class="page">
+
+
+
+      <p>Las coordenadas de un punto en el plano también se pueden establecer fijando un punto $O$, al que llamaremos origen o polo y
+      con una recta que pase por $O$ a la que llamaremos el eje polar. Este nuevo sistema de coordendas se llama
+      “sistema de coordenadas polares”.</p>
+
+      <p>A cada punto $P$ en el plano le asignamos un par ordenado $(r,\theta)$ (llamadas coordenadas polares del punto).</p>
 
       <figure>
         <div class="interactive" width="819" height="588" src="interactive/cap_1/polares.html"></div>
         <figcaption>Coordenadas polares</figcaption>
       </figure>
 
+    </div>
+
+    <div class="page">
+
       <ul>
-        <li> r es la distancia de O al punto P, el signo “−” invierte la dirección.
-        <li> $\theta$ es el ángulo desde el Eje Polar hasta el segmento $\overline{OP}$.
+        <li> $r$ es la distancia de $O$ al punto $P$, el signo “−” invierte la dirección.
+        <li> $\theta$ es el ángulo formado entre el eje polar y el segmento $\overline{OP}$.
       </ul>
 
       A diferencia de las coordenadas rectángulares de un punto, en coordenadas polares la representación no
       es única: $P(r,\theta)$ también se puede representar como $P(r,\theta \pm 2k\pi)$ con $k \in \Z$.
 
+      <h2 id="sec_c1_representación_gráfica">Representación gráfica de funciones. Ecuación de una recta. Proporcionalidad.</h2>
+
+      <p>Una función numérica tiene siempre asociada una gráfica. Una gráfica es una representación
+        que nos permite visualizar el comportamiento de la función.</p>
+
+      <p>La gráfica de una función numérica $f(x)$ es un conjunto de puntos en el plano cuyas
+        coordenadas son de la forma $(x, f(x))$ con $x$ perteneciente al dominio de $f$.</p>
+
+      <p>Es decir, la coordenada $x$ de un punto que pertenece a la gráfica de $f$ forma parte del dominio de $f$
+        y su coordenada $y$ será igual a $f(x)$. Tengamos en cuenta que mientras el dominio de una función es un subconjunto de la recta numérica
+        (formado por todos los números para los cuales la función está definida), la gráfica de la función es un subconjunto del plano.</p>
+
     </div>
-
-      <!--  -->
-      <div class="page">
-        <h2 id="sec_c1_representación_gráfica">Representación gráfica de funciones. Ecuación de una recta. Proporcionalidad.</h2>
-
-        <p>Una función numérica tiene siempre asociada una gráfica. Esa gráfica es un dibujo
-          que permite visualizar el comportamiento de la función y es de suma utilidad para obtener conclusiones acerca de ella.</p>
-
-        <p>La gráfica de una función numérica $f(x)$ es el conjunto de puntos del plano cuyas
-          coordenadas son de la forma $(x, f(x))$ con $x$ perteneciente al dominio de $f$.</p>
-
-        <p>Dicho de otra manera: un punto del plano pertenece a la gráfica de $f$ siempre y cuando
-          su primera coordenada $x$ esté en el dominio de $f$ y su segunda coordenada sea igual a $f(x)$. Tengamos
-          en cuenta que mientras el dominio de una función es un subconjunto de la recta numérica
-          (formado por todos los números para los cuales la función está definida), la gráfica de la función es un subconjunto del plano.</p>
-
-      </div>
 
       <div class="page">
 
