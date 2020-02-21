@@ -20,14 +20,18 @@
       <param name="Idioma" value="español">
       <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=40 ">
       <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='no' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='c0c0c0' red10='808080' ejes='404040' texto='no' números='sí' resizable='false' sensible_a_los_movimientos_del_ratón='no' color_borde_texto='0' borderColor='000000' border_radius='0' ">
-      <param name="C_01" value="id='x1' tipo='gráfico' espacio='E1' color='000000' color-int='000000' tamaño='13' expresión='(3,0)' ">
-      <param name="C_02" value="id='x2' tipo='gráfico' espacio='E1' color='00ff00' color-int='ffff00' tamaño='13' expresión='(-3,0)' ">
+      <param name="C_01" value="id='x1' tipo='gráfico' espacio='E1' color='000000' color-int='000000' tamaño='13' expresión='(2,1)' ">
+      <param name="C_02" value="id='x2' tipo='gráfico' espacio='E1' color='00ff00' color-int='ffff00' tamaño='13' expresión='(5,4)' ">
       <param name="A_01" value="id='z' expresión='sqrt((x2.x-x1.x)^2 + (x2.y-x1.y)^2)' tipo='variable' ">
       <param name="A_02" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='x=0; y=0' ">
       <param name="A_03" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
       <param name="G_01" value="espacio='E1' tipo='texto' fondo='no' color='20303a' coord_abs='sí' expresión='(20,20)' texto='Coordenadas del punto negro: ([x1.x], [x1.y])' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
       <param name="G_02" value="espacio='E1' tipo='texto' fondo='no' color='20303a' coord_abs='sí' expresión='(440,20)' texto='Coordenadas del punto amarillo: ([x2.x], [x2.y])' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
       <param name="G_03" value="espacio='E1' tipo='texto' fondo='no' color='ff0000' coord_abs='sí' expresión='(20,430)' texto='Distancia entre los dos puntos: [z]' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+      <param name="G_04" value="espacio='E1' tipo='punto' fondo='no' color='ff0000' coord_abs='no' expresión='(x2.x, x1.y)' texto='Q' decimales='2' fijo='sí' tamaño='5' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+      <param name="G_05" value="espacio='E1' tipo='segmento' fondo='no' color='20303a' coord_abs='no' expresión='(x1.x,x1.y)(x2.x,x2.y)' texto='[z]' decimales='2' fijo='sí' tamaño='2' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_06" value="espacio='E1' tipo='segmento' fondo='no' color='20303a' coord_abs='no' expresión='(x1.x,x1.y)(x2.x,x1.y)' texto='[abs(x2.x-x1.x)]' decimales='2' fijo='sí' tamaño='2' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='dash' ">
+      <param name="G_07" value="espacio='E1' tipo='segmento' fondo='no' color='20303a' coord_abs='no' expresión='(x2.x,x2.y)(x2.x,x1.y)' texto='  [abs(x2.y-x1.y)]' decimales='2' fijo='sí' tamaño='2' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='dash' ">
     </ajs>
   </div>
 
