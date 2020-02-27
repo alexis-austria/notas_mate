@@ -10,8 +10,8 @@
 <body style="padding:0; margin:0; background:#eff0f1;">
 
   <div align="center">
-    <ajs name="Descartes" code="Descartes" width="970" height="550">
-      <param name="tamaño" value="970x550">
+    <ajs name="Descartes" code="Descartes" width="819" height="588">
+      <param name="tamaño" value="819x588">
       <param name="decimal_symbol" value=".">
       <param name="expand" value="fit">
       <param name="nombre" value="">
@@ -19,9 +19,9 @@
       <param name="editable" value="no">
       <param name="Idioma" value="español">
       <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=40 ">
-      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='no' escala='50' O.x='0' O.y='100' despl_imagen='arr-izq' fondo='ffffff' red='c0c0c0' red10='808080' ejes='404040' texto='no' números='sí' resizable='false' sensible_a_los_movimientos_del_ratón='no' color_borde_texto='0' borderColor='000000' border_radius='0' ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='no' escala='50' O.x='0' O.y='100' despl_imagen='arr-izq' fondo='ffffff' red='c0c0c0' red10='808080' ejes='404040' texto='no' números='sí' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
       <param name="C_01" value="id='b' interfaz='botón' tipo='numérico' región='sur' espacio='E1' nombre='Otra función' expresión='(0,0,150,40)' valor='0' color='222222' borderColor='no' color-int='f0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='no' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='19' acción='calcular' parámetro='i = (i >= 6) ? 0 : i + 1; c=0' ">
-      <param name="C_02" value="id='c' interfaz='botón' tipo='numérico' región='sur' espacio='E1' nombre='Comprobar' expresión='(0,0,150,40)' valor='0' color='222222' borderColor='no' color-int='f0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='no' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='19' acción='calcular' parámetro='c=1;' ">
+      <param name="C_02" value="id='c' interfaz='botón' tipo='numérico' región='sur' espacio='E1' nombre='Comprobar' expresión='(0,0,150,40)' valor='0' color='222222' borderColor='no' color-int='f0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='no' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='19' acción='calcular' parámetro='c=1;' activo-si='c==0' ">
       <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='i=0' ">
       <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
       <param name="G_01" value="espacio='E1' tipo='ecuación' fondo='no' color='20303a' dibujar-si='i==0' coord_abs='no' expresión='y=x^2' ancho='1' visible='no' editable='no' ">
@@ -32,6 +32,24 @@
       <param name="G_06" value="espacio='E1' tipo='ecuación' fondo='no' color='ff0000' dibujar-si='c & (i==1)' coord_abs='no' expresión='y=-1' ancho='1' visible='no' editable='no' ">
       <param name="G_07" value="espacio='E1' tipo='ecuación' fondo='no' color='ff0000' dibujar-si='c & (i==1)' coord_abs='no' expresión='y=2' ancho='1' visible='no' editable='no' ">
       <param name="G_08" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='c & (i==1)' coord_abs='sí' expresión='(20,20)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;}\f0\fs40 La función {\*\mjaformula\i f(x)=x\i0{\supix\i 3\i0}} si tiene inversa, las líneas sólo intersectan en un punto}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+      <param name="G_09" value="espacio='E1' tipo='ecuación' fondo='no' color='20303a' dibujar-si='i==2' coord_abs='no' expresión='y=x^3-4x' ancho='1' visible='no' editable='no' ">
+      <param name="G_10" value="espacio='E1' tipo='ecuación' fondo='no' color='ff0000' dibujar-si='c & (i==2)' coord_abs='no' expresión='y=1' ancho='1' visible='no' editable='no' ">
+      <param name="G_11" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='c & (i==2)' coord_abs='sí' expresión='(20,20)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;}\f0\fs40 La función {\*\mjaformula\i f(x)=x\i0{\supix\i 3\i0}-4x} no tiene inversa\par\f0\fs40 }' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+      <param name="G_12" value="espacio='E1' tipo='ecuación' fondo='no' color='20303a' dibujar-si='i==3' coord_abs='no' expresión='y=2x-5' ancho='1' visible='no' editable='no' ">
+      <param name="G_13" value="espacio='E1' tipo='ecuación' fondo='no' color='ff0000' dibujar-si='c & (i==3)' coord_abs='no' expresión='y=1' ancho='1' visible='no' editable='no' ">
+      <param name="G_14" value="espacio='E1' tipo='ecuación' fondo='no' color='ff0000' dibujar-si='c & (i==3)' coord_abs='no' expresión='y=4' ancho='1' visible='no' editable='no' ">
+      <param name="G_15" value="espacio='E1' tipo='ecuación' fondo='no' color='ff0000' dibujar-si='c & (i==3)' coord_abs='no' expresión='y=-1' ancho='1' visible='no' editable='no' ">
+      <param name="G_16" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='c & (i==3)' coord_abs='sí' expresión='(20,20)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;}\f0\fs40 La función {\*\mjaformula\i f(x)=2x\i0 -5} si tiene inversa, las líneas sólo intersectan en un punto}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+      <param name="G_17" value="espacio='E1' tipo='ecuación' fondo='no' color='20303a' dibujar-si='i==4' coord_abs='no' expresión='y=-x^2+4' ancho='1' visible='no' editable='no' ">
+      <param name="G_18" value="espacio='E1' tipo='ecuación' fondo='no' color='ff0000' dibujar-si='c & (i==4)' coord_abs='no' expresión='y=2' ancho='1' visible='no' editable='no' ">
+      <param name="G_19" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='c & (i==4)' coord_abs='sí' expresión='(20,20)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;}\f0\fs40 La función {\*\mjaformula\i f(x)=-x\i0{\supix\i 2\i0}+4} no tiene inversa\par\f0\fs40 }' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+      <param name="G_20" value="espacio='E1' tipo='ecuación' fondo='no' color='20303a' dibujar-si='i==5' coord_abs='no' expresión='y=(x/3)+(2/3)' ancho='1' visible='no' editable='no' ">
+      <param name="G_21" value="espacio='E1' tipo='ecuación' fondo='no' color='ff0000' dibujar-si='c & (i==5)' coord_abs='no' expresión='y=1' ancho='1' visible='no' editable='no' ">
+      <param name="G_22" value="espacio='E1' tipo='ecuación' fondo='no' color='ff0000' dibujar-si='c & (i==5)' coord_abs='no' expresión='y=-1' ancho='1' visible='no' editable='no' ">
+      <param name="G_23" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='c & (i==5)' coord_abs='sí' expresión='(20,20)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;}\f0\fs40 La función {\*\mjaformula\i f(x)=\i0{\fraction{\num\i x\i0}{\den\i 3\i0}}+{\fraction{\num 2}{\den 3}}} si tiene inversa, las líneas sólo intersectan en un punto}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+      <param name="G_24" value="espacio='E1' tipo='ecuación' fondo='no' color='20303a' dibujar-si='i==6' coord_abs='no' expresión='y=cos(x)' ancho='1' visible='no' editable='no' ">
+      <param name="G_25" value="espacio='E1' tipo='ecuación' fondo='no' color='ff0000' dibujar-si='c & (i==6)' coord_abs='no' expresión='y=.5' ancho='1' visible='no' editable='no' ">
+      <param name="G_26" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='c & (i==6)' coord_abs='sí' expresión='(20,20)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;}\f0\fs40 La función {\*\mjaformula\i f(x)=cos(x)\i0} no tiene inversa\par\f0\fs40 \par\f0\fs40 }' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
     </ajs>
   </div>
 
