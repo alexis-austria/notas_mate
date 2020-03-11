@@ -10,9 +10,10 @@
 <body style="padding:0; margin:0; background:#eff0f1;">
 
   <div align="center">
-    <ajs name="Descartes" code="Descartes" width="970" height="550">
-      <param name="tamaño" value="970x550">
+    <ajs name="Descartes" code="Descartes" width="819" height="588">
+      <param name="tamaño" value="819x588">
       <param name="decimal_symbol" value=".">
+      <param name="expand" value="fit">
       <param name="nombre" value="">
       <param name="Versión" value="5.5">
       <param name="editable" value="no">
@@ -23,7 +24,8 @@
       <param name="C_02" value="id='v' tipo='numérico' interfaz='pulsador' región='sur' espacio='E1' nombre='Traslación vertical' expresión='(0,0,150,40)' valor='0' incr='0.1' discreto='no' decimales='2' fijo='sí' visible='sí' btn_pos='v_left' ">
       <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='h=0; v=0' ">
       <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
-      <param name="G_01" value="espacio='E1' tipo='ecuación' fondo='no' color='20303a' coord_abs='no' expresión='y=(x + h)^2 + v' ancho='1' visible='no' editable='no' ">
+      <param name="G_01" value="espacio='E1' tipo='ecuación' fondo='no' color='00ff00' coord_abs='no' expresión='y=(x + h)^2 + v' ancho='1' visible='no' editable='no' ">
+      <param name="G_02" value="espacio='E1' tipo='texto' fondo='no' color='20303a' coord_abs='sí' expresión='(20,20)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;}\f0\fs40 {\*\mjaformula\i f(x) = (x + \i0\i{\expr h\decimals 2\fixed0}\i0\i )\i0{\supix\i 2\i0}\i  + \i0\i{\expr v\decimals 2\fixed0}\i0}}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='20' align='a_left' anchor='a_top_left' ">
     </ajs>
   </div>
 
