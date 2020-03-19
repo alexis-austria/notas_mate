@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>TITULO</title>
+  
+  <script type="text/javascript" src="lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="819" height="588">
+      <param name="tamaño" value="819x588">
+      <param name="decimal_symbol" value=".">
+      <param name="expand" value="fit">
+      <param name="nombre" value="">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=40 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='p = 1' fijo='no' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='no' ejes='no' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='R2' id='E2' x='0' y='0' ancho='100%' alto='100%' dibujar-si='p>=2' fijo='no' escala='25' O.x='0' O.y='110' despl_imagen='arr-izq' fondo='f0f8fa' red='b8c4c8' red10='889498' ejes='405860' texto='405860' números='sí' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='a' tipo='numérico' interfaz='campo de texto' solo_texto='sí' región='interior' espacio='E1' nombre='x = f(t) = ' expresión='(0,110,250,40)' valor='t^2-5' discreto='no' decimales='2' fijo='sí' visible='sí' evaluar='no' respuesta='krypto_d' ">
+      <param name="C_02" value="id='b' tipo='numérico' interfaz='campo de texto' solo_texto='sí' región='interior' espacio='E1' nombre='y = g(t) =' expresión='(310,110,250,40)' valor='2*t+2' discreto='no' decimales='2' fijo='sí' visible='sí' evaluar='no' respuesta='krypto_a' ">
+      <param name="C_03" value="id='n2' interfaz='botón' tipo='numérico' región='sur' espacio='E1' nombre='Anterior' expresión='(0,0,150,40)' valor='0' color='222222' borderColor='no' color-int='f0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='no' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='19' acción='calcular' parámetro='p = p -1' activo-si='p > 1' ">
+      <param name="C_04" value="id='n2' interfaz='botón' tipo='numérico' región='sur' espacio='E1' nombre='Siguiente' expresión='(0,0,150,40)' valor='0' color='222222' borderColor='no' color-int='f0f8ff' flat='no' text_align='a_center_center' image_align='a_center_center' negrita='no' cursiva='no' subrayada='no' font_family='SansSerif' fuente puntos='19' acción='calcular' parámetro='p = p +1' activo-si='p < 3' ">
+      <param name="A_01" value="id='f(t)' algoritmo='no' expresión='_Eval_(a)' tipo='función' ">
+      <param name="A_02" value="id='f2(t)' algoritmo='no' expresión='_Eval_(b)' tipo='función' ">
+      <param name="A_03" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='p = 1; a = t^2-5; b = 2*t+3' ">
+      <param name="A_04" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' inicio='fin = 1' hacer='ola > 2 ? (fin = 0) : (fin = 1)' ">
+      <param name="G_01" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='p = 1' coord_abs='sí' expresión='(20,20)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs36 Paso 1: Construimos una tabla con valores del paramtro {\*\mjaformula\i t\i0}, {\*\mjaformula\i f(t)\i0} y {\*\mjaformula\i g(t)\i0}, en este caso {\*\mjaformula\i t\i0} está en el \par\f0\fs36 intervalo [-4,4], esta tabla nos dará las coordenadas {\*\mjaformula\i x\i0} y {\*\mjaformula\i y\i0} de los puntos a graficar}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+      <param name="G_02" value="espacio='E2' tipo='texto' fondo='no' color='20303a' dibujar-si='fin==0' coord_abs='sí' expresión='(20,500)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs36 Paso 3: Conectamos los puntos}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+      <param name="G_03" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='p=1' coord_abs='sí' expresión='(320,350 + 30*s)' familia='s' s.intervalo='[-4,4]' s.pasos='8' texto='[s]' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+      <param name="G_04" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='p=1' coord_abs='sí' expresión='(410,350 + 30*s)' familia='s' s.intervalo='[-4,4]' s.pasos='8' texto='[f(s)]' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+      <param name="G_05" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='p=1' coord_abs='sí' expresión='(540,350 + 30*s)' familia='s' s.intervalo='[-4,4]' s.pasos='8' texto='[f2(s)]' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+      <param name="G_06" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='p=1' coord_abs='sí' expresión='(340,200)' texto='t' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='22' align='a_left' anchor='a_top_left' ">
+      <param name="G_07" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='p=1' coord_abs='sí' expresión='(410,200)' texto='x' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='22' align='a_left' anchor='a_top_left' ">
+      <param name="G_08" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='p=1' coord_abs='sí' expresión='(540,200)' texto='y' decimales='2' fijo='sí' ancho='1' negrita='sí' cursiva='no' font_family='SansSerif' fuente puntos='22' align='a_left' anchor='a_top_left' ">
+      <param name="G_09" value="espacio='E1' tipo='rectángulo' fondo='no' color='000000' dibujar-si='p=1' coord_abs='sí' expresión='(395,200+30*s,280,30)' familia='s' s.intervalo='[0,9]' s.pasos='9' ancho='1' border_radius='0' lineDash='solid' ">
+      <param name="G_10" value="espacio='E1' tipo='rectángulo' fondo='no' color='000000' dibujar-si='p=1' coord_abs='sí' expresión='(250,200+30*s,280,30)' familia='s' s.intervalo='[0,9]' s.pasos='9' ancho='1' border_radius='0' lineDash='solid' ">
+      <param name="G_11" value="espacio='E2' tipo='flecha' fondo='no' color='20303a' dibujar-si='p=3' coord_abs='no' expresión='(f(s),f2(s))(f(s+1),f2(s+1))' familia='s' s.intervalo='[-4,3]' s.pasos='7' decimales='2' fijo='sí' ancho='1' punta='3' flecha='000000' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+      <param name="G_12" value="espacio='E2' tipo='punto' fondo='no' color='ff0000' dibujar-si='p>=2' coord_abs='no' expresión='(f(s),f2(s))' familia='s' s.intervalo='[-4,4]' s.pasos='8' decimales='2' fijo='sí' tamaño='4' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+      <param name="G_13" value="espacio='E2' tipo='rectángulo' fondo='no' color='ffffff' coord_abs='sí' expresión='(0,0,819,60)' relleno='ffffff' ancho='1' border_radius='0' lineDash='solid' ">
+      <param name="G_14" value="espacio='E2' tipo='curva' fondo='no' color='20303a' dibujar-si='0' coord_abs='no' expresión='(f(t),f2(t))' parámetro='t' t.intervalo='[-4,4]' t.pasos='8' ancho='1' visible='no' editable='no' lineDash='solid' ">
+      <param name="G_15" value="espacio='E2' tipo='texto' fondo='no' color='000000' dibujar-si='p=2' coord_abs='sí' expresión='(20,20)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs36 Paso 2: Graficamos los puntos de la tabla de valores en el plano}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+      <param name="G_16" value="espacio='E2' tipo='texto' fondo='no' color='20303a' dibujar-si='p=3' coord_abs='sí' expresión='(20,20)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs36 Paso 3: Conectamos los puntos, las flechas indican la orientación de la gráfica}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>
