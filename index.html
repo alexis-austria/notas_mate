@@ -1169,7 +1169,42 @@
 
       <div class="page">
         <p>Los límites son igual a la derivada de $g(x)$ y $f(x)$, por lo tanto $$(fg)' = f(x)g'(x) + g(x)f'(x)$$</p>
+
+        <h3>Derivación de cociente de funciones</h3>
+
+        <p>La derivada de el cociente de funciones es igual a $$(\frac{f}{g})' = \frac{f'g - fg'}{g^2}$$</p>
+
+        <p><b>Demostración:</b> Utilizando la definición de derivada $$(\frac{f}{g})' = \lim_{h \to 0}\frac{\frac{f(x+h)}{g(x+h)}-\frac{f(x)}{g(x)}}{h}$$</p>
+
+        <p>$$\lim_{h \to 0}\frac{\frac{f(x+h)g(x) - f(x)g(x+h)}{g(x+h)g(x)}}{h}$$</p>
+
+        <p>$$\lim_{h \to 0}\frac{1}{h}\frac{f(x+h)g(x) - f(x)g(x+h)}{g(x+h)g(x)}$$</p>
+
+        <p>Agregamos el término $f(x)g(x) - f(x)g(x)$ $$\lim_{h \to 0}\frac{1}{h}\frac{f(x+h)g(x) - f(x)g(x) + f(x)g(x) - f(x)g(x+h)}{g(x+h)g(x)}$$</p>
+
+        <p>Reescribimos el cociente $$\small\lim_{h \to 0}\frac{1}{g(x+h)g(x)}\frac{f(x+h)g(x) - f(x)g(x) + f(x)g(x) - f(x)g(x+h)}{h}$$</p>
+
       </div>
+
+      <div class="page">
+        <p>Separamos el cociente y factorizamos $$\small\lim_{h \to 0}\frac{1}{g(x+h)g(x)}((g(x))\frac{f(x+h) - f(x)}{h} - (f(x))\frac{g(x+h) - g(x)}{h})$$</p>
+
+        <p>Usando las propiedades de los límites $$\small\lim_{h \to 0}\frac{1}{g(x+h)g(x)}((g(x))\frac{f(x+h) - f(x)}{h} - (f(x))\frac{g(x+h) - g(x)}{h})$$</p>
+
+        <p>$$\small\lim_{h \to 0}\frac{1}{g(x+h)g(x)}\lim_{h \to 0}((g(x))\frac{f(x+h) - f(x)}{h} - (f(x))\frac{g(x+h) - g(x)}{h})$$</p>
+
+        <p>$$\footnotesize\frac{1}{\lim_{h \to 0}g(x+h)g(x)}(\lim_{h \to 0}(g(x))\frac{f(x+h) - f(x)}{h} - \lim_{h \to 0}(f(x))\frac{g(x+h) - g(x)}{h})$$</p>
+
+        <p>$$\scriptsize\frac{1}{\lim_{h \to 0}g(x+h)g(x)}(\lim_{h \to 0}(g(x))\lim_{h \to 0}\frac{f(x+h) - f(x)}{h} - \lim_{h \to 0}(f(x))\lim_{h \to 0}\frac{g(x+h) - g(x)}{h})$$</p>
+
+        <p>Aplicando los límites tenemos que $$\small\frac{1}{g(x)g(x)}((g(x))\lim_{h \to 0}\frac{f(x+h) - f(x)}{h} - (f(x))\lim_{h \to 0}\frac{g(x+h) - g(x)}{h})$$</p>
+
+        <p>$$\frac{1}{g(x)^2}(g(x)f'(x) - f(x)g'(x))$$</p>
+
+        <p>$$(\frac{f}{g})' = \frac{f'g - fg'}{g^2}$$</p>
+      </div>
+
+
 
       <div class="page">
 
