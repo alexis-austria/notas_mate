@@ -985,7 +985,9 @@
       </div>
 
       <div class="page">
-        <h2 id="sec_c2_razón_de_cambio_en_la_naturaleza">Razón de cambio en la naturaleza. Movimiento, velocidad de reacción, capacidad calorífica de un cuerpo, dilatación de un cuerpo por calentamiento, difusión, etc.</h2>
+        <h2 id="sec_c2_razón_de_cambio_en_la_naturaleza">Razón de cambio en la naturaleza.</h2>
+
+         <!-- Movimiento, velocidad de reacción, capacidad calorífica de un cuerpo, dilatación de un cuerpo por calentamiento, difusión, etc. -->
 
         <h3>Velocidad media</h3>
 
@@ -1100,7 +1102,15 @@
 
         <p>Sea una función $f$. La derivada de $f$, denotada por $f'$ es la función cuyo dominio consiste de los valores de $x$ tal que existe el límite: $$f'(x) = \lim_{h \to 0}\frac{f(x+h)-f(x)}{h}$$</p>
 
-        <p>Decimos que una función $f(x)$ es diferenciable en $a$ si existe $f'(a)$. Una función es diferenciable en $S$ si es diferenciable en todos los puntos del conjunto $S$, y una función diferenciable es una función tal que $f'(x)$ existe en su dominio.</p>
+        <p>Decimos que una función $f(x)$ es diferenciable en $a$ si existe $f'(a)$. Una función es diferenciable en el conjunto $S$ si es diferenciable en todos los puntos de $S$, y una función diferenciable es una función tal que $f'(x)$ existe en su dominio.</p>
+
+        <p>También podemos denotar la derivada de la siguiente manera: $$\frac{d}{dx}y$$</p>
+
+        <p>A esta notación la llamamos notación de Leibniz y se lee como: "la derivada de $y$ respecto a $x$". Por ejemplo, otra forma de escribir $y' = 2x$ sería $\frac{d}{dx}y = 2x$.</p>
+
+      </div>
+
+      <div class="page">
 
         <h3>Derivada de algunas funciones simples</h3>
 
@@ -1110,22 +1120,24 @@
           <li>La derivada de la función identidad es igual a $1$. $$\frac{d}{dx}x=1$$</li>
         </ul>
 
+        <ul>
+          <li>Sea $n \in \N$, la derivada de $f(x) = x^n$ es $$\frac{d}{dx}x^n = nx^{n-1}$$</li>
+
+          <li>La derivada de la función seno es igual a la función coseno. $$\frac{d}{dx}sin(x) = cos(x)$$</li>
+
+          <li>La derivada de la función coseno es igual a la función -seno. $$\frac{d}{dx}cos(x) = -sin(x)$$</li>
+
+          <li>La derivada de la función tangente es igual a la función secante$^2$. $$\frac{d}{dx}tan(x) = sec^2(x)$$</li>
+        </ul>
+
       </div>
 
       <div class="page">
 
         <ul>
-          <li>Sea $n \in \N$, la derivada de $f(x) = x^n$ es $$\frac{d}{dx}x^n = nx^{x-1}$$</li>
+          <li>La derivada de la función exponencial es igual a la función exponencial. $$\frac{d}{dx}{\rm e}^x = {\rm e}^x$$</li>
 
-          <li>La derivada de la función $sin$ es igual a la función $cos$. $$\frac{d}{dx}sin(x) = cos(x)$$</li>
-
-          <li>La derivada de la función $cos$ es igual a la función $-sin$. $$\frac{d}{dx}cos(x) = -sin(x)$$</li>
-
-          <li>La derivada de la función $tan$ es igual a la función $sec^2$. $$\frac{d}{dx}tan(x) = sec^2(x)$$</li>
-
-          <li>La derivada de ${\rm e}^x$ es igual a ${\rm e}^x$. $$\frac{d}{dx}{\rm e}^x = {\rm e}^x$$</li>
-
-          <li>La derivada de $\ln (x)$ es igual a $\frac{1}{x}$. $$\frac{d}{dx}\ln (x) = \frac{1}{x}$$</li>
+          <li>La derivada de la función logarítmica es igual a $\frac{1}{x}$. $$\frac{d}{dx}\ln (x) = \frac{1}{x}$$</li>
         </ul>
 
       </div>
@@ -1172,9 +1184,9 @@
 
         <h3>Derivación de cociente de funciones</h3>
 
-        <p>La derivada de el cociente de funciones es igual a $$(\frac{f}{g})' = \frac{f'g - fg'}{g^2}$$</p>
+        <p>La derivada del cociente de funciones es igual a $$\left( \frac{f}{g} \right)' = \frac{f'g - fg'}{g^2}$$</p>
 
-        <p><b>Demostración:</b> Utilizando la definición de derivada $$(\frac{f}{g})' = \lim_{h \to 0}\frac{\frac{f(x+h)}{g(x+h)}-\frac{f(x)}{g(x)}}{h}$$</p>
+        <p><b>Demostración:</b> Utilizando la definición de derivada $$\left(\frac{f}{g}\right)' = \lim_{h \to 0}\frac{\frac{f(x+h)}{g(x+h)}-\frac{f(x)}{g(x)}}{h}$$</p>
 
         <p>$$\lim_{h \to 0}\frac{\frac{f(x+h)g(x) - f(x)g(x+h)}{g(x+h)g(x)}}{h}$$</p>
 
@@ -1187,17 +1199,24 @@
       </div>
 
       <div class="page">
-        <p>Separamos el cociente y factorizamos $$\small\lim_{h \to 0}\frac{1}{g(x+h)g(x)}((g(x))\frac{f(x+h) - f(x)}{h} - (f(x))\frac{g(x+h) - g(x)}{h})$$</p>
+        <p>Separamos el cociente y factorizamos $$\small\lim_{h \to 0}\frac{1}{g(x+h)g(x)}\left((g(x))\frac{f(x+h) - f(x)}{h} - (f(x))\frac{g(x+h) - g(x)}{h}\right)$$</p>
 
-        <p>Usando las propiedades de los límites $$\small\lim_{h \to 0}\frac{1}{g(x+h)g(x)}((g(x))\frac{f(x+h) - f(x)}{h} - (f(x))\frac{g(x+h) - g(x)}{h})$$</p>
+        <p>Usando las propiedades de los límites $$\small\lim_{h \to 0}\frac{1}{g(x+h)g(x)}\left((g(x))\frac{f(x+h) - f(x)}{h} - (f(x))\frac{g(x+h) - g(x)}{h}\right)$$</p>
 
-        <p>$$\small\lim_{h \to 0}\frac{1}{g(x+h)g(x)}\lim_{h \to 0}((g(x))\frac{f(x+h) - f(x)}{h} - (f(x))\frac{g(x+h) - g(x)}{h})$$</p>
+        <br>
 
-        <p>$$\footnotesize\frac{1}{\lim_{h \to 0}g(x+h)g(x)}(\lim_{h \to 0}(g(x))\frac{f(x+h) - f(x)}{h} - \lim_{h \to 0}(f(x))\frac{g(x+h) - g(x)}{h})$$</p>
+        <p>$$= \small\lim_{h \to 0}\frac{1}{g(x+h)g(x)}\lim_{h \to 0}\left((g(x))\frac{f(x+h) - f(x)}{h} - (f(x))\frac{g(x+h) - g(x)}{h}\right)$$</p>
 
-        <p>$$\scriptsize\frac{1}{\lim_{h \to 0}g(x+h)g(x)}(\lim_{h \to 0}(g(x))\lim_{h \to 0}\frac{f(x+h) - f(x)}{h} - \lim_{h \to 0}(f(x))\lim_{h \to 0}\frac{g(x+h) - g(x)}{h})$$</p>
+        <br>
 
-        <p>Aplicando los límites tenemos que $$\small\frac{1}{g(x)g(x)}((g(x))\lim_{h \to 0}\frac{f(x+h) - f(x)}{h} - (f(x))\lim_{h \to 0}\frac{g(x+h) - g(x)}{h})$$</p>
+        <p>$$= \footnotesize\frac{1}{\lim_{h \to 0}g(x+h)g(x)}\left(\lim_{h \to 0}(g(x))\frac{f(x+h) - f(x)}{h} - \lim_{h \to 0}(f(x))\frac{g(x+h) - g(x)}{h}\right)$$</p>
+
+        <br>
+
+        <p>$$= \scriptsize\frac{1}{\lim_{h \to 0}g(x+h)g(x)}\left(\lim_{h \to 0}(g(x))\lim_{h \to 0}\frac{f(x+h) - f(x)}{h} - \lim_{h \to 0}(f(x))\lim_{h \to 0}\frac{g(x+h) - g(x)}{h}\right)$$</p>
+
+
+        <p>Aplicando los límites tenemos que $$\small\frac{1}{g(x)g(x)}\left((g(x))\lim_{h \to 0}\frac{f(x+h) - f(x)}{h} - (f(x))\lim_{h \to 0}\frac{g(x+h) - g(x)}{h}\right)$$</p>
 
         <p>$$\frac{1}{g(x)^2}(g(x)f'(x) - f(x)g'(x))$$</p>
 
@@ -1273,6 +1292,18 @@
           <div class="interactive" width="800" height="500" src="interactive/cap_2/maxminabs.html"></div>
           <figcaption>Extremos absolutos de una función.</figcaption>
         </figure>
+
+        <p>Como se ve en el ejemplo una función puede tener un máximo y un mínimo absoluto, sólo un extremo absoluto o ninguno. El teorema de los valores extremos garantiza que una función continua $f(x)$
+        sobre un intervalo cerrado $[a,b]$ tiene una máximo y mínimo absoluto, el teorema es el siguiente:</p>
+
+        <p>Sea $f(x)$ una función continua sobre el intervalo cerrado $[a,b]$, entonces existe un punto en $[a,b]$ en el que $f(x)$ alcanza un máximo absoluto y un punto en $[a,b]$ en el que $f(x)$ alcanza un mínimo absoluto.</p>
+      </div>
+
+      <div class="page">
+        <p>Una función $f(x)$ alcanza un máximo local en $c$ si existe un intervalo abierto $I$, tal que $c \in I$, contenido en el dominio de $f(c)$ y $f(c) \geq f(x), \forall x \in I$.
+        Decimos que $f(x)$ alcanza un mínimo local en $c$ si existe un intervalo abierto $I$, tal que $c \in I$, contenido en el dominio de $f(c)$ y $f(c) \leq f(x), \forall x \in I$.</p>
+
+        <p>Notemos que si $f(x)$ alcanza un extremo absoluto en $c$ y $f(x)$ esta definida sobre un intervalo que contiene a $c$ entonces $f(c)$ también es un extremo .</p>
       </div>
 
       <div class="page">
