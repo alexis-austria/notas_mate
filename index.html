@@ -1244,7 +1244,7 @@
       </div>
 
       <div class="page">
-        <p>La función es creciente en los intervalos $(-\infty, -\sqrt{\frac{5}{3}} ]$ y $[\sqrt{\frac{5}{3}}, \infty]$, y es decreciente en el intervalo $[-\sqrt{\frac{5}{3}},\sqrt{\frac{5}{3}}]$.</p>
+        <p>La función es creciente en los intervalos $(-\infty, -\sqrt{\frac{5}{3}}]$ y $[\sqrt{\frac{5}{3}}, \infty]$, y es decreciente en el intervalo $[-\sqrt{\frac{5}{3}},\sqrt{\frac{5}{3}}]$.</p>
 
         <p>Podemos saber si una función es creciente o decreciente en un intervalo utilizando su derivada. Sea $f(x)$ una función continua en el intervalo $[a,b]$ y derivable en $(a,b)$, </p>
 
@@ -1301,9 +1301,31 @@
 
       <div class="page">
         <p>Una función $f(x)$ alcanza un máximo local en $c$ si existe un intervalo abierto $I$, tal que $c \in I$, contenido en el dominio de $f(c)$ y $f(c) \geq f(x), \forall x \in I$.
-        Decimos que $f(x)$ alcanza un mínimo local en $c$ si existe un intervalo abierto $I$, tal que $c \in I$, contenido en el dominio de $f(c)$ y $f(c) \leq f(x), \forall x \in I$.</p>
+        Decimos que $f(x)$ alcanza un mínimo local en $c$ si existe un intervalo abierto $I$, tal que $c \in I$, contenido en el dominio de $f(c)$ y $f(c) \leq f(x), \forall x \in I$. Decimos que una función $f(x)$ alcanza
+        un extremo local en $c$ si $f(x)$ alcanza un máximo o mínimo local en $c$.</p>
+
+        <p>Por ejemplo, a continuación se muestra la gráfica de la función $f(x) = 3x^3-4x^2$ definida sobre el intervalo $[-\infty,\infty]$.</p>
+
+        <figure>
+          <div class="interactive" width="800" height="500" src="interactive/cap_2/maxminloc.html"></div>
+          <figcaption>Extremos locales de una función.</figcaption>
+        </figure>
+
+        <p>La función alcanza sus extremos locales en $x = 0$ y $x = 0.889$, marcados con rojo en la gráfica.</p>
+
+      </div>
+
+      <div class="page">
+        <p>Aunque $f(0)$ no es el valor máximo de $f(x)$, el valor $f(0)$ es mayor que el valor de $f(x)$ para valores de $x$ cercanos a $0$. De la misma manera, $f(0.889)$ no es
+        el valor mínimo de $f(x)$, pero el valor de $f(0.889)$ es menor que los valores de $f(x)$ para valores de $x$ cercaons a $0.889$.</p>
 
         <p>Notemos que si $f(x)$ alcanza un extremo absoluto en $c$ y $f(x)$ esta definida sobre un intervalo que contiene a $c$ entonces $f(c)$ también es un extremo .</p>
+
+        <p>Nos interesa saber los valores de $x$ en los que $f(x)$ alcanza sus extremos locales, al igual que con los los intervalos de crecimiento y decrecimiento utilizaremos la derivada de la función.</p>
+
+        <p>Regresando al ejemplo anterior, la derivada de $f(x) = 3x^3-4x^2$ es $$f'(x) = 9x^2-8x$$</p>
+
+        <p>Sabemos que $f(x)$ alcanza sus extremos locales en $x = 0$ y $x = 0.889$, el valor de la derivada en esos puntos es igual a $0$ $$f'(0) = 0$$ $$f'(0.889) = 0$$</p>
       </div>
 
       <div class="page">
