@@ -20,11 +20,17 @@
       <param name="Idioma" value="español">
       <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=40 ">
       <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='100' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='c0c0c0' red10='808080' ejes='404040' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
-      <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' ">
-      <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="C_01" value="id='g' tipo='gráfico' espacio='E1' color='0000ff' color-int='0000ff' tamaño='4' expresión='(0.5,0)' constricción='y=3x^3-4x^2' ">
+      <param name="A_01" value="id='f(x)' algoritmo='no' expresión='3x^3-4x^2' tipo='función' ">
+      <param name="A_02" value="id='derivada(x)' algoritmo='no' expresión='_Eval_(&squot;9*x^2-8*x&squot;)' tipo='función' ">
+      <param name="A_03" value="id='tangente(x,y,m,a)' algoritmo='no' expresión='_Eval_(&squot;y+m*(x-a)&squot;)' tipo='función' ">
+      <param name="A_04" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' ">
+      <param name="A_05" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
       <param name="G_01" value="espacio='E1' tipo='ecuación' fondo='no' color='20303a' coord_abs='no' expresión='y=3x^3-4x^2' ancho='1' visible='no' editable='no' ">
       <param name="G_02" value="espacio='E1' tipo='punto' fondo='no' color='ff0000' coord_abs='no' expresión='(0,0)' decimales='2' fijo='sí' tamaño='3.5' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
       <param name="G_03" value="espacio='E1' tipo='punto' fondo='no' color='ff0000' coord_abs='no' expresión='(8/9,-1.053)' decimales='2' fijo='sí' tamaño='3.5' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+      <param name="G_04" value="espacio='E1' tipo='texto' fondo='no' color='20303a' coord_abs='sí' expresión='(20,20)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs36 \i{\*\mjaformula\i c = \i0\i{\expr g.x\decimals 2\fixed0}\i0\i , f&squot;(c) = \i0\i{\expr derivada(g.x)\decimals 2\fixed0}\i0}\i0 }' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+      <param name="G_05" value="espacio='E1' tipo='ecuación' fondo='no' color='0000ff' coord_abs='no' expresión='y=tangente(x,f(g.x),derivada(g.x),g.x)' ancho='1' visible='no' editable='no' ">
     </ajs>
   </div>
 
