@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>TITULO</title>
+  
+  <script type="text/javascript" src="lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="800" height="500">
+      <param name="tamaño" value="800x500">
+      <param name="decimal_symbol" value=".">
+      <param name="expand" value="fit">
+      <param name="nombre" value="">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=40 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='50%' alto='50%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='808080' ejes='404040' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='1' border_color='000000' border_radius='0' ">
+      <param name="E_02" value="tipo='R2' id='E2' x='50%' y='0' ancho='50%' alto='50%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='808080' ejes='404040' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='1' border_color='000000' border_radius='0' ">
+      <param name="E_03" value="tipo='R2' id='E3' x='0' y='50%' ancho='50%' alto='50%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='808080' ejes='404040' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='1' border_color='000000' border_radius='0' ">
+      <param name="E_04" value="tipo='R2' id='E4' x='50%' y='50%' ancho='50%' alto='50%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='no' red10='808080' ejes='404040' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='1' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='g1' tipo='gráfico' espacio='E1' color='0000ff' color-int='0000ff' tamaño='4' expresión='(1,0)' constricción='y=-log(x)' ">
+      <param name="C_02" value="id='g2' tipo='gráfico' espacio='E2' color='0000ff' color-int='0000ff' tamaño='4' expresión='(1,0)' constricción='y=.5*x^2' ">
+      <param name="C_03" value="id='g3' tipo='gráfico' espacio='E3' color='0000ff' color-int='0000ff' tamaño='4' expresión='(1,0)' constricción='y=-.5*x^2' ">
+      <param name="C_04" value="id='g4' tipo='gráfico' espacio='E4' color='0000ff' color-int='0000ff' tamaño='4' expresión='(1,0)' constricción='y=log(x)' ">
+      <param name="A_01" value="id='f1(x)' algoritmo='no' expresión='-log(x)' tipo='función' ">
+      <param name="A_02" value="id='derivada1(x)' algoritmo='no' expresión='-1/x' tipo='función' ">
+      <param name="A_03" value="id='f2(x)' algoritmo='no' expresión='.5*x^2' tipo='función' ">
+      <param name="A_04" value="id='derivada2(x)' algoritmo='no' expresión='x' tipo='función' ">
+      <param name="A_05" value="id='f3(x)' algoritmo='no' expresión='-.5*x^2' tipo='función' ">
+      <param name="A_06" value="id='derivada3(x)' algoritmo='no' expresión='-x' tipo='función' ">
+      <param name="A_07" value="id='f4(x)' algoritmo='no' expresión='log(x)' tipo='función' ">
+      <param name="A_08" value="id='derivada4(x)' algoritmo='no' expresión='1/x' tipo='función' ">
+      <param name="A_09" value="id='tangente(x,y,m,a)' algoritmo='no' expresión='_Eval_(&squot;y+m*(x-a)&squot;)' tipo='función' ">
+      <param name="A_10" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' ">
+      <param name="A_11" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='g1.x = (g1.x < .25) ? .25 : g1.x;;g1.x = (g1.x > 2) ? 2 : g1.x;;;g2.x = (g2.x < 0) ? 0 : g2.x;;g2.x = (g2.x > 2) ? 2 : g2.x;;;g3.x = (g3.x < 0) ? 0 : g3.x;;g3.x = (g3.x > 2) ? 2 : g3.x;;;g4.x = (g4.x < .25) ? .25 : g4.x;;g4.x = (g4.x > 2) ? 2 : g4.x;' ">
+      <param name="G_01" value="espacio='E2' tipo='curva' fondo='no' color='20303a' coord_abs='no' expresión='(t,.5*t^2)' parámetro='t' t.intervalo='[0,2]' t.pasos='8' ancho='1' visible='no' editable='no' lineDash='solid' ">
+      <param name="G_02" value="espacio='E3' tipo='curva' fondo='no' color='20303a' coord_abs='no' expresión='(t,-.5*t^2)' parámetro='t' t.intervalo='[0,2]' t.pasos='8' ancho='1' visible='no' editable='no' lineDash='solid' ">
+      <param name="G_03" value="espacio='E4' tipo='curva' fondo='no' color='20303a' coord_abs='no' expresión='(t,log(t))' parámetro='t' t.intervalo='[0,2]' t.pasos='8' ancho='1' visible='no' editable='no' lineDash='solid' ">
+      <param name="G_04" value="espacio='E1' tipo='curva' fondo='no' color='20303a' coord_abs='no' expresión='(t,-log(t))' parámetro='t' t.intervalo='[0,2]' t.pasos='8' ancho='1' visible='no' editable='no' lineDash='solid' ">
+      <param name="G_05" value="espacio='E1' tipo='texto' fondo='no' color='20303a' coord_abs='sí' expresión='(15,20)' texto='Cóncava hacia arriba, \ndecreciente' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+      <param name="G_06" value="espacio='E2' tipo='texto' fondo='no' color='20303a' coord_abs='sí' expresión='(15,20)' texto='Cóncava hacia arriba, \ncreciente' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+      <param name="G_07" value="espacio='E3' tipo='texto' fondo='no' color='20303a' coord_abs='sí' expresión='(15,20)' texto='Cóncava hacia abajo, \ndecreciente' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+      <param name="G_08" value="espacio='E4' tipo='texto' fondo='no' color='20303a' coord_abs='sí' expresión='(15,20)' texto='Cóncava hacia abajo, \ncreciente' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+      <param name="G_09" value="espacio='E2' tipo='ecuación' fondo='no' color='ff0000' coord_abs='no' expresión='y=tangente(x,f2(g2.x),derivada2(g2.x),g2.x)' ancho='1' visible='no' editable='no' ">
+      <param name="G_10" value="espacio='E1' tipo='ecuación' fondo='no' color='ff0000' coord_abs='no' expresión='y=tangente(x,f1(g1.x),derivada1(g1.x),g1.x)' ancho='1' visible='no' editable='no' ">
+      <param name="G_11" value="espacio='E3' tipo='ecuación' fondo='no' color='ff0000' coord_abs='no' expresión='y=tangente(x,f3(g3.x),derivada3(g3.x),g3.x)' ancho='1' visible='no' editable='no' ">
+      <param name="G_12" value="espacio='E4' tipo='ecuación' fondo='no' color='ff0000' coord_abs='no' expresión='y=tangente(x,f4(g4.x),derivada4(g4.x),g4.x)' ancho='1' visible='no' editable='no' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>
