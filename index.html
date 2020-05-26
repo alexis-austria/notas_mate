@@ -1445,7 +1445,7 @@
 
       <div class="page">
         <p>Decimos que una función es cóncava hacia arriba o convexa si su gráfica "abre" hacia arriba, y una función es cóncava hacia abajo o simplemente cóncava si su gráfica "abre" hacia abajo.
-        Notemos que una función puede ser cóncava hacia arriba o hacia abajo independientemente de si la función es creciente o decreciente. Para dar una definición más conncreta de concavidad, analizemos las rectas tangentes a las curvas (mueve los puntos azules para mover las rectas tangentes a las curvas):</p>
+        Notemos que una función puede ser cóncava hacia arriba o hacia abajo independientemente de si la función es creciente o decreciente. Para dar una definición más concreta de concavidad, analizemos las rectas tangentes a las curvas (mueve los puntos azules para mover las rectas tangentes a las curvas):</p>
 
         <figure>
           <div class="interactive" width="800" height="500" src="interactive/cap_2/concavidad2.html"></div>
@@ -1453,6 +1453,27 @@
         </figure>
 
         <p>Podemos ver que cuando la gráfica es cóncava hacia arriba la gráfica la tangente queda por debajo de la gráfica y cuando la gráfica es cóncava hacia abajo la tangente queda por arriba de la gráfica.</p>
+      </div>
+
+      <div class="page">
+        <p>También podemos observar que cuando la gráfica es cóncava hacia arriba la pendiente de la recta tangente va aumentando, mientras que cuando la gráfica es cóncava hacia abajo la pendiente va disminuyendo.
+        Esto quiere decir que la concavidad esta relacionada con el sentido de crecimiento de la derivada, recordemos que para saber si una función es creciente o decreciente en un intervalo utilizamos su derivada, por lo tanto,
+        para determinar la concavidad de una función utilizaremos su segunda derivada:</p>
+
+        <ul>
+          <li>Si para toda $x$ en un intervalo $[a,b]$ se cumple que $f''(x) > 0$, entonces la gráfica de $f(x)$ es cóncava hacia arriba en $[a,b]$.</li>
+
+          <li>Si para toda $x$ en un intervalo $[a,b]$ se cumple que $f''(x) < 0$, entonces la gráfica de $f(x)$ es cóncava hacia abajo en $[a,b]$.</li>
+        </ul>
+
+        <h3>Puntos de inflexión</h3>
+
+        <p>Un punto $x = c$ es un punto de inflexión si la función es continua en ese punto y la concavidad de la gráfica cambia en ese punto. Como la concavidad de una gráfica depende del signo de la segunda derivada
+        los puntos de inflexión ocurren en todos los puntos donde la segunda derivada cambia de signo. Los puntos en los que una función cambia de signo ocurren cuando $f(x) = 0$ o en los que la función no esta definida, esto
+        nos dice que los puntos en los que la segunda derivada es $0$ o es indefinida son posibles puntos de inflexión.</p>
+
+        <p>Notemos que no sólo porque la segunda derivada sea $0$ o indefinida en un punto será un punto de inflexión. Para saber si ese punto es realmente un punto de inflexión tenemos que determinar si la concavidad de la
+        gráfica es distinta de ambos lados del punto.</p>
       </div>
 
       <!-- HERE -->
