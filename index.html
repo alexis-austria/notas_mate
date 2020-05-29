@@ -1476,6 +1476,33 @@
         gráfica es distinta de ambos lados del punto.</p>
       </div>
 
+      <div class="page">
+        <p>Veamos un ejemplo, sea $f(x) = 2x^4 + 2x^3 - 6x^2$ encontraremos sus puntos de inflexión. Primero, calculamos la derivada y segunda derivada de $f(x)$ $$f'(x) = 8x^3 + 6x^2 - 12x$$ $$f''(x) = 24x^2 + 12x - 12$$</p>
+
+        <p>Luego, igualamos $f''(x)$ a $0$ y resolvemos $$24x^2 + 12x - 12 = 0$$ $$2x^2 + x - 1 = 0$$ $$(x+1)(2x-1)=0$$</p>
+
+        <p>Tenemos dos soluciones $x = -1$ y $x = \frac{1}{2}$, ahora verificamos que realmente sean puntos de inflexión escogiendo un punto en cada uno de los intervalos.</p>
+
+        <p>Para el intervalo $(-\infty, -1)$ escogemos $x = -2$, $f''(-2) = 60$, por lo tanto la gráfica es cóncava hacia arriba en $(-\infty, -1)$</p>
+
+        <p>Para el intervalo $(-1, \frac{1}{2})$ escogemos $x = 0$, $f''(0) = -12$, por lo tanto la gráfica es cóncava hacia abajo en $(-1, \frac{1}{2})$</p>
+
+        <p>Para el intervalo $(\frac{1}{2}, \infty)$ escogemos $x = 1$, $f''(1) = 24$, por lo tanto la gráfica es cóncava hacia arriba en $(\frac{1}{2}, \infty)$</p>
+
+        <p>La gráfica es cóncava hacia arriba en $(-\infty, -1) \cup (\frac{1}{2}, \infty)$ y cóncava hacia abajo en $(-1, \frac{1}{2})$, lo que significa que $x = -1$ y $x = \frac{1}{2}$ sí son puntos de inflexión.</p>
+      </div>
+
+      <div class="page">
+        <p>Finalmente evaluamos $f(x)$ en $x = -1$ y $x = \frac{1}{2}$ para obtener la coordenada $y$ de los puntos de inflexión $$f(-1) = -6$$ $$f(\frac{1}{2}) = -\frac{9}{8}$$</p>
+
+        <p>Por lo tanto, los dos puntos de inflexión de $f(x) = 2x^4 + 2x^3 - 6x^2$ son $(-1, -6)$ y $(\frac{1}{2}, -\frac{9}{8})$, su gráfica se muestra en la siguiente figura</p>
+
+        <figure>
+          <div class="interactive" width="800" height="500" src="interactive/cap_2/ejemplo_inflexion.html"></div>
+          <figcaption>Ejemplo puntos de inflexión.</figcaption>
+        </figure>
+      </div>
+
       <!-- HERE -->
       <div class="page" num=""></div>
 
