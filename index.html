@@ -1518,13 +1518,15 @@
         <p>Supongamos que una párticula se mueve con velocidad variable $v(t)$ durante un intervalo de tiempo y queremos calcular la distancia recorrida durante ese intervalo, como la velocidad de la partícula no es constante durante todo el intervalo lo que podemos hacer es
           en intervalos más pequeños, durante los cuales la velocidad no va a variar mucho.</p>
 
-        <p>Entonces, suponiendo que queremos calcular la distancia recorrida por la partícula en el intervalo $[0, N]$ primero lo dividimos en intervalos mas cortos de duración $\Delta t$, trataremos la velocidad de la partícula dentro de cada uno de los intervalos como si fuera constante.
-           La distancia recorrida dentro del intervalo centrado en el instante $t_i$ es aproximadamente $$\Delta x_i \approx v(t_i) \Delta t$$</p>
+        <p>Entonces, suponiendo que queremos calcular la distancia recorrida por la partícula en el intervalo $[a, b]$ primero lo dividimos en $n$ intervalos mas cortos de duración $\Delta t$ (siendo $\Delta t$ igual a $\frac{b-a}{n}$), trataremos la velocidad de la partícula dentro de cada uno de los intervalos como si se mantuviera constante.
+           La distancia recorrida dentro del intervalo que inicia en el instante $t_i$ es aproximadamente $$\Delta x_i \approx v(t_i) \Delta t$$</p>
 
       </div>
 
       <div class="page">
-        <p>Para obtener la distancia total recorrida sumamos las distancias recorridas durante cada uno de los intervalos $$\Delta x = \Delta x_1 + \Delta x_2 + \dots + \Delta x_j = \sum_{t_i = 0}^{t_i = j} v(t_i) \Delta t$$</p>
+        <p>Para obtener la distancia total recorrida sumamos las distancias recorridas durante cada uno de los intervalos $$\Delta x = \Delta x_0 + \Delta x_1 + \dots + \Delta x_{n-1} = \sum_{t_i = 0}^{n-1} v(t_i) \Delta t$$</p>
+
+        <p>A esta suma la llamamos suma de Riemann</p>
       </div>
 
       <!-- HERE -->
