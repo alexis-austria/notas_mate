@@ -1220,7 +1220,7 @@
 
         <p>$$\frac{1}{g(x)^2}(g(x)f'(x) - f(x)g'(x))$$</p>
 
-        <p>$$(\frac{f}{g})' = \frac{f'g - fg'}{g^2}$$</p>
+        <p>$$\left(\frac{f}{g}\right)' = \frac{f'g - fg'}{g^2}$$</p>
       </div>
 
 
@@ -1296,7 +1296,7 @@
         <p>Como se ve en el ejemplo una función puede tener un máximo y un mínimo absoluto, sólo un extremo absoluto o ninguno. El teorema de los valores extremos garantiza que una función continua $f(x)$
         sobre un intervalo cerrado $[a,b]$ tiene una máximo y mínimo absoluto.</p>
 
-        <p><text style="color:red"><b>Teorema de los valores extremos:</b></text> Sea $f(x)$ una función continua sobre el intervalo cerrado $[a,b]$, entonces existe un punto en $[a,b]$ en el que $f(x)$ alcanza un máximo absoluto y un punto en $[a,b]$ en el que $f(x)$ alcanza un mínimo absoluto.</p>
+        <div class="num_block" prefix="Teorema">Sea $f(x)$ una función continua sobre el intervalo cerrado $[a,b]$, entonces existe un punto en $[a,b]$ en el que $f(x)$ alcanza un máximo absoluto y un punto en $[a,b]$ en el que $f(x)$ alcanza un mínimo absoluto.</div>
       </div>
 
       <div class="page">
@@ -1340,7 +1340,7 @@
           <figcaption>Teorema de Fermat.</figcaption>
         </figure>
 
-        <p><text style="color:red"><b>Teorema de Fermat:</b></text> Sea $f(x)$ una función, si $f(x)$ alcanza un extremo local en $c$ y es derivable en $c$, entonces $f'(c) = 0$.</p>
+        <div class="num_block" prefix="Teorema">Sea $f(x)$ una función, si $f(x)$ alcanza un extremo local en $c$ y es derivable en $c$, entonces $f'(c) = 0$.</div>
 
         <p>Del teorema podemos concluir que los extremos locales son puntos críticos, pero, no todos los puntos críticos son extremos locales, por ejemplo, veamos la gráfica de la función $f(x) = x^3$.</p>
       </div>
@@ -1348,7 +1348,7 @@
       <div class="page">
         <figure>
           <div class="interactive" width="800" height="500" src="interactive/cap_2/fermat2.html"></div>
-          <figcaption>Puntos críticos.</figcaption>
+          <figcaption>Puntos críticos de la función $f(x) = x^3$.</figcaption>
         </figure>
 
         <p>La función  tiene un punto crítico en $x = 0$ ya que $f'(0) = 0$, pero, la función es creciente sobre el intervalo $(-\infty, \infty)$, por lo tanto, no es un extremo local.</p>
@@ -1372,7 +1372,7 @@
 
         <p>Primero evaluamos $f(x)$ en los extremos del intervalo, $x = -2$ y $x = 1$ $$f(-2) = 0$$ $$f(1) = 6$$</p>
 
-        <p>Ahora, encontramos los puntos de inflexión, para hacerlos derivamos $f(x)$ y resolvemos $f'(x) = 0$ $$f'(x) = 6x + 5$$</p>
+        <p>Ahora, encontramos los puntos de inflexión, para esto derivamos $f(x)$ y resolvemos $f'(x) = 0$ $$f'(x) = 6x + 5$$</p>
 
         <p>$$6x + 5 = 0$$ $$6x = -5$$ $$x = -\frac{5}{6}$$</p>
 
@@ -1381,7 +1381,13 @@
 
       <div class="page">
         <p>Finalmente, comparamos los valores obtenidos, el valor mayor es $f(1) = 6$ y el valor menor es $f(-\frac{5}{6}) = -\frac{49}{12}$, por lo tanto,
-        la función $f(x) = 3x^2+5x-2$ definida sobre el intervalo $[-2,1]$ alcanza sus extremos absolutos en $x = 1$ y $x = -\frac{5}{6}$.</p>
+        la función $f(x) = 3x^2+5x-2$ definida sobre el intervalo $[-2,1]$ alcanza sus extremos absolutos en $x = 1$ y $x = -\frac{5}{6}$, su gráfica se muestra en la siguiente figura</p>
+
+        <figure>
+          <div class="interactive" width="800" height="550" src="interactive/cap_2/ejemplo_extremos.html"></div>
+          <figcaption>Extremos absolutos de la función $f(x) = 3x^2+5x-2$.</figcaption>
+        </figure>
+
       </div>
 
       <div class="page">
@@ -1444,7 +1450,8 @@
       </div>
 
       <div class="page">
-        <p>Decimos que una función es cóncava hacia arriba o convexa si su gráfica "abre" hacia arriba, y una función es cóncava hacia abajo o simplemente cóncava si su gráfica "abre" hacia abajo.
+
+        <p>Decimos que una función es cóncava hacia arriba o convexa si su gráfica “abre” hacia arriba, y una función es cóncava hacia abajo o simplemente cóncava si su gráfica “abre” hacia abajo.
         Notemos que una función puede ser cóncava hacia arriba o hacia abajo independientemente de si la función es creciente o decreciente. Para dar una definición más concreta de concavidad, analizemos las rectas tangentes a las curvas (mueve los puntos azules para mover las rectas tangentes a las curvas):</p>
 
         <figure>
@@ -1477,7 +1484,7 @@
       </div>
 
       <div class="page">
-        <p>Veamos un ejemplo, sea $f(x) = 2x^4 + 2x^3 - 6x^2$ encontraremos sus puntos de inflexión. Primero, calculamos la derivada y segunda derivada de $f(x)$ $$f'(x) = 8x^3 + 6x^2 - 12x$$ $$f''(x) = 24x^2 + 12x - 12$$</p>
+        <p>Veamos un ejemplo, sea $f(x) = 2x^4 + 2x^3 - 6x^2$ encontraremos sus puntos de inflexión. Primero, calculamos la primera y segunda derivada de $f(x)$ $$f'(x) = 8x^3 + 6x^2 - 12x$$ $$f''(x) = 24x^2 + 12x - 12$$</p>
 
         <p>Luego, igualamos $f''(x)$ a $0$ y resolvemos $$24x^2 + 12x - 12 = 0$$ $$2x^2 + x - 1 = 0$$ $$(x+1)(2x-1)=0$$</p>
 
@@ -1515,8 +1522,8 @@
 
         <h2 id="sec_c3_distancia_y_área">Distancia recorrida a partir de la velocidad instantánea. Área de la región limitada por una curva.</h2>
 
-        <p>Supongamos que una párticula se mueve con velocidad variable $v(t)$ durante un intervalo de tiempo y queremos calcular la distancia recorrida durante ese intervalo, como la velocidad de la partícula no es constante durante todo el intervalo lo que podemos hacer es
-          en intervalos más pequeños, durante los cuales la velocidad no va a variar mucho.</p>
+        <p>Supongamos que una partícula se mueve con velocidad variable $v(t)$ durante un intervalo de tiempo y queremos calcular la distancia recorrida durante ese intervalo, como la velocidad de la partícula no es constante durante todo el intervalo lo que podemos hacer es
+          dividir este intervalo en intervalos más pequeños, durante los cuales la velocidad no va a variar mucho.</p>
 
         <p>Entonces, suponiendo que queremos calcular la distancia recorrida por la partícula en el intervalo $[a, b]$ primero lo dividimos en $n$ intervalos mas cortos de duración $\Delta t$ (siendo $\Delta t$ igual a $\frac{b-a}{n}$), trataremos la velocidad de la partícula dentro de cada uno de los intervalos como si se mantuviera constante.
            La distancia recorrida dentro del intervalo que inicia en el instante $t_i$ es aproximadamente $$\Delta x_i \approx v(t_i) \Delta t$$</p>
@@ -1526,7 +1533,14 @@
       <div class="page">
         <p>Para obtener la distancia total recorrida sumamos las distancias recorridas durante cada uno de los intervalos $$\Delta x = \Delta x_0 + \Delta x_1 + \dots + \Delta x_{n-1} = \sum_{t_i = 0}^{n-1} v(t_i) \Delta t$$</p>
 
-        <p>A esta suma la llamamos suma de Riemann</p>
+        <p>A esta suma la llamamos suma de Riemann. Graficamente se vería de la siguiente manera:</p>
+
+        <figure>
+          <div class="interactive" width="800" height="500" src="interactive/cap_3/area_bajo.html"></div>
+          <figcaption>Area bajo la curva de la función $f(x)=2x^3-4x^2 +3$ en el intervalo $[0,2]$.</figcaption>
+        </figure>
+
+        <p>La suma de Riemann es una aproximación del área total bajo la gráfica de una función $f(x)$. Notemos que al aumentar el número de intervalos mejoramos la aproximación y el ancho $\Delta t$ de los intervalos disminuye.</p>
       </div>
 
       <!-- HERE -->
