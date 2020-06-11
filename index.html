@@ -1531,7 +1531,7 @@
       </div>
 
       <div class="page">
-        <p>Para obtener la distancia total recorrida sumamos las distancias recorridas durante cada uno de los intervalos $$\Delta x = \Delta x_0 + \Delta x_1 + \dots + \Delta x_{n-1} = \sum_{t_i = 0}^{n-1} v(t_i) \Delta t$$</p>
+        <p>Para obtener la distancia total recorrida sumamos las distancias recorridas durante cada uno de los intervalos $$\Delta x = \Delta x_0 + \Delta x_1 + \dots + \Delta x_{n-1} = \sum_{i = 0}^{n-1} v(t_i) \Delta t$$</p>
 
         <p>A esta suma la llamamos suma de Riemann. Graficamente se vería de la siguiente manera:</p>
 
@@ -1540,7 +1540,17 @@
           <figcaption>Area bajo la curva de la función $f(x)=2x^3-4x^2 +3$ en el intervalo $[0,2]$.</figcaption>
         </figure>
 
-        <p>La suma de Riemann es una aproximación del área total bajo la gráfica de una función $f(x)$. Notemos que al aumentar el número de intervalos mejoramos la aproximación y el ancho $\Delta t$ de los intervalos disminuye.</p>
+        <p>La suma de Riemann es una aproximación del área total bajo la gráfica de una función $f(x)$. Notemos que al aumentar el número de intervalos obtenemos una mejor aproximación y el ancho $\Delta t$ de los intervalos disminuye.</p>
+      </div>
+
+      <div class="page">
+        <p>A este método lo llamamos suma de Riemann por la izquierda ya que la altura de los rectángulos es igual a la función $f$ evaluada en el extremo izquierdo de los subintervalos. Existen otros métodos dependiendo de que punto de los subintervalos se utilizen para la altura,
+        si utilizamos el extremo derecho de los subintervalos lo llamaremos suma de Riemann por la derecha y si utilizamos el punto medio de los subintervalos lo llamaremos suma de Riemann por punto medio, tengamos en cuenta que los tres métodos de suma de Riemann convergeran al mismo valor.</p>
+
+        <figure>
+          <div class="interactive" width="800" height="500" src="interactive/cap_3/metodos_riemann.html"></div>
+          <figcaption>Sumas de Riemann por la izquierda, por la erecha y por punto medio.</figcaption>
+        </figure>
       </div>
 
       <!-- HERE -->
