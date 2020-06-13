@@ -1548,18 +1548,26 @@
         si utilizamos el extremo derecho de los subintervalos lo llamaremos suma de Riemann por la derecha y si utilizamos el punto medio de los subintervalos lo llamaremos suma de Riemann por punto medio, tengamos en cuenta que los tres métodos de suma de Riemann convergeran al mismo valor.</p>
 
         <figure>
-          <div class="interactive" width="800" height="500" src="interactive/cap_3/metodos_riemann.html"></div>
-          <figcaption>Sumas de Riemann por la izquierda, por la erecha y por punto medio.</figcaption>
+          <div class="interactive" width="800" height="420" src="interactive/cap_3/metodos_riemann.html"></div>
+          <figcaption>Sumas de Riemann por la izquierda, por la derecha y por punto medio.</figcaption>
         </figure>
+
+        <p>Sea $f(x)$ una función continua no negativa sobre un intervalo $[a,b]$ y sea $\sum_{i = 1}^{n} f(x_i) \Delta x$ una suma de Riemann para $f(x)$. El área bajo la curva $y = f(x)$ en $[a,b]$ está dada por $$A = \lim_{n \to \infty}\sum_{i = 1}^{n} f(x_i) \Delta x$$</p>
       </div>
 
-      <!-- HERE -->
-
-      <!--  -->
       <div class="page">
 
         <h2 id="sec_c3_integral_definida">Integral definida.</h2>
 
+        <p>La integral definida de una función continua $f(x)$ sobre el intervalo $[a, b]$ denotada por $$\int_{a}^{b} f(x)dx$$ es el número real dado por $$\int_{a}^{b} f(x)dx = \lim_{n \to \infty}\sum_{i = 1}^{n} f(x^*_i) \Delta x$$ donde $\Delta x = \frac{b-a}{n}$, $x_i = a + i\Delta x$ para $i = 0, \dots, n$, y $x^*_i$
+        satisface $x_{i - 1} \leq x^*_i \leq x_i$ para $i = 1, \dots, n$, es decir, estamos tomando cualquier punto dentro de cada subintervalo en lugar de restringirlo al extremo derecho o izquierdo.</p>
+
+        <p>Al símbolo $\int$ lo llamamos signo de integración, los valores $a$ y $b$ son los límites de integración, la función $f(x)$ es el integrando, y el símbolo $dx$, llamado el diferencial de la variable $x$, indica la variable de integración.</p>
+
+
+      </div>
+
+      <div class="page">
         <h2 id="sec_c3_teorema_fundamental_del_cálculo">Relación entre la integral y la derivada. Teorema fundamental del cálculo.</h2>
 
         <h2 id="sec_c3_integral_indefinida">Integral indefinida.</h2>
@@ -1567,9 +1575,9 @@
         <h2 id="sec_c3_propiedades_de_la_integral">Propiedades de la integral.</h2>
 
         <h2 id="sec_c3_trabajo_y_distribución_de_probabilidad">Ejemplos y aplicaciones. Trabajo. Distribuciones de Probabilidad.</h2>
-
       </div>
 
+      <!-- HERE -->
 
       <!------------------------------------------------------------>
       <!-- CAPITULO 4 -->
