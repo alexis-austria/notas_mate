@@ -1620,14 +1620,38 @@
       <div class="page">
         <h2 id="sec_c3_teorema_fundamental_del_cálculo">Relación entre la integral y la derivada. Teorema fundamental del cálculo.</h2>
 
-        <p>El teorema fundamental del cálculo establece la relación entre la derivada y la integral de una función, y nos proporciona una manera más simple de evaluar integrales.</p>
+        <p>El teorema fundamental del cálculo establece la relación entre la derivada y la integral de una función</p>
 
         <div class="num_block" prefix="Teorema"><text style="color: red"><b>Teorema fundamental del cálculo:</b></text> Sea $f(x)$ una función continua sobre un intervalo $[a,b]$, y sea la función $F(x)$ definida de la siguiente manera: $$F(x) = \int_{a}^{x} f(t)dt$$
         entonces $F´(x) = f(x)$ en $[a,b]$.</div>
 
-        <p>Lo que el teorema nos dice es que la integración y la derivación son operaciones mutuamente inversas.</p>
+        <p>Lo que el teorema nos dice es que la integración y la derivación son operaciones mutuamente inversas. Por ejemplo, sea $$g(x) = \int_{2}^{x} \sqrt{\frac{5t^3}{2}}dt$$</p>
+
+        <p>Por el teorema fundamental del cálculo la derivada de la función es igual a $$g'(x) = \sqrt{\frac{5x^3}{2}}$$</p>
 
 
+      </div>
+
+      <div class="page">
+
+        <h3>Segundo teorema fundamental del cálculo</h3>
+
+        <p>El segundo teorema fundamental del cálculo nos permite evaluar integrales definidas sin la necesidad de utilizar sumas de Riemann.</p>
+
+        <div class="num_block" prefix="Teorema"><text style="color: red"><b>Segundo teorema fundamental del cálculo:</b></text> Sea $f(x)$ una función continua sobre un intervalo $[a,b]$, y sea $F(x)$ una antiderivada de $f(x)$ entonces $$\int_{a}^{b} f(x)dx = F(b) - F(a)$$.</div>
+
+        <p>La antiderivada de una función $f$ es una función diferenciable $F$ cuya derivada es igual a la función original $f$. El segundo teorema fundamental del cálculo nos dice que si podemos
+        encontrar una antiderivada para el integrando entonces podemos evaluar la integral definida evaluando la antiderivada en los límites de integración y restando los dos valores.</p>
+
+        <p>Por ejemplo,
+        para evaluar la integral del ejemplo anterior $$\int_{1}^{3} 3x^2+1dx$$</p>
+
+        <p>Como $$\frac{d}{dx}x^3 + x = 3x^2+1$$</p>
+
+      </div>
+
+      <div class="page">
+        <p>El segundo teorema fundamental del cálculo nos dice que $$\int_{1}^{3} 3x^2+1dx = x^3 + x \Big\rvert_1^3$$ $$x^3 + x \Big\rvert_1^3 = (3^3 + 3) - (1^3 + 1)$$ $$\int_{1}^{3} 3x^2+1dx = 28$$</p>
 
       </div>
 
