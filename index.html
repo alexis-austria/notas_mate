@@ -1662,11 +1662,64 @@
 
         <p>Como vimos anteriormente, decimos que una función $F(x)$ es una antiderivada o primitiva de $g(x)$ si satisface la ecuación $$\frac{d}{dx}F(x) = g(x)$$</p>
 
-        <p>Notemos que si $F(x)$ es una antiderivada de la función $g(x)$ entonces la función $$H(x) = F(x) + c, c \in \R$$ también lo es ya que $$H'(x) = (F(x) + c)' = F'(x) + c' = g(x)$$</p>
+        <p>Notemos que si $F(x)$ es una antiderivada de la función $g(x)$ entonces la función $$H(x) = F(x) + C,\, C \in \R$$ también lo es ya que $$H'(x) = (F(x) + C)' = F'(x) + C' = g(x)$$</p>
 
-        <p>Sea $g(x)$ una función definida sobre un intervalo $I$ y $F(x)$ una antiderivada de de $g(x)$, llamamos integral indefinida a la familia de antiderivadas en $I$ y la denotamos como $$\int g(x)dx = F(x) + c$$</p>
+        <p>Sea $g(x)$ una función definida sobre un intervalo $I$ y $F(x)$ una antiderivada de de $g(x)$, llamamos integral indefinida a la antiderivada más general de $f(x)$ la denotamos como $$\int g(x)dx = F(x) + C, \, C \in \R$$</p>
 
-        <p>$c$ es cualquier constante y la llamamos constante de integración. Es decir, la integral indefinida de una función $g(x)$ es la familia de funciones tal que $$\int g(x)dx = \{ f: I \rightarrow \R \Big\rvert \frac{d}{dx}F(x) = g(x) \}$$</p>
+        <p>$C$ es cualquier constante y la llamamos constante de integración.  Para una función $f(x)$ y antiderivada $F(x)$, a las funciones de la forma $F(x) + C$ las llamamos la familia de antiderivadas de $f(x)$. Al proceso de encontrar
+          la integral indefinida de una función lo llamamos integración, si necesitamos especificar la variable de integración decimos que integramos $f(x)$ con repecto a $x$.</p>
+      </div>
+
+      <div class="page">
+
+        <p>En la siguiente tabla se muestran las integrales indefinidas para algunas funciones comunes</p>
+
+        <style type="text/css">
+        .tg  {border-collapse:collapse;border-color:#9ABAD9;border-spacing:0;margin:0px auto;}
+        .tg td{background-color:#EBF5FF;border-color:#9ABAD9;border-style:solid;border-width:1px;color:#444;
+          font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
+        .tg th{background-color:#409cff;border-color:#9ABAD9;border-style:solid;border-width:1px;color:#fff;
+          font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+        .tg .tg-phtq{background-color:#D2E4FC;border-color:inherit;text-align:left;vertical-align:top}
+        .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+        @media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;margin: auto 0px;}}</style>
+        <div class="tg-wrap"><table class="tg">
+        <thead>
+          <tr>
+            <th class="tg-0pky" colspan="2">Integral indefinida</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="tg-phtq">$$\int a dx = ax + C$$</td>
+            <td class="tg-phtq">$$\int \csc x \cot x dx = -\csc x + C$$</td>
+          </tr>
+          <tr>
+            <td class="tg-0pky">$$\int x^n dx = \frac{x^{n+1}}{n+1} + C$$</td>
+            <td class="tg-0pky">$$\int \sec x \tan x dx = \sec x + C$$</td>
+          </tr>
+          <tr>
+            <td class="tg-phtq">$$\int e^x dx = e^x + C$$</td>
+            <td class="tg-phtq">$$\int \csc^2 x = -\cot x + C$$</td>
+          </tr>
+          <tr>
+            <td class="tg-0pky">$$\int \frac{1}{x} dx = \ln |x| + C$$</td>
+            <td class="tg-0pky">$$\int \frac{1}{\sqrt{1-x^2}} dx = \sin^{-1} x + C$$</td>
+          </tr>
+          <tr>
+            <td class="tg-phtq">$$\int \sin x dx = -\cos x + C$$</td>
+            <td class="tg-phtq">$$\int \frac{1}{1+x^2} dx = \tan^{-1} x + C$$</td>
+          </tr>
+          <tr>
+            <td class="tg-0pky">$$\int \cos x dx = \sin x + C$$</td>
+            <td class="tg-0pky">$$\int \frac{1}{x\sqrt{x^2-1}} dx = \sec^{-1} |x| + C$$</td>
+          </tr>
+          <tr>
+            <td class="tg-phtq">$$\int \sec^2 x dx = \tan x + C$$</td>
+            <td class="tg-phtq">$$\int a^x dx = \frac{a^{x}}{\ln a} + C$$</td>
+          </tr>
+        </tbody>
+        </table></div>
       </div>
 
       <div class="page">
