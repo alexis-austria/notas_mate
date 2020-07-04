@@ -1662,7 +1662,7 @@
 
         <p>Como vimos anteriormente, decimos que una función $F(x)$ es una antiderivada o primitiva de $g(x)$ si satisface la ecuación $$\frac{d}{dx}F(x) = g(x)$$</p>
 
-        <p>Notemos que si $F(x)$ es una antiderivada de la función $g(x)$ entonces la función $$H(x) = F(x) + C,\, C \in \R$$ también lo es ya que $$H'(x) = (F(x) + C)' = F'(x) + C' = g(x)$$</p>
+        <p>Notemos que si $F(x)$ es una antiderivada de la función $g(x)$ entonces la función $$H(x) = F(x) + C,\, C \in \R$$ también lo es, ya que $$H'(x) = (F(x) + C)' = F'(x) + C' = g(x)$$</p>
 
         <p>Sea $g(x)$ una función definida sobre un intervalo $I$ y $F(x)$ una antiderivada de de $g(x)$, llamamos integral indefinida a la antiderivada más general de $f(x)$ la denotamos como $$\int g(x)dx = F(x) + C, \, C \in \R$$</p>
 
@@ -1725,7 +1725,30 @@
       <div class="page">
         <h2 id="sec_c3_propiedades_de_la_integral">Propiedades de la integral.</h2>
 
+        <p>Sean $f(x)$ y $g(x)$ funciones continuas en $[a,b]$, la integral cumple las siguientes propiedades:</p>
+
+        <ul>
+          <li>Sea $k \in \R$, podemos mover la constante afuera de la integral $$\int_{a}^{b} k f(x) dx = k \int_{a}^{b} f(x) dx$$
+            <b>Demostración:</b> Usando la definición de integral tenemos que: $$\int_{a}^{b} k f(x) dx =  \lim_{n \to \infty}\sum_{i = 1}^{n} kf(x^*_i) \Delta x$$
+            Usando propiedades de la suma sacamos la constante de la suma $$\int_{a}^{b} k f(x) dx =  \lim_{n \to \infty}k\sum_{i = 1}^{n} f(x^*_i) \Delta x$$
+            Usando la propiedad de los límites sacamos la constante del límite $$\int_{a}^{b} k f(x) dx =  k\lim_{n \to \infty}\sum_{i = 1}^{n} f(x^*_i) \Delta x$$
+            Por lo tanto $$\int_{a}^{b} k f(x) dx =  k\int_{a}^{b} f(x) dx$$
+          </li>
+        </ul>
+
+      </div>
+
+      <div class="page">
+        <ul>
+          <li>La integral de una suma o resta de funciones es igual a la suma o resta de las integrales $$\int_{a}^{b} f(x) \pm g(x) dx =\int_{a}^{b} f(x) dx \, \pm \int_{a}^{b} g(x)$$
+          <b>Demostración:</b> Usando la definición de la integral tenemos que: $$\int_{a}^{b} f(x) \pm g(x) dx = \lim_{n \to \infty}\sum_{i = 1}^{n} (f(x^*_i) \pm g(x^*_i)) \Delta x$$
+          </li>
+        </ul>
+      </div>
+
+      <div class="page">
         <h2 id="sec_c3_trabajo_y_distribución_de_probabilidad">Ejemplos y aplicaciones. Trabajo. Distribuciones de Probabilidad.</h2>
+
       </div>
 
       <!-- HERE -->
