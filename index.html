@@ -1742,7 +1742,30 @@
         <ul>
           <li>La integral de una suma o resta de funciones es igual a la suma o resta de las integrales $$\int_{a}^{b} f(x) \pm g(x) dx =\int_{a}^{b} f(x) dx \, \pm \int_{a}^{b} g(x)$$
           <b>Demostración:</b> Usando la definición de la integral tenemos que: $$\int_{a}^{b} f(x) \pm g(x) dx = \lim_{n \to \infty}\sum_{i = 1}^{n} (f(x^*_i) \pm g(x^*_i)) \Delta x$$
+          Al separar la suma obtenemos $$\int_{a}^{b} f(x) \pm g(x) dx = \lim_{n \to \infty}\sum_{i = 1}^{n} f(x^*_i)\Delta x \pm g(x^*_i)\Delta x$$
+          $$\int_{a}^{b} f(x) \pm g(x) dx = \lim_{n \to \infty}\left( \sum_{i = 1}^{n} f(x^*_i)\Delta x \pm \sum_{i = 1}^{n}g(x^*_i)\Delta x \right)$$
+          $$\int_{a}^{b} f(x) \pm g(x) dx = \lim_{n \to \infty}\sum_{i = 1}^{n} f(x^*_i)\Delta x \pm \lim_{n \to \infty}\sum_{i = 1}^{n}g(x^*_i)\Delta x$$
+          $$\int_{a}^{b} f(x) \pm g(x) dx = \int_{a}^{b} f(x) dx \pm \int_{a}^{b} g(x) dx$$
           </li>
+        </ul>
+      </div>
+
+      <div class="page">
+        <ul>
+          <li>Si el límite superior de una integral definida es igual a su límite inferior entonces la integral es igual a $0$ $$\int_{a}^{a} f(x) \pm g(x) dx = 0$$
+          <b>Demostración: </b>Usando la definición tenemos que: $$\int_{a}^{a} f(x) dx = \lim_{n \to \infty}\sum_{i = 1}^{n} f(x^*_i) \Delta x$$
+          Donde $\Delta x$ es igual a $$\Delta x = \frac{a-a}{n} = 0$$
+          Por lo tanto $$\int_{a}^{a} f(x) dx = \lim_{n \to \infty}\sum_{i = 1}^{n} f(x^*_i) 0$$
+          $$\int_{a}^{a} f(x) dx = \lim_{n \to \infty} 0$$
+          $$\int_{a}^{a} f(x) dx = 0$$
+          </li>
+        </ul>
+      </div>
+
+      <div class="page">
+        <ul>
+          <li>Al cambiar el signo de la integral intercambiamos los límites superior e inferior $$\int_{a}^{b} f(x) dx = -\int_{b}^{a} f(x) dx $$
+          <b>Demostración:</b></li>
         </ul>
       </div>
 
