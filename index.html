@@ -1765,7 +1765,33 @@
       <div class="page">
         <ul>
           <li>Al cambiar el signo de la integral intercambiamos los límites superior e inferior $$\int_{a}^{b} f(x) dx = -\int_{b}^{a} f(x) dx $$
-          <b>Demostración:</b></li>
+          <b>Demostración:</b> Usando la definición tenemos que: $$\int_{a}^{b} f(x) dx = \lim_{n \to \infty}\sum_{i = 1}^{n} f(x^*_i)  \frac{b-a}{n}$$ Y que
+          $$\int_{b}^{a} f(x) dx = \lim_{n \to \infty}\sum_{i = 1}^{n} f(x^*_i)  \frac{a-b}{n}$$
+          Entonces, reordenando la resta en $\Delta x$ tenemos que  $$\int_{a}^{b} f(x) dx = \lim_{n \to \infty}\sum_{i = 1}^{n} f(x^*_i)  \frac{-(a-b)}{n}$$
+          $$\int_{a}^{b} f(x) dx = \lim_{n \to \infty}\left(-\sum_{i = 1}^{n} f(x^*_i)  \frac{(a-b)}{n}\right)$$
+          $$\int_{a}^{b} f(x) dx = -\lim_{n \to \infty}\sum_{i = 1}^{n} f(x^*_i)  \frac{(a-b)}{n}$$
+          Por lo tanto $$\int_{a}^{b} f(x) dx = -\int_{b}^{a} f(x) dx $$</li>
+        </ul>
+      </div>
+
+      <div class="page">
+        <ul>
+          <li>Sea $c$ un punto en el intervalo $[a,b]$, entonces la integral definida sobre el intervalo $[a,b]$ es igual a la suma de las integrales sobre
+          $[a,c]$ y $[c,b]$ $$\int_{a}^{b} f(x) dx = \int_{a}^{c} f(x) dx + \int_{c}^{b} f(x) dx$$
+          <b>Demostración:</b> Usando el segundo teorema fundamental del cálculo tenemos que: $$\int_{a}^{c} f(x) dx = F(c) - F(a)$$
+          $$\int_{c}^{b} f(x) dx = F(b) - F(c)$$
+          Sumando las dos ecuaciones anteriores tenemos que $$\int_{a}^{c} f(x) dx + \int_{c}^{b} f(x) dx = F(c) - F(a) + F(b) - F(c)$$
+          $$\int_{a}^{c} f(x) dx + \int_{c}^{b} f(x) dx = F(b) - F(a)$$
+          Por el segundo teorema fundamental del cálculo $$F(b) - F(a) = \int_{a}^{b} f(x) dx$$
+          Por lo tanto $$\int_{a}^{c} f(x) dx + \int_{c}^{b} f(x) dx = \int_{a}^{b} f(x) dx$$
+          </li>
+        </ul>
+      </div>
+
+      <div class="page">
+        <ul>
+          <li>Si $f(x) \geq 0$, entonces su integral definida será positiva para $a \geq x \geq b $ $$\int_{a}^{b} f(x) dx \geq 0$$
+          </li>
         </ul>
       </div>
 
