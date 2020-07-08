@@ -1752,7 +1752,7 @@
 
       <div class="page">
         <ul>
-          <li>Si el límite superior de una integral definida es igual a su límite inferior entonces la integral es igual a $0$ $$\int_{a}^{a} f(x) \pm g(x) dx = 0$$
+          <li>Si el límite superior de una integral definida es igual a su límite inferior entonces la integral es igual a $0$ $$\int_{a}^{a} f(x) dx = 0$$
           <b>Demostración: </b>Usando la definición tenemos que: $$\int_{a}^{a} f(x) dx = \lim_{n \to \infty}\sum_{i = 1}^{n} f(x^*_i) \Delta x$$
           Donde $\Delta x$ es igual a $$\Delta x = \frac{a-a}{n} = 0$$
           Por lo tanto $$\int_{a}^{a} f(x) dx = \lim_{n \to \infty}\sum_{i = 1}^{n} f(x^*_i) 0$$
@@ -1790,7 +1790,11 @@
 
       <div class="page">
         <ul>
-          <li>Si $f(x) \geq 0$, entonces su integral definida será positiva para $a \geq x \geq b $ $$\int_{a}^{b} f(x) dx \geq 0$$
+          <li>Si $f(x) \geq 0$, entonces su integral definida será positiva para $a \leq x \leq b $ $$\int_{a}^{b} f(x) dx \geq 0 \text{, si } f(x) \geq 0 \text{ en } [a,b]$$
+          <b>Demostración:</b> Usando la definición tenemos que: $$\int_{a}^{b} f(x) dx = \lim_{n \to \infty}\sum_{i = 1}^{n} f(x^*_i)  \Delta x$$
+          Como $f(x) \geq 0$ y $\Delta x > 0$ entonces $$\sum_{i = 1}^{n} f(x^*_i)  \Delta x \geq 0$$
+          Aplicando el límite en ambos lados de la desigualdad tenemos que $$\lim_{n \to \infty} \sum_{i = 1}^{n} f(x^*_i)  \Delta x \geq \lim_{n \to \infty} 0 = 0$$
+          Por lo tanto $$\int_{a}^{b} f(x) dx = \lim_{n \to \infty} \sum_{i = 1}^{n} f(x^*_i)  \Delta x \geq 0$$
           </li>
         </ul>
       </div>
