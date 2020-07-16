@@ -24,11 +24,14 @@
       <param name="C_02" value="id='op' tipo='numérico' interfaz='menú' región='sur' espacio='E1' nombre='Método de suma' expresión='(0,0,150,40)' valor='0' decimales='2' fijo='sí' visible='no' opciones='Suma por la derecha,Suma por la izquierda,Punto medio' ">
       <param name="A_01" value="id='v(x)' algoritmo='no' expresión='2x^3-4x^2 +3' tipo='función' ">
       <param name="A_02" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' ">
-      <param name="A_03" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
-      <param name="G_01" value="espacio='E1' tipo='rectángulo' fondo='no' color='000000' dibujar-si='(s!=2) && (op=0)' coord_abs='no' expresión='(s,0, 2/i,v(s+2/i))' familia='s' s.intervalo='[0,2]' s.pasos='i' relleno='ff0000' ancho='1' border_radius='0' lineDash='solid' ">
-      <param name="G_02" value="espacio='E1' tipo='rectángulo' fondo='no' color='000000' dibujar-si='(s!=2) && (op=1)' coord_abs='no' expresión='(s,0, 2/i,v(s))' familia='s' s.intervalo='[0,2]' s.pasos='i' relleno='ff0000' ancho='1' border_radius='0' lineDash='solid' ">
-      <param name="G_03" value="espacio='E1' tipo='rectángulo' fondo='no' color='000000' dibujar-si='(s!=2) && (op=2)' coord_abs='no' expresión='(s,0, 2/i,v((s + s+2/i)/2))' familia='s' s.intervalo='[0,2]' s.pasos='i' relleno='ff0000' ancho='1' border_radius='0' lineDash='solid' ">
-      <param name="G_04" value="espacio='E1' tipo='ecuación' fondo='no' color='20303a' coord_abs='no' expresión='y=2x^3-4x^2 +3' ancho='1' visible='no' editable='no' ">
+      <param name="A_03" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' inicio='borde = 1' hacer='borde = (i < 50) ? 1 : 0' ">
+      <param name="G_01" value="espacio='E1' tipo='rectángulo' fondo='no' color='000000' dibujar-si='(s!=2) && (op=0) && (i < 50)' coord_abs='no' expresión='(s,0, 2/i,v(s+2/i))' familia='s' s.intervalo='[0,2]' s.pasos='i' relleno='ff0000' ancho='1' border_radius='0' lineDash='solid' ">
+      <param name="G_02" value="espacio='E1' tipo='rectángulo' fondo='no' color='ff0000' dibujar-si='(s!=2) && (op=0) && (i >= 50)' coord_abs='no' expresión='(s,0, 2/i,v(s+2/i))' familia='s' s.intervalo='[0,2]' s.pasos='i' relleno='ff0000' ancho='1' border_radius='0' lineDash='solid' ">
+      <param name="G_03" value="espacio='E1' tipo='rectángulo' fondo='no' color='000000' dibujar-si='(s!=2) && (op=1) && (i < 50)' coord_abs='no' expresión='(s,0, 2/i,v(s))' familia='s' s.intervalo='[0,2]' s.pasos='i' relleno='ff0000' ancho='1' border_radius='0' lineDash='solid' ">
+      <param name="G_04" value="espacio='E1' tipo='rectángulo' fondo='no' color='ff0000' dibujar-si='(s!=2) && (op=1) && (i >= 50)' coord_abs='no' expresión='(s,0, 2/i,v(s))' familia='s' s.intervalo='[0,2]' s.pasos='i' relleno='ff0000' ancho='1' border_radius='0' lineDash='solid' ">
+      <param name="G_05" value="espacio='E1' tipo='rectángulo' fondo='no' color='000000' dibujar-si='(s!=2) && (op=2) && (i < 50)' coord_abs='no' expresión='(s,0, 2/i,v((s + s+2/i)/2))' familia='s' s.intervalo='[0,2]' s.pasos='i' relleno='ff0000' ancho='1' border_radius='0' lineDash='solid' ">
+      <param name="G_06" value="espacio='E1' tipo='rectángulo' fondo='no' color='ff0000' dibujar-si='(s!=2) && (op=2) && (i >= 50)' coord_abs='no' expresión='(s,0, 2/i,v((s + s+2/i)/2))' familia='s' s.intervalo='[0,2]' s.pasos='i' relleno='ff0000' ancho='1' border_radius='0' lineDash='solid' ">
+      <param name="G_07" value="espacio='E1' tipo='ecuación' fondo='no' color='20303a' coord_abs='no' expresión='y=2x^3-4x^2 +3' ancho='1' visible='no' editable='no' ">
     </ajs>
   </div>
 
