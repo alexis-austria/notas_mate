@@ -1909,7 +1909,7 @@
       </div>
 
       <div class="page">
-        <p>Donde $\lambda$ representa la cantidad de ocurrencia de eventos en promedio por cantidad de tiempo.</p>
+        <p>Donde $\lambda$ representa la cantidad de ocurrencia de eventos en promedio por unidad de tiempo.</p>
 
         <figure>
           <div class="interactive" width="800" height="450" src="interactive/cap_3/dist_exponencial.html"></div>
@@ -1933,8 +1933,6 @@
 
       <div class="page" num=""></div>
 
-      <!-- HERE -->
-
       <!------------------------------------------------------------>
       <!-- CAPITULO 4 -->
       <!------------------------------------------------------------>
@@ -1944,6 +1942,25 @@
 
         <h2 id="sec_c4_diferencial">Diferencial, Aproximación por medio de la derivada. Cero de funciones. Método de Newton.</h2>
 
+        <p>Sea $y = f(x)$ una función diferenciable, los diferenciales $dx$ y $dy$ están dados por la relación $$dy = f'(x) dx$$</p>
+
+        <p>Donde $dx$ es cualquier número real distinto de $0$.</p>
+
+        <p>Si $\Delta x$ es el cambio en $x$, entonces $\Delta y = f(x + \Delta x) - f(x)$ es el cambio en $y$ correspondiente al cambio en $x$. Si $\Delta x$ es suficientemente podemos utilizar $dy$ como
+        una aproximación del cambio en $y$, es decir $$\Delta y \approx dy = f'(x) dx$$</p>
+
+        <p>Por ejemplo, sea $y = x^3 + 3x^2$ comparemos los valores de $dy$ y $\Delta y$ cuando $x$ cambia de $x = 1$ a $x = 1.01$.</p>
+
+      </div>
+
+      <div class="page">
+        <p>Primero calculemos el cambio en $y$, $\Delta y$. $$\small\Delta y =  f(x + \Delta x) - f(x) = f(1.01) - f(1) = 4.090601 - 4 = 0.090601$$</p>
+
+        <p>Ahora, calculemos $dy$. $$dy =  f'(x) dx = f'(1)(0.01) = 0.09$$</p>
+      </div>
+
+      <!--  -->
+      <div class="page">
         <h2 id="sec_c4_regla_de_la_cadena">Regla de la cadena. Derivada de la función inversa.</h2>
 
         <h2 id="sec_c4_curvas_parametrizadas">Curvas parametrizadas $c(t)=(x(t), y(t))$. Derivadas de $y$ respecto a $x$.</h2>
@@ -1953,12 +1970,11 @@
         <h2 id="sec_c4_exponencial_y_logaritmo">Función exponencial. El número e. Logaritmos.</h2>
 
         <h2 id="sec_c4_funciones_trigonométricas">Funciones trigonométricas y sus inversas.</h2>
-      </div>
 
-      <!--  -->
-      <div class="page">
         <h2 id="sec_c4_derivada_implícita">Derivación implícita.</h2>
       </div>
+
+            <!-- HERE -->
 
       <div class="page" num=""></div>
       <div class="page" num=""></div>
