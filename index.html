@@ -1946,7 +1946,7 @@
 
         <p>Donde $dx$ es cualquier número real distinto de $0$.</p>
 
-        <p>Si $\Delta x$ es el cambio en $x$, entonces $\Delta y = f(x + \Delta x) - f(x)$ es el cambio en $y$ correspondiente al cambio en $x$. Si $\Delta x$ es suficientemente podemos utilizar $dy$ como
+        <p>Si $\Delta x$ es el cambio en $x$, entonces $\Delta y = f(x + \Delta x) - f(x)$ es el cambio en $y$ correspondiente al cambio en $x$. Si $\Delta x$ es suficientemente pequeño podemos utilizar $dy$ como
         una aproximación del cambio en $y$, es decir $$\Delta y \approx dy = f'(x) dx$$</p>
 
         <p>Por ejemplo, sea $y = x^3 + 3x^2$ comparemos los valores de $dy$ y $\Delta y$ cuando $x$ cambia de $x = 1$ a $x = 1.01$.</p>
@@ -1957,6 +1957,15 @@
         <p>Primero calculemos el cambio en $y$, $\Delta y$. $$\small\Delta y =  f(x + \Delta x) - f(x) = f(1.01) - f(1) = 4.090601 - 4 = 0.090601$$</p>
 
         <p>Ahora, calculemos $dy$. $$dy =  f'(x) dx = f'(1)(0.01) = 0.09$$</p>
+
+        <p>Como podemos ver para valores de $\Delta x$ suficientemente pequeños se cumple que $\Delta y \approx dy$.</p>
+
+        <p>En el siguiente interactivo se muestra la interpretación geométrica del diferencial, la línea punteada negra representa $\Delta y$ mientras que la línea punteada roja representa $dy$, observa que al disminuir $\Delta x$ los valores de $dy$ y $\Delta y$ se acercan el uno al otro.</p>
+
+        <figure>
+          <div class="interactive" width="800" height="500" src="interactive/cap_4/diferencial.html"></div>
+          <figcaption>Interpretación geométrica del diferencial.</figcaption>
+        </figure>
       </div>
 
       <!--  -->

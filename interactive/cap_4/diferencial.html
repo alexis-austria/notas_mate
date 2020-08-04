@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>TITULO</title>
+  
+  <script type="text/javascript" src="lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="800" height="500">
+      <param name="tamaño" value="800x500">
+      <param name="decimal_symbol" value=".">
+      <param name="expand" value="fit">
+      <param name="nombre" value="">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=40 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='no' escala='50' O.x='0' O.y='220' despl_imagen='arr-izq' fondo='ffffff' red='c0c0c0' red10='808080' ejes='404040' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='z' tipo='numérico' interfaz='pulsador' región='sur' espacio='E1' nombre='x' expresión='(0,0,150,40)' valor='0.5' incr='0.05' discreto='no' decimales='2' fijo='sí' visible='sí' btn_pos='v_left' ">
+      <param name="C_02" value="id='dz' tipo='numérico' interfaz='pulsador' región='sur' espacio='E1' nombre='Δx' expresión='(0,0,150,40)' valor='0.85' incr='0.05' discreto='no' decimales='2' fijo='sí' visible='sí' btn_pos='v_left' ">
+      <param name="A_01" value="id='v' expresión='f(z)' tipo='variable' ">
+      <param name="A_02" value="id='v2' expresión='df(z)' tipo='variable' ">
+      <param name="A_03" value="id='f(x)' algoritmo='no' expresión='x^3 + 3x^2' tipo='función' ">
+      <param name="A_04" value="id='df(x)' algoritmo='no' expresión='3x^2 + 6x' tipo='función' ">
+      <param name="A_05" value="id='tan(x,y,m,a)' algoritmo='no' expresión='y+m*(x-a)' tipo='función' ">
+      <param name="A_06" value="id='diff' expresión='df(z)*dz' tipo='variable' ">
+      <param name="A_07" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' ">
+      <param name="A_08" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="G_01" value="espacio='E1' tipo='ecuación' fondo='no' color='20303a' coord_abs='no' expresión='y=f(x)' ancho='1' visible='no' editable='no' ">
+      <param name="G_02" value="espacio='E1' tipo='ecuación' fondo='no' color='ff0000' coord_abs='no' expresión='y=tan(x,f(z),df(z),z)' ancho='1' visible='no' editable='no' ">
+      <param name="G_03" value="espacio='E1' tipo='punto' fondo='no' color='20303a' coord_abs='no' expresión='(z,f(z))' decimales='2' fijo='sí' tamaño='4' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+      <param name="G_04" value="espacio='E1' tipo='punto' fondo='no' color='20303a' coord_abs='no' expresión='(z + dz,f(z + dz))' decimales='2' fijo='sí' tamaño='4' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+      <param name="G_05" value="espacio='E1' tipo='segmento' fondo='no' color='20303a' coord_abs='no' expresión='(z+dz,0)(z+dz,f(z+dz))' decimales='2' fijo='sí' tamaño='0' ancho='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='dash' ">
+      <param name="G_06" value="espacio='E1' tipo='segmento' fondo='no' color='ff0000' coord_abs='no' expresión='(z+dz,0)(z+dz,f(z) + diff)' decimales='2' fijo='sí' tamaño='0' ancho='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='dash' ">
+      <param name="G_07" value="espacio='E1' tipo='punto' fondo='no' color='ff0000' coord_abs='no' expresión='(z + dz,f(z)+diff)' decimales='2' fijo='sí' tamaño='4' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>
