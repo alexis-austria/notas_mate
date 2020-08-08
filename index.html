@@ -1968,6 +1968,38 @@
         </figure>
       </div>
 
+      <div class="page">
+        <h3>Aproximación por medio de la derivada</h3>
+
+        <p>Sea $f(x)$ una función diferenciable en el punto $x = a$, la recta tangente a la gráfica de $f(x)$ en el punto $a$ está dada por la ecuación $$y = f(a) + f'(a)(x-a)$$</p>
+
+        <p>Por ejemplo, usando la función del ejemplo anterior: $f(x) = x^3 + 3x^2$, la ecuación de la recta tangente a la función $f(x)$ en el punto $a = 1$ es igual a $$y = 9(x-1) + 4$$</p>
+
+        <figure>
+          <div class="interactive" width="800" height="500" src="interactive/cap_4/aproximacion.html"></div>
+          <figcaption>Recta tangente a la función $f(x) = x^3 + 3x^2$.</figcaption>
+        </figure>
+      </div>
+
+      <div class="page">
+        <p>Notemos que para valores cercanos a $a$ la gráfica de la tangente se careca a la gráfica de $f(x)$, por lo tanto podemos usar la ecuación de la tangente para aproximar los valores de $f(x)$ para valores de $x$ cercanos a $a$.</p>
+
+        <p>Por ejemplo, sea $x = 1.1$ utilizando la ecuación de la recta tangente tenemos que $$y = 9*0.1 + 4 = 4.9$$</p>
+
+        <p>Y $f(1.1)$ es igual a $$f(1.1) = 4.961$$</p>
+
+        <p>Obtuvimos una buena aproximación utilizando la ecuación de la recta tangente, pero si utilizamos valores mas alejados a $a$ la aproximación será peor, por
+        ejemplo, sea $x = 10$, utilizando la ecuación de la recta tangente tenemos que $$y = 9*9 + 4 = 85$$</p>
+
+        <p>Mientras que $f(10)$ es igual a $$f(10) = 1300$$</p>
+
+        <p>Por lo tanto $$f(x) \approx f(a) + f'(a)(x-a) \text{ para valores de } x \text{ cercanos a } a$$</p>
+      </div>
+
+      <div class="page">
+        <h3>Cero de funciones</h3>
+      </div>
+
       <!--  -->
       <div class="page">
         <h2 id="sec_c4_regla_de_la_cadena">Regla de la cadena. Derivada de la función inversa.</h2>
