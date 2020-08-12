@@ -2008,6 +2008,35 @@
         veremos un método que nos permitirá aproximar los ceros de una función.</p>
 
         <h3>Método de Newton</h3>
+
+        <p>El método de Newton nos permite aproximar soluciones a $f(x) = 0$. Primero trazamos la gráfica de $f(x)$ y encontramos una aproximación inicial a la solución de $f(x) = 0$
+        a esta aproximación inicial la llamaremos $x_0$. Esta aproximación probablemente no será muy buena, entonces, para encontrar una mejor aproximación trazaremos la recta tangente a $f(x)$ en el punto $x_0$
+        $$y = f(x_0) + f'(x_0)(x-x_0)$$</p>
+      </div>
+
+      <div class="page">
+        <p>La recta tangente va a intersectar al eje $x$ en el punto $(x_1, 0)$. El punto $x_1$ estará más cerca a la solución que $x_0$, para encontrarlo simplemente despejamos en la ecuacuón de la tangente $$0 = f(x_0) + f'(x_0)(x_1-x_0)$$
+        $$\frac{-f(x_0)}{f'(x_0)} = x_1-x_0$$ $$x_1 = x_0 - \frac{f(x_0)}{f'(x_0)}$$</p>
+
+        <p>Podemos repetir este proceso para seguir mejorando la aproximación. La siguiente aproximación, $x_2$, será el punto donde la tagente a $f(x)$ en $x_1$ intersecte al eje $x$, $x_2$ estará dado por la fórmula
+        $$x_2 = x_1 - \frac{f(x_1)}{f'(x_1)}$$</p>
+
+        <p>Si continuamos este proceso obtendremos números que se acercarán cada vez más a la solución actual, a este proceso lo llamamos método de Newton.</p>
+
+        <div class="num_block" prefix="Algoritmo"><text style="color: red"><b>Método de Newton:</b></text> Si $x_n$ es una aproximación a la solución de $f(x) = 0$ y $f'(x) \neq 0$ la siguiente aproximación está dada por $$x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)}$$</div>
+      </div>
+
+      <div class="page">
+        <p>Veamos un ejemplo, utilizaremos el método de Newton para calcular $\sqrt{5}$. Primero, recordemos que la función debe ser de la forma $f(x) = 0$, entonces la función a calcular será: $$x = \sqrt{5}$$
+        $$x^2 = 5$$ $$x^2 -5 = 0$$</p>
+
+        <p>El siguiente paso será escoger una aproximación inicial $x_0$, en este caso $x_0 = 3$. Después utilizaremos la fórmula: $$x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)}$$ Hasta que encontremos una aproximación suficientemente buena. En el siguiente interactivo se muestran las iteraciones realizadas del método de
+        Newton.</p>
+
+        <figure>
+          <div class="interactive" width="800" height="360" src="interactive/cap_4/newton.html"></div>
+          <figcaption>Método de newton utilizado para aproximar $\sqrt{5}$.</figcaption>
+        </figure>
       </div>
 
       <!--  -->
