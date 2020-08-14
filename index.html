@@ -2015,10 +2015,10 @@
       </div>
 
       <div class="page">
-        <p>La recta tangente va a intersectar al eje $x$ en el punto $(x_1, 0)$. El punto $x_1$ estará más cerca a la solución que $x_0$, para encontrarlo simplemente despejamos en la ecuacuón de la tangente $$0 = f(x_0) + f'(x_0)(x_1-x_0)$$
+        <p>La recta tangente va a intersectar al eje $x$ en el punto $(x_1, 0)$. El punto $x_1$ estará más cerca a la solución que $x_0$, para encontrarlo simplemente despejamos en la ecuación de la tangente $$0 = f(x_0) + f'(x_0)(x_1-x_0)$$
         $$\frac{-f(x_0)}{f'(x_0)} = x_1-x_0$$ $$x_1 = x_0 - \frac{f(x_0)}{f'(x_0)}$$</p>
 
-        <p>Podemos repetir este proceso para seguir mejorando la aproximación. La siguiente aproximación, $x_2$, será el punto donde la tagente a $f(x)$ en $x_1$ intersecte al eje $x$, $x_2$ estará dado por la fórmula
+        <p>Podemos repetir este proceso para seguir mejorando la aproximación. La siguiente aproximación, $x_2$, será el punto donde la tangente a $f(x)$ en $x_1$ intersecte al eje $x$, $x_2$ estará dado por la fórmula
         $$x_2 = x_1 - \frac{f(x_1)}{f'(x_1)}$$</p>
 
         <p>Si continuamos este proceso obtendremos números que se acercarán cada vez más a la solución actual, a este proceso lo llamamos método de Newton.</p>
@@ -2039,10 +2039,30 @@
         </figure>
       </div>
 
+      <div class="page">
+        <p>Notemos que obtuvimos el mismo valor para $x_4$ y $x_5$, por lo tanto, podemos dejar de aplicar el método de Newton ya que es poco probable que el valor cambie si volvemos a aplicaarlo. Entonces, podemos suponer que  $$\sqrt{5} \approx 2.36068$$</p>
+
+        <p>El método de Newton puede fallar cuando:
+
+        <ul>
+          <li>La derivada de $x_n$ es igual a $0$ y $f(x_n) \neq 0$, esto significa que la tangente nunca intersecta al eje $x$.</li>
+
+          <li>Existe más de una $x$ que cumple $f(x) = 0$, en este caso debemos elegir un $x_0$ que esté más cerca a la solución que buscamos.</li>
+
+          <li>En ocasiones puede fallar completamente, en este caso podemos escoger un $x_0$ que este más cerca a la solución actual e intentar otra vez.</li>
+        </ul>
+
+      </p>
+      </div>
+
       <!--  -->
       <div class="page">
         <h2 id="sec_c4_regla_de_la_cadena">Regla de la cadena. Derivada de la función inversa.</h2>
 
+
+      </div>
+
+      <div class="page">
         <h2 id="sec_c4_curvas_parametrizadas">Curvas parametrizadas $c(t)=(x(t), y(t))$. Derivadas de $y$ respecto a $x$.</h2>
 
         <h2 id="sec_c4_polinomios_y_métodos_numéricos">Polinomios. Raíces de polinomios. Métodos numéricos.</h2>
