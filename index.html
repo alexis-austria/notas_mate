@@ -1500,7 +1500,7 @@
       </div>
 
       <div class="page">
-        <p>Finalmente evaluamos $f(x)$ en $x = -1$ y $x = \frac{1}{2}$ para obtener la coordenada $y$ de los puntos de inflexión $$f(-1) = -6$$ $$f(\frac{1}{2}) = -\frac{9}{8}$$</p>
+        <p>Finalmente evaluamos $f(x)$ en $x = -1$ y $x = \frac{1}{2}$ para obtener la coordenada $y$ de los puntos de inflexión $$f(-1) = -6$$ $$f\left(\frac{1}{2}\right) = -\frac{9}{8}$$</p>
 
         <p>Por lo tanto, los dos puntos de inflexión de $f(x) = 2x^4 + 2x^3 - 6x^2$ son $(-1, -6)$ y $(\frac{1}{2}, -\frac{9}{8})$, su gráfica se muestra en la siguiente figura</p>
 
@@ -1887,7 +1887,7 @@
         <p>La probabilidad de que una variable aleatoria continua $X$ tome un valor en el intervalo $[a,b]$ es igual a: $$P(a \leq X \leq b) = \int_{a}^{b} f(x) dx$$
         Que es igual al área bajo la función $f(x)$ en el intervalo $[a,b]$. A continuación veremos algunos ejemplos de funciones de densidad de probabilidad.</p>
 
-        <h3>Distribución uniforma continua</h3>
+        <h3>Distribución uniforme continua</h3>
 
         <p>Decimos que una variable aleatoria $X$ tiene una distribución uniforme continua en el intervalo $[a,b]$ si su función de densidad es</p>
       </div>
@@ -1900,12 +1900,12 @@
           <figcaption>Gráfica general de la función de densidad de una variable aleatoria con distribución uniforme continua.</figcaption>
         </figure>
 
-        <p>Esta distribución se utiliza para variables aleatorias que toman valores continuos dentro de cierto intervalo.</p>
+        <p>Esta distribución se utiliza para variables aleatorias que toman valores continuos dentro de un intervalo.</p>
 
         <h3>Distribución exponencial</h3>
 
         <p>Esta distribución es utilizada para modelar tiempos de espera para la ocurrencia de un evento específico, por ejemplo, la cantidad de tiempo antes de que
-        ocurra un terremoto tiene distribución exponencial. Su función de densidad es de la forma: $$f(x) = \lambda e^{-\lambda x} \text{  , para } x > 0$$</p>
+        ocurra un terremoto tiene una distribución exponencial. Su función de densidad es de la forma: $$f(x) = \lambda e^{-\lambda x} \text{  , para } x > 0$$</p>
       </div>
 
       <div class="page">
@@ -1918,7 +1918,7 @@
 
         <h3>Distribución normal</h3>
 
-        <p>Una de las distribuciones más importantes ya que puede ser utilizada para modelar varios fenómenos como la presión de sangre, la altura de un grupo de personas, errores de medición, etc. Su función de densidad está dada por
+        <p>La distribución normal o gaussiana es una de las distribuciones más importantes ya que puede ser utilizada para modelar varios fenómenos como la presión de sangre, la altura de un grupo de personas, errores de medición, etc. Su función de densidad está dada por
         la expresión $$f(x) = \frac{1}{\sqrt{2 \pi \sigma^2}} e^{\frac{-(x-\mu)^2}{2 \sigma^2}}$$</p>
       </div>
 
@@ -1973,7 +1973,7 @@
 
         <p>Sea $f(x)$ una función diferenciable en el punto $x = a$, la recta tangente a la gráfica de $f(x)$ en el punto $a$ está dada por la ecuación $$y = f(a) + f'(a)(x-a)$$</p>
 
-        <p>Por ejemplo, usando la función del ejemplo anterior: $f(x) = x^3 + 3x^2$, la ecuación de la recta tangente a la función $f(x)$ en el punto $a = 1$ es igual a $$y = 9(x-1) + 4$$</p>
+        <p>Por ejemplo, usando la función del ejemplo anterior: $f(x) = x^3 + 3x^2$, la ecuación de la recta tangente a la función $f(x)$ en el punto $a = 1$ es igual a $$y = 4 + 9(x-1)$$</p>
 
         <figure>
           <div class="interactive" width="800" height="500" src="interactive/cap_4/aproximacion.html"></div>
@@ -1982,7 +1982,7 @@
       </div>
 
       <div class="page">
-        <p>Notemos que para valores cercanos a $a$ la gráfica de la tangente se careca a la gráfica de $f(x)$, por lo tanto podemos usar la ecuación de la tangente para aproximar los valores de $f(x)$ para valores de $x$ cercanos a $a$.</p>
+        <p>Notemos que para valores cercanos a $a$ la gráfica de la tangente se acerca a la gráfica de $f(x)$, por lo tanto podemos usar la ecuación de la tangente para aproximar los valores de $f(x)$ para valores de $x$ cercanos a $a$.</p>
 
         <p>Por ejemplo, sea $x = 1.1$ utilizando la ecuación de la recta tangente tenemos que $$y = 9*0.1 + 4 = 4.9$$</p>
 
@@ -2028,18 +2028,18 @@
 
       <div class="page">
         <p>Veamos un ejemplo, utilizaremos el método de Newton para calcular $\sqrt{5}$. Primero, recordemos que la función debe ser de la forma $f(x) = 0$, entonces la función a calcular será: $$x = \sqrt{5}$$
-        $$x^2 = 5$$ $$x^2 -5 = 0$$</p>
+        $$x^2 = 5$$ $$x^2 -5 = 0$$ $$f(x) = x^2 -5$$</p>
 
         <p>El siguiente paso será escoger una aproximación inicial $x_0$, en este caso $x_0 = 3$. Después utilizaremos la fórmula: $$x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)}$$ Hasta que encontremos una aproximación suficientemente buena. En el siguiente interactivo se muestran las iteraciones realizadas del método de
         Newton.</p>
-
-        <figure>
-          <div class="interactive" width="800" height="360" src="interactive/cap_4/newton.html"></div>
-          <figcaption>Método de newton utilizado para aproximar $\sqrt{5}$.</figcaption>
-        </figure>
       </div>
 
       <div class="page">
+        <figure>
+          <div class="interactive" width="800" height="500" src="interactive/cap_4/newton.html"></div>
+          <figcaption>Método de newton utilizado para aproximar $\sqrt{5}$.</figcaption>
+        </figure>
+
         <p>Notemos que obtuvimos el mismo valor para $x_4$ y $x_5$, por lo tanto, podemos dejar de aplicar el método de Newton ya que es poco probable que el valor cambie si volvemos a aplicaarlo. Entonces, podemos suponer que  $$\sqrt{5} \approx 2.36068$$</p>
 
         <p>El método de Newton puede fallar cuando:
@@ -2048,11 +2048,15 @@
           <li>La derivada de $x_n$ es igual a $0$ y $f(x_n) \neq 0$, esto significa que la tangente nunca intersecta al eje $x$.</li>
 
           <li>Existe más de una $x$ que cumple $f(x) = 0$, en este caso debemos elegir un $x_0$ que esté más cerca a la solución que buscamos.</li>
-
-          <li>En ocasiones puede fallar completamente, en este caso podemos escoger un $x_0$ que este más cerca a la solución actual e intentar otra vez.</li>
         </ul>
 
       </p>
+      </div>
+
+      <div class="page">
+        <ul>
+          <li>En ocasiones puede fallar completamente, en este caso podemos escoger un $x_0$ que este más cerca a la solución actual e intentar otra vez.</li>
+        </ul>
       </div>
 
       <!--  -->

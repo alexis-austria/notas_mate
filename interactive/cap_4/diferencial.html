@@ -19,7 +19,7 @@
       <param name="editable" value="no">
       <param name="Idioma" value="español">
       <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=40 ">
-      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='no' escala='50' O.x='0' O.y='220' despl_imagen='arr-izq' fondo='ffffff' red='c0c0c0' red10='808080' ejes='404040' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='no' escala='50' O.x='0' O.y='185' despl_imagen='arr-izq' fondo='ffffff' red='c0c0c0' red10='808080' ejes='404040' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
       <param name="C_01" value="id='z' tipo='numérico' interfaz='pulsador' región='sur' espacio='E1' nombre='x' expresión='(0,0,150,40)' valor='0.5' incr='0.05' discreto='no' decimales='2' fijo='sí' visible='sí' btn_pos='v_left' ">
       <param name="C_02" value="id='dz' tipo='numérico' interfaz='pulsador' región='sur' espacio='E1' nombre='Δx' expresión='(0,0,150,40)' valor='0.85' incr='0.05' discreto='no' decimales='2' fijo='sí' visible='sí' btn_pos='v_left' ">
       <param name="A_01" value="id='v' expresión='f(z)' tipo='variable' ">
@@ -32,11 +32,14 @@
       <param name="A_08" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
       <param name="G_01" value="espacio='E1' tipo='ecuación' fondo='no' color='20303a' coord_abs='no' expresión='y=f(x)' ancho='1' visible='no' editable='no' ">
       <param name="G_02" value="espacio='E1' tipo='ecuación' fondo='no' color='ff0000' coord_abs='no' expresión='y=tan(x,f(z),df(z),z)' ancho='1' visible='no' editable='no' ">
-      <param name="G_03" value="espacio='E1' tipo='punto' fondo='no' color='20303a' coord_abs='no' expresión='(z,f(z))' decimales='2' fijo='sí' tamaño='4' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+      <param name="G_03" value="espacio='E1' tipo='punto' fondo='no' color='20303a' coord_abs='no' expresión='(z,f(z))' texto='x' decimales='2' fijo='sí' tamaño='4' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
       <param name="G_04" value="espacio='E1' tipo='punto' fondo='no' color='20303a' coord_abs='no' expresión='(z + dz,f(z + dz))' decimales='2' fijo='sí' tamaño='4' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
       <param name="G_05" value="espacio='E1' tipo='segmento' fondo='no' color='20303a' coord_abs='no' expresión='(z+dz,0)(z+dz,f(z+dz))' decimales='2' fijo='sí' tamaño='0' ancho='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='dash' ">
       <param name="G_06" value="espacio='E1' tipo='segmento' fondo='no' color='ff0000' coord_abs='no' expresión='(z+dz,0)(z+dz,f(z) + diff)' decimales='2' fijo='sí' tamaño='0' ancho='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='dash' ">
       <param name="G_07" value="espacio='E1' tipo='punto' fondo='no' color='ff0000' coord_abs='no' expresión='(z + dz,f(z)+diff)' decimales='2' fijo='sí' tamaño='4' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' ">
+      <param name="G_08" value="espacio='E1' tipo='texto' fondo='no' color='ff0000' coord_abs='no' expresión='(dz+.6, f(z)+diff-.2)' texto='dy' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+      <param name="G_09" value="espacio='E1' tipo='segmento' fondo='no' color='20303a' coord_abs='no' expresión='(z,-.3)(z+dz,-.3)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;}\f0\fs30 Δ\fs40 x}' decimales='2' fijo='sí' tamaño='3' ancho='3' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='13' lineDash='dash' ">
+      <param name="G_10" value="espacio='E1' tipo='texto' fondo='no' color='000000' coord_abs='no' expresión='(dz+.6, f(z+dz)-.2)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs36 Δy}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
     </ajs>
   </div>
 
