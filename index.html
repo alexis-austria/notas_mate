@@ -2063,11 +2063,27 @@
       <div class="page">
         <h2 id="sec_c4_regla_de_la_cadena">Regla de la cadena. Derivada de la función inversa.</h2>
 
-        <p>La regla de la cadena nos permite derivar funciones que son el resultado de la composición de dos funciones. Sean $f(x)$ y $g(x)$ funciones diferenciables y sea $h(x)$ la composición de ambas funciones $h(x) = (f \circ g)(x)$ la derivada de $h(x)$ es igual a: $$h'(x) = f'(g(x))g(x)$$</p>
+        <p>La regla de la cadena nos permite derivar composiciones de funciones. Sean $f(x)$ y $g(x)$ funciones diferenciables y sea $h(x)$ la composición de ambas funciones $h(x) = (f \circ g)(x)$ la derivada de $h(x)$ es igual a: $$h'(x) = f'(g(x))g(x)$$</p>
 
         <p>Si $y = f(u)$ y $u = g(x)$ la derivada de $y$ es igual a: $$\frac{d}{dx}y = \frac{d}{du}y \cdot \frac{d}{dx}u$$</p>
 
+        <p>Por ejemplo, usemos la regla de la cadena para derivar la función $h(x) = \sqrt{3x^2 - 5}$. Lo primero que haremos será identificar $f(x)$ y $g(x)$, que en este caso son $$f(x) = \sqrt{x}\qquad g(x) = 3x^2-5$$</p>
 
+        <p>Ahora, derivamos $f(x)$ y $g(x)$ $$f'(x) = \frac{1}{2\sqrt{x}}\qquad g'(x) = 6x$$</p>
+
+        <p>Por último, aplicamos la regla de la cadena $$h'(x) = f'(g(x))g(x)$$ $$h'(x) = \frac{1}{2\sqrt{3x^2-5}}6x$$</p>
+
+      </div>
+
+      <div class="page">
+        <p>$$h'(x) = \frac{3x}{\sqrt{3x^2-5}}$$</p>
+
+        <h3>Regla de la cadena para potencias de funciones</h3>
+
+        <p>Podemos utilizar la regla de la cadena para derivar funciones de la forma $h(x) = g(x)^n$, $h(x)$ es una composición de las funciones $f(x) = x^n$ y $g(x)$, entonces,
+        $f'(x) = nx^{n-1}$ y aplicando la regla de la cadena tenemos que $$h'(x) = ng(x)^{n-1}g'(x)$$</p>
+
+        <h3>Derivada de la función inversa</h3>
       </div>
 
       <div class="page">
