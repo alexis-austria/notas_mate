@@ -2105,7 +2105,24 @@
       <div class="page">
         <h2 id="sec_c4_curvas_parametrizadas">Curvas parametrizadas $c(t)=(x(t), y(t))$. Derivadas de $y$ respecto a $x$.</h2>
 
+        <p>Supongamos que queremos encontrar la derivada $\frac{d}{dx}y$ de una función $f(x)$ escrita en forma paramétrica, es decir, $f(x)$ está descrita por el par de ecuaciones: $$x = f(t), \text{ } y = g(t)$$</p>
 
+        <p>Una manera de encontrar $\frac{d}{dx}y$ sería eliminar el parámetro, otra manera de hacerlo sin tener que eliminar el parámetro sería la siguiente: Consideremos la derivada de $y$ respecto a $t$, como usando la regla de la cadena tenemos que $\frac{d}{dt}y$ es igual a $$\frac{d}{dt}y = \frac{d}{dx}y \frac{d}{dt}x$$</p>
+
+        <p>Ahora, despejamos la ecuación para para obtener $\frac{d}{dx}y$ $$\frac{d}{dx}y = \frac{\frac{d}{dt}y}{\frac{d}{dt}x}$$</p>
+
+        <p>Veamos un ejemplo, sean $x = t^2$ y $y = t^3 - 2t$ calculemos $\frac{d}{dx}y$. Primero derivamos $x$ y $y$ respecto a $t$: $$\frac{d}{dt}x = 2t \quad \frac{d}{dt}y = 3t - 2$$ Aplicando la regla de la cadena obtenemos:</p>
+
+
+      </div>
+
+      <div class="page">
+        <p>$$\frac{d}{dx}y = \frac{\frac{d}{dt}y}{\frac{d}{dt}x} = \frac{3t - 2}{2t}$$</p>
+
+        <figure>
+          <div class="interactive" width="800" height="450" src="interactive/cap_4/deriv_param.html"></div>
+          <figcaption>Gráfica de la curva paramétrica $x = t^2$ $y = t^3 - 2t$ en el intervalo $[0,3]$.</figcaption>
+        </figure>
       </div>
 
       <div class="page">
