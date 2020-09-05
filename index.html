@@ -2111,23 +2111,41 @@
 
         <p>Ahora, despejamos la ecuación para para obtener $\frac{d}{dx}y$ $$\frac{d}{dx}y = \frac{\frac{d}{dt}y}{\frac{d}{dt}x}$$</p>
 
-        <p>Veamos un ejemplo, sean $x = t^2$ y $y = t^3 - 2t$ calculemos $\frac{d}{dx}y$. Primero derivamos $x$ y $y$ respecto a $t$: $$\frac{d}{dt}x = 2t \quad \frac{d}{dt}y = 3t - 2$$ Aplicando la regla de la cadena obtenemos:</p>
+        <p>Veamos un ejemplo, sean $x = t^2$ y $y = t^3 - 2t$ calculemos $\frac{d}{dx}y$. Primero derivamos $x$ y $y$ respecto a $t$: $$\frac{d}{dt}x = 2t \quad \frac{d}{dt}y = 3t^2 - 2$$ Aplicando la regla de la cadena obtenemos:</p>
 
 
       </div>
 
       <div class="page">
-        <p>$$\frac{d}{dx}y = \frac{\frac{d}{dt}y}{\frac{d}{dt}x} = \frac{3t - 2}{2t}$$</p>
+        <p>$$\frac{d}{dx}y = \frac{\frac{d}{dt}y}{\frac{d}{dt}x} = \frac{3t^2 - 2}{2t}$$</p>
 
         <figure>
           <div class="interactive" width="800" height="450" src="interactive/cap_4/deriv_param.html"></div>
           <figcaption>Gráfica de la curva paramétrica $x = t^2$ $y = t^3 - 2t$ en el intervalo $[0,3]$.</figcaption>
         </figure>
+
+        <h3>Segunda derivada</h3>
+
+        <p>Para calcular la segunda derivada aplicamos la regla de la cadena dos veces de la siguiente manera: $$\frac{d^2}{dx^2}y = \frac{d}{dx}\left(\frac{d}{dx}y\right)$$
+        $$\frac{d}{dx}\left(\frac{d}{dx}y\right) = \frac{d}{dx}\left(\frac{\frac{d}{dt}y}{\frac{d}{dt}x}\right)$$
+      </div>
+
+      <div class="page">
+        <p>$$ \frac{d}{dx}\left(\frac{\frac{d}{dt}y}{\frac{d}{dt}x}\right) = \frac{d}{dt}\left(\frac{\frac{d}{dt}y}{\frac{d}{dt}x}\right)\frac{d}{dx}t$$
+        $$\frac{d}{dt}\left(\frac{\frac{d}{dt}y}{\frac{d}{dt}x}\right)\frac{d}{dx}t = \frac{\frac{d}{dt}\left(\frac{d}{dx}y\right)}{\frac{d}{dt}x}$$</p>
+
+        <p>Por ejemplo, calculemos la segunda derivada del ejemplo anterior: $$\frac{d^2}{dx^2}y = \frac{\frac{d}{dt}\left(\frac{d}{dx}y\right)}{\frac{d}{dt}x}$$
+        $$\frac{d^2}{dx^2}y = \frac{\frac{d}{dt}\left(\frac{3t^2 - 2}{2t}\right)}{2t}$$
+        $$\frac{d^2}{dx^2}y = \frac{\frac{1}{t^2} + \frac{3}{2}}{2t}$$
+        $$\frac{d^2}{dx^2}y = \frac{3t^2 + 2}{4t^3}$$</p>
       </div>
 
       <div class="page">
         <h2 id="sec_c4_polinomios_y_métodos_numéricos">Polinomios. Raíces de polinomios. Métodos numéricos.</h2>
 
+      </div>
+
+      <div class="page">
         <h2 id="sec_c4_exponencial_y_logaritmo">Función exponencial. El número e. Logaritmos.</h2>
 
         <h2 id="sec_c4_funciones_trigonométricas">Funciones trigonométricas y sus inversas.</h2>
