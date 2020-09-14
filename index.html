@@ -2157,8 +2157,21 @@
 
         <p>Y usando propiedades de las potencias podemos escribir a la función exponencial como: $$a^x = \left(e^{\ln(a)}\right)^{x} = e^{x \ln(a)}$$</p>
 
-        <p>Entonces, aplicando la regla de la cadena tenemos que: $$(a^{x})' = \left( e^{x \ln(a)} \right)'$$</p>
+        <p>Entonces, aplicando la regla de la cadena tenemos que: $$(a^{x})' = \left( e^{x \ln(a)} \right)'$$
+        $$ \left( e^{x \ln(a)} \right)' =  e^{x \ln(a)}(x \ln(a))'$$</p>
 
+      </div>
+
+      <div class="page">
+        <p>$$e^{x \ln(a)}(x \ln(a))' = e^{x \ln(a)}\ln(a)$$
+        $$e^{x \ln(a)}\ln(a) = a^x \ln(a)$$
+        $$\therefore (a^{x})' = a^x \ln(a)$$</p>
+
+        <p>Veamos un ejemplo, sea la función $f(x) = 7^{3x^2} - e^{5x}$ calculemos $f'(x)$: $$f'(x) = 6(7^{3x^2} \ln(7)) - 5e^{5x}$$</p>
+
+        <p>Notemos que el primer y el segundo término son de la forma $a^{u}$ y $e^{u}$ respectivamente, por lo tanto, utilizamos la regla de la cadena con la fórmula de
+        las derivadas de una función exponencial. En el caso del primer término $u = 3x^2$ y $u' = 6$ por lo que su derivada es igual a $6(7^{3x^2} \ln(7))$, para el segundo término $u = 5x$
+        y $u' = 5$ por lo que su derivada es igual a $-5e^{5x}$.</p>
       </div>
 
       <div class="page">
