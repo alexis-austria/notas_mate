@@ -2181,8 +2181,22 @@
 
         <p>Entonces, utilizando la definición de derivada tenemos que: $$\frac{d}{dx} \sin x = \lim_{h \to 0} \frac{\sin(x + h) - \sin x}{h}$$</p>
 
-        <p>Utilizamos la siguiente identidad trigonométrica:</p>
+        <p>Utilizamos la siguiente identidad trigonométrica y sustituimos en la ecuación anterior: $$\sin (x+h) = \sin x \cos h + \cos x \sin h$$
+        $$\frac{d}{dx} \sin x = \lim_{h \to 0} \frac{\sin x \cos h + \cos x \sin h - \sin x}{h}$$</p>
 
+        <p>Reordenamos la fracción:   $$\frac{d}{dx} \sin x = \lim_{h \to 0} \left(\frac{\sin x \cos h - \sin x}{h} + \frac{\cos x \sin h }{h}\right)$$</p>
+
+        <p>Factorizamos $\sin x$ y $\cos x$: $$\frac{d}{dx} \sin x = \lim_{h \to 0} \left(\sin x \frac{\cos h - 1}{h} + \cos x\frac{ \sin h }{h}\right)$$</p>
+
+      </div>
+
+      <div class="page">
+        <p>Aplicamos los límites:
+         $$\lim_{h \to 0} \frac{\sin h}{h} = 1$$
+         $$\lim_{h \to 0} \frac{\cos h - 1}{h} = 0$$
+         $$\therefore \frac{d}{dx} \sin x = \sin x (0) + \cos x (1)$$</p>
+
+        <p>Por lo tanto:  $$\frac{d}{dx} \sin x = \cos x$$</p>
       </div>
 
       <div class="page">
