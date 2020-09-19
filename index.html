@@ -2197,13 +2197,33 @@
          $$\therefore \frac{d}{dx} \sin x = \sin x (0) + \cos x (1)$$</p>
 
         <p>Por lo tanto:  $$\frac{d}{dx} \sin x = \cos x$$</p>
+
+        <p>Para la derivada de $\cos x$ realizamos un proceso similar: $$\frac{d}{dx} \cos x = \lim_{h \to 0} \frac{\cos(x + h) - \cos x}{h}$$
+          $$\frac{d}{dx} \cos x = \lim_{h \to 0} \frac{\cos x \cos h - \sin x \sin h - \cos x}{h}$$
+          $$\frac{d}{dx} \cos x = \lim_{h \to 0} \frac{\cos x \cos h - \cos x}{h} - \lim_{h \to 0} \frac{\sin x \sin h }{h}$$
+          $$\frac{d}{dx} \cos x = \cos x \lim_{h \to 0} \frac{\cos h - 1}{h} - \sin x \lim_{h \to 0} \frac{ \sin h }{h}$$
+          $$\frac{d}{dx} \cos x = \cos x (0) - \sin x (1)$$
+          $$\frac{d}{dx} \cos x = - \sin x$$</p>
+      </div>
+
+      <div class="page">
+        <p>El resto de las funciones trigonométricas puede ser expresado como cocientes de seno o coseno de la siguiente manera: $$\small\sec x = \frac{1}{\cos x} \qquad \csc x = \frac{1}{\sin x} \qquad \tan x = \frac{\sin x}{\cos x} \qquad \cot x = \frac{\cos x}{\sin x}$$</p>
+
+        <p>Por lo que podemos calcular sus derivadas utilizando la regla del cociente, por ejemplo, para la derivada de la función $\sec x$: $$\frac{d}{dx} \sec x = \frac{d}{dx} \frac{1}{\cos x}$$
+        $$\frac{d}{dx} \frac{1}{\cos x} = \frac{(0)\cos x - (1)(- \sin x)}{\cos^2 x}$$
+        $$\frac{d}{dx} \sec x = \frac{\sin x}{\cos^2 x}$$
+        $$\frac{d}{dx} \sec x = \frac{\sin x}{\cos x} \frac{1}{\cos x}$$
+        $$\frac{d}{dx} \sec x = \tan x \sec x$$</p>
+
+        <p>Las derivadas de las funciones trigonométricas restantes pueden ser conseguidas de manera similar, las fórmulas son las siguientes: $$\frac{d}{dx} \sec x = \tan x \sec x \quad \frac{d}{dx} \csc x = -\csc x \cot x$$
+        $$\frac{d}{dx} \tan x = \sec^2 x \quad \frac{d}{dx} \cot x = - \csc^2 x$$</p>
       </div>
 
       <div class="page">
         <h2 id="sec_c4_derivada_implícita">Derivación implícita.</h2>
       </div>
 
-            <!-- HERE -->
+            <!-- SHERE -->
 
       <div class="page" num=""></div>
       <div class="page" num=""></div>
