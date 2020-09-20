@@ -2220,6 +2220,27 @@
       </div>
 
       <div class="page">
+        <h3>Funciones trigonométricas inversas</h3>
+
+        <p>Las funciones trigonométricas inversas, como su nombre lo indica, son las funciones inversas de las funciones trigonométricas, son utilizadas cuando queremos obtener el ángulo
+        a partir del seno, coseno, etc.</p>
+
+        <p>Recordemos que la derivadada de una función inversa es igual a: $$\frac{d}{dx}f^{-1}(x) = \frac{1}{f'(f^{-1}(x))}$$</p>
+
+        <p>Empezemos con la derivada del seno inverso: $$\frac{d}{dx}\sin^{-1}(x) = \frac{1}{\cos(\sin^{-1}(x))}$$</p>
+
+        <p>Podemos utilizar la siguiente identidad trigonométrica para sutituir la función coseno en la ecuación: $$\sin^2 \theta + \cos^2 \theta = 1$$
+        $$\cos^2 \theta = 1 - \sin^2 \theta$$
+        $$\cos \theta = \sqrt{1 - \sin^2 \theta}$$</p>
+
+        <p>Sustituyendo en la ecuación tenemos: $$\frac{d}{dx}\sin^{-1}(x) = \frac{1}{\sqrt{1 - \sin^2 (\sin^{-1}(x))}}$$</p>
+      </div>
+
+      <div class="page">
+        <p> $$\frac{d}{dx}\sin^{-1}(x) = \frac{1}{\sqrt{1 - x^2}}$$</p>
+      </div>
+
+      <div class="page">
         <h2 id="sec_c4_derivada_implícita">Derivación implícita.</h2>
       </div>
 
