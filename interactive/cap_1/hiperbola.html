@@ -19,10 +19,10 @@
       <param name="editable" value="no">
       <param name="Idioma" value="español">
       <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=40 ">
-      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='no' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='c0c0c0' red10='808080' ejes='404040' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' color_borde_texto='0' borderColor='000000' border_radius='0' ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='no' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='c0c0c0' red10='808080' ejes='404040' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
       <param name="C_01" value="id='a' tipo='numérico' interfaz='pulsador' región='sur' espacio='E1' nombre='a' expresión='(0,0,150,40)' valor='5' incr='0.1' min='b+.1' discreto='no' decimales='2' fijo='sí' visible='sí' btn_pos='v_left' ">
       <param name="C_02" value="id='b' tipo='numérico' interfaz='pulsador' región='sur' espacio='E1' nombre='b' expresión='(0,0,150,40)' valor='3' incr='0.1' min='1' discreto='no' decimales='2' fijo='sí' visible='sí' btn_pos='v_left' ">
-      <param name="C_03" value="id='c' tipo='numérico' interfaz='campo de texto' solo_texto='no' región='sur' espacio='E1' nombre='c' expresión='(0,0,150,40)' valor='3' discreto='no' decimales='2' fijo='sí' visible='sí' activo-si='0' evaluar='no' respuesta='krypto_1' ">
+      <param name="C_03" value="id='c' tipo='numérico' interfaz='campo de texto' solo_texto='no' región='sur' espacio='E1' nombre='c' expresión='(0,0,150,40)' valor='3' discreto='no' decimales='2' fijo='sí' visible='sí' activo-si='0' evaluar='no' respuesta='krypto_g' ">
       <param name="C_04" value="id='h' tipo='numérico' interfaz='pulsador' región='sur' espacio='E1' nombre='h' expresión='(0,0,150,40)' valor='0' incr='0.1' discreto='no' decimales='2' fijo='sí' visible='sí' btn_pos='v_left' ">
       <param name="C_05" value="id='k' tipo='numérico' interfaz='pulsador' región='sur' espacio='E1' nombre='k' expresión='(0,0,150,40)' valor='0' incr='0.1' discreto='no' decimales='2' fijo='sí' visible='sí' btn_pos='v_left' ">
       <param name="A_01" value="id='c' expresión='sqrt(abs(a^2+b^2))' tipo='variable' ">
@@ -35,6 +35,10 @@
       <param name="G_05" value="espacio='E1' tipo='ecuación' fondo='no' color='ff0000' coord_abs='no' expresión='y=k+((b/a)*(x − h))' ancho='1' visible='no' editable='no' ">
       <param name="G_06" value="espacio='E1' tipo='ecuación' fondo='no' color='ff0000' coord_abs='no' expresión='y=k-((b/a)*(x − h))' ancho='1' visible='no' editable='no' ">
       <param name="G_07" value="espacio='E1' tipo='rectángulo' fondo='no' color='20303a' coord_abs='no' expresión='(-a+h,-b+k,a*2,b*2)' ancho='1' border_radius='0' lineDash='solid' ">
+      <param name="G_08" value="espacio='E1' tipo='segmento' fondo='no' color='00ff00' coord_abs='no' expresión='(-a + h,k)(a + h,k)' decimales='2' fijo='sí' tamaño='0' ancho='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_09" value="espacio='E1' tipo='segmento' fondo='no' color='0000ff' coord_abs='no' expresión='(h,-b + k)(h,b + k)' decimales='2' fijo='sí' tamaño='0' ancho='2' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_10" value="espacio='E1' tipo='texto' fondo='no' color='0000ff' coord_abs='no' expresión='(h+.3,b + .5 + k)' texto='Eje conjugado' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
+      <param name="G_11" value="espacio='E1' tipo='texto' fondo='no' color='00ff00' coord_abs='no' expresión='(a + h,k - .5)' texto='Eje transverso' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' ">
     </ajs>
   </div>
 
