@@ -2256,7 +2256,36 @@
         <p>Que es la ecuación que describe a un círculo de radio $3$. En este caso  $y$ no está expresada enteramente en términos de $x$, a este tipo de ecuaciones las llamamos ecuaciones o funciones implícitas. Para econtrar la derivada de la ecuación anterior
         podríamos despejar la ecuación para obtener $y$: $$y = \pm \sqrt{9 - x^2}$$</p>
 
-        <p>El problema es que al despejar obtenemos $2$ soluciones diferentes: $y = \sqrt{9 - x^2} \text{ }$ y $\text{ } y = - \sqrt{9 - x^2}$</p>
+        <p>El problema es que al despejar obtenemos $2$ soluciones diferentes: $y = \sqrt{9 - x^2} \text{ }$ y $\text{ } y = - \sqrt{9 - x^2}$, en el siguiente interactivo se muestran las gráficas de las tres ecuaciones:</p>
+
+      </div>
+
+      <div class="page">
+        <figure>
+          <div class="interactive" width="800" height="450" src="interactive/cap_4/implicita.html"></div>
+          <figcaption>Gráficas de las ecuaciones $x^2 + y^2 = 9$, $\text{ } y = \sqrt{9 - x^2} \text{ }$ y $\text{ } y = - \sqrt{9 - x^2}$.</figcaption>
+        </figure>
+
+        <p>Podemos ver que ninguna de las dos soluciones representa la gráfica completa. La técnica de derivación implícita nos permite clacular la derivada de funciones implícitas sin tener que despejar variables. Los pasos para
+        realizar la derivación implícita son los siguientes: </p>
+
+        <ul>
+          <li>Derivamos ambos lados de la ecuación, tratando $y$ como una función de $x$.</li>
+          <li>Separamos los factores que contienen $\frac{d}{dx}y$ en distintos lados de la ecuación.</li>
+          <li>Despejamos $\frac{d}{dx}y$.</li>
+        </ul>
+      </div>
+
+      <div class="page">
+        <p>Usando derivación implícita podemos encontrar la derivada del ejemplo anterior. Primero derivamos ambos lados de la ecuación, tratando a $y$ como una función de $x$: $$\frac{d}{dx}(x^2 + y^2) = \frac{d}{dx}9$$
+         $$\frac{d}{dx}x^2 + \frac{d}{dx}y^2 = \frac{d}{dx}9$$
+         $$2x + 2y*\frac{d}{dx}y = 0$$</p>
+
+        <p>Pasamos el factor $2x$ al lado derecho de la ecuación: $$2y* \frac{d}{dx}y = -2x$$</p>
+
+        <p>Por último despejamos \frac{d}{dx}y: $$\frac{d}{dx}y = \frac{-2x}{2y} = -\frac{x}{y}$$</p>
+
+
       </div>
 
             <!-- SHERE -->
