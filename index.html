@@ -2283,14 +2283,13 @@
 
         <p>Pasamos el factor $2x$ al lado derecho de la ecuación: $$2y* \frac{d}{dx}y = -2x$$</p>
 
-        <p>Por último despejamos \frac{d}{dx}y: $$\frac{d}{dx}y = \frac{-2x}{2y} = -\frac{x}{y}$$</p>
+        <p>Por último despejamos $\frac{d}{dx}y$: $$\frac{d}{dx}y = \frac{-2x}{2y} = -\frac{x}{y}$$</p>
 
 
       </div>
 
             <!-- SHERE -->
 
-      <div class="page" num=""></div>
       <div class="page" num=""></div>
 
       <!------------------------------------------------------------>
@@ -2302,14 +2301,27 @@
 
         <h2 id="sec_c5_integración_por_partes_y_por_sustitución">Integración por partes. Integración por substitución.</h2>
 
-        <h2 id="sec_c5_cambio_de_variable">Cambio de variable.</h2>
+        <p>La integración por partes nos permite integrar funciones que son el resultado del producto de otras dos funciones. Sea $h(x) = f(x)g(x)$ usando la regla del producto tenemos que: $$h'(x) = (f(x)g(x))' = f'(x)g(x) + f(x)g'(x)$$</p>
 
-        <h2 id="sec_c5_métodos_numéricos">Métodos numéricos.</h2>
+        <p>Integramos ambos lados de la ecuación: $$\int (f(x)g(x))' dx= \int (f'(x)g(x) + f(x)g'(x)) dx$$
+        $$f(x)g(x) = \int f'(x)g(x) dx + \int f(x)g'(x) dx$$</p>
+
+        <p>Ahora, despejamos el término $\int f(x)g'(x) dx$: $$\int f(x)g'(x) dx = f(x)g(x) - \int f'(x)g(x) dx$$</p>
+
+      </div>
+
+      <div class="page">
+        <p>Para que la fórmula sea más fácil de leer hacemos las siguientes substituciones: $u = f(x)$ y $\text{ }v = g(x)$, sus derivadas serían $\text{ }du = f'(x)dx$ y$\text{ }dv = g'(x)dx$. Entonces, la fórmula sería la siguiente:
+        $$\int udv = uv - \int vdu$$</p>
+
+        <p>A esta fórmula la conocemos como la fórmula de integración por partes. Para usar la fórmula primero identificamos $u$ y $dv$ y calculamos $du$ y $v$, sabremos si identificamos correctamente $u$ y $dv$ si la integral que obtenemos al usar la fórmula es una que si podamos integrar.</p>
       </div>
 
       <!--  -->
       <div class="page">
+        <h2 id="sec_c5_cambio_de_variable">Cambio de variable.</h2>
 
+        <h2 id="sec_c5_métodos_numéricos">Métodos numéricos.</h2>
       </div>
 
 
