@@ -2285,10 +2285,8 @@
 
         <p>Por último despejamos $\frac{d}{dx}y$: $$\frac{d}{dx}y = \frac{-2x}{2y} = -\frac{x}{y}$$</p>
 
-
       </div>
 
-            <!-- SHERE -->
 
       <div class="page" num=""></div>
 
@@ -2315,6 +2313,38 @@
         $$\int udv = uv - \int vdu$$</p>
 
         <p>A esta fórmula la conocemos como la fórmula de integración por partes. Para usar la fórmula primero identificamos $u$ y $dv$ y calculamos $du$ y $v$, sabremos si identificamos correctamente $u$ y $dv$ si la integral que obtenemos al usar la fórmula es una que si podamos integrar.</p>
+
+        <p>Veamos un ejemplo, usemos integración por partes para calcular la siguiente integral: $$\int x^2 \cos(2x) dx$$</p>
+
+        <p>Lo primero que tenemos que hacer es identificar que términos serán $u$ y $dv$. Generalmente, la función que escogeremos como $u$ será la primera que encontremos de la siguiente lista:</p>
+
+        <ol>
+          <li>Logaritmos</li>
+
+          <li>Funciones trigonométricas inversas</li>
+
+          <li>Funciones algebraicas (como $x^2 + 1$)</li>
+
+          <li>Funciones trigonométricas</li>
+
+          <li>Funciones exponenciales</li>
+        </ol>
+      </div>
+
+      <div class="page">
+        <p>En este caso, $x^2$ tiene precedencia sobre $\cos(2x)$ ya que es una función algebraica, entonces, aplicando la fórmula de integración por partes tenemos que:
+        $$u = x^2 \qquad dv = \cos(2x) \qquad v = \frac{1}{2} \sin(2x)$$
+        $$\int x^2 \cos(2x) dx = \frac{1}{2} x^2 \sin(2x) - \int x \sin(2x) dx$$</p>
+
+        <p>Para resolver la nueva integral obtenida volvemos a aplicar integración por partes:
+        $$u = x \qquad dv = \sin(2x) \qquad v =  -\frac{1}{2} \cos(2x)$$
+        $$\int x \sin(2x) dx = - \frac{1}{2} x \cos(2x) - \int -\frac{1}{2} \cos(2x) dx$$
+        $$\int x \sin(2x) dx = - \frac{1}{2} x \cos(2x) + \frac{1}{4} \sin(2x) + C$$</p>
+
+        <p>Sustituimos el resultado en la ecuación anterior:
+        $$\int x^2 \cos(2x) dx = \frac{1}{2} x^2 \sin(2x) - \left( - \frac{1}{2} x \cos(2x) + \frac{1}{4} \sin(2x) \right)$$
+          $$\int x^2 \cos(2x) dx = \frac{1}{2} x^2 \sin(2x) + \frac{1}{2} x \cos(2x) - \frac{1}{4} \sin(2x) + C$$</p>
+
       </div>
 
       <!--  -->
@@ -2324,6 +2354,7 @@
         <h2 id="sec_c5_métodos_numéricos">Métodos numéricos.</h2>
       </div>
 
+      <!-- SHERE -->
 
       <!------------------------------------------------------------>
       <!-- CAPITULO 6 -->
