@@ -2350,12 +2350,16 @@
       <div class="page">
         <h3>Integración por substitución</h3>
 
-        <p>La intergación por substitución es una técnica de integración relacionada con la regla de la cadena que nos ayuda a encontrar antiderivadas. Para aplicar la integración por substitución lo primero que haremos es buscar que la integral este escrita de la siguiente forma:
+        <p>La integración por substitución es una técnica de integración relacionada con la regla de la cadena que nos ayuda a encontrar antiderivadas. Para aplicar la integración por substitución lo primero que haremos es buscar que la integral este escrita de la siguiente forma:
         $$\int f(g(x))g'(x)dx$$</p>
 
         <p>Por ejemplo, en la siguiente integral: $$\int 2x \sqrt{1 + x^2} dx$$</p>
 
-        <p>$f(x) = \sqrt{x}$, $\text{ } g(x) = 1 + x^2$ y $\text{ } g'(x) = 2x$</p>
+        <p>$f(x) = \sqrt{x}$, $\text{ } g(x) = 1 + x^2$ y $\text{ } g'(x) = 2x$. Una vez que la integral está escrita de esta forma podemos sustituir $g(x)$ por la variable $u$ y $g'(x)$ por $du$: $$\int \sqrt{u} du = \frac{2}{3}u^{\frac{3}{2}}$$</p>
+
+        <p>Finalmente, sustituimos $u$ por $g(x)$: $$\int 2x \sqrt{1 + x^2} dx =  \frac{2}{3}(1 + x^2)^{\frac{3}{2}} + C$$</p>
+
+        <p>Decimos que la integración por substitución esta relacionada con la regla de la cadena ya que podemos verla como si fuera la inversa de la regla de la cadena.</p>
       </div>
 
       <!--  -->
