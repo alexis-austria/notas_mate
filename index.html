@@ -2100,7 +2100,7 @@
 
         <h3>Derivada de la función inversa</h3>
 
-        <p>Sea $f(x)$ una función inverTible y derivable, como $f(x)$ es derivable podemos pensar que su inversa también lo es. Para encontrar la derivada de $f^{-1}(x)$ empezemos recordando que: $$f(f^{-1}(x)) = x$$</p>
+        <p>Sea $f(x)$ una función invertible y derivable, como $f(x)$ es derivable podemos pensar que su inversa también lo es. Para encontrar la derivada de $f^{-1}(x)$ empezemos recordando que: $$f(f^{-1}(x)) = x$$</p>
 
         <p>Derivamos ambos lados de la ecuación $$\frac{d}{dx}f(f^{-1}(x)) = \frac{d}{dx}x$$</p>
 
@@ -2158,7 +2158,12 @@
       <div class="page">
         <h2 id="sec_c4_polinomios_y_métodos_numéricos">Polinomios. Raíces de polinomios. Métodos numéricos.</h2>
 
-        <p>Pendiente</p>
+        <p>La diferenciación numérica es un método para aproximar la derivada de una función definida como un conjunto discreto de puntos. Sea la función $f(x)$ y el punto $x_0$ lo primero que haremos será aproximar la función
+        usando un polinomio de interpolación de Lagrange.</p>
+
+        <div class="num_block" prefix="Definición"><text style="color: red"><b>Interpolación de Lagrange:</b></text> El método de interpolación de Lagrange es una forma de encontrar el polinomio que toma ciertos valores en puntos arbitrarios. Sea un conjunto de $N$ puntos: $$(x_1, y_1), (x_2, y_2), \dots, (x_N, y_N)$$
+        El polinomio de interpolación de grado $N - 1$ está dado por: $$P(x) = \phi_1 (x) y_1 + \phi_2 (x) y_2 + \dots + \phi_N (x) y_N$$
+        Donde la función $\phi_i(x)$ está dada por $$\phi_i(x) = \frac{(x - x_1)(x - x_2) \dots (x - x_{i-1}) (x - x_{i+1}) \dots (x - x_N)}{(x_i - x_1)(x_i - x_2) \dots (x_i - x_{i-1}) (x_i - x_{i+1}) \dots (x_i - x_N)}$$</div>
 
       </div>
 
@@ -2281,7 +2286,7 @@
           <figcaption>Gráficas de las ecuaciones $x^2 + y^2 = 9$, $\text{ } y = \sqrt{9 - x^2} \text{ }$ y $\text{ } y = - \sqrt{9 - x^2}$.</figcaption>
         </figure>
 
-        <p>Podemos ver que ninguna de las dos soluciones representa la gráfica completa. La técnica de derivación implícita nos permite clacular la derivada de funciones implícitas sin tener que despejar variables. Los pasos para
+        <p>Podemos ver que ninguna de las dos soluciones representa la gráfica completa. La técnica de derivación implícita nos permite calcular la derivada de funciones implícitas sin tener que despejar variables. Los pasos para
         realizar la derivación implícita son los siguientes: </p>
 
         <ul>
