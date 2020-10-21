@@ -2184,12 +2184,34 @@
       <div class = "page">
         <p>Para obtener una aproximación de segundo orden de la derivada necesitaremos un polinomio de interpolación cuadrático $L_2 (x)$, para esto utilizaremos tres puntos: $$(x_1, f(x_1)) \quad (x_2, f(x_2)) \quad (x_3, f(x_3))$$</p>
 
-        <p>El polinomio de interpolación será igual a: $$f(x) \approx P_1 f(x_1) + P_2 f(x_2) + P_3 f(x_2)$$ $$P_1 = \frac{(x - x_2) (x - x_3)}{(x_1 - x_2) (x_1 - x_3)}$$
+        <p>El polinomio de interpolación será igual a: $$f(x) \approx L_2(x)$$ $$f(x) \approx P_1 f(x_1) + P_2 f(x_2) + P_3 f(x_2)$$ $$P_1 = \frac{(x - x_2) (x - x_3)}{(x_1 - x_2) (x_1 - x_3)}$$
         $$P_2 = \frac{(x - x_1) (x - x_3)}{(x_2 - x_1) (x_2 - x_3)}$$
-        $$P_3 = \frac{(x - x_1) (x - x_2)}{(x_3 - x_1) (x_3 - X_2)}$$</p>
+        $$P_3 = \frac{(x - x_1) (x - x_2)}{(x_3 - x_1) (x_3 - x_2)}$$</p>
 
-        <p>Derivando el polinomio de interpolación tenemos que: $$f'(x) \approx P_1' f(x_0) + P_2' f(x_0 + h) + P_3' f(x_0 + 2h)$$
-        $$P_1' = $$</p>
+        <p>Derivando el polinomio de interpolación tenemos que: $$f'(x) \approx P_1' f(x_1) + P_2' f(x_2) + P_3' f(x_3)$$
+        $$P_1' = \frac{2x - x_2 - x_3}{(x_1 - x_2) (x_1 - x_3)}$$
+        $$P_2' = \frac{2x - x_1 - x_3}{(x_2 - x_1) (x_2 - x_3)}$$
+        $$P_3' = \frac{2x - x_1 - x_2}{(x_3 - x_1) (x_3 - x_2)}$$</p>
+      </div>
+
+      <div class="page">
+        <p>Realizando las siguientes sustituciones tenemos que, $x_1 = x$, $x_2 = x + h$, $x_3 = x + 2h$:
+
+        $$f'(x) \approx \frac{-3}{2h} f(x) + \frac{2}{h} f(x + h) + \frac{-1}{2h} f(x + 2h)$$
+
+        $$f'(x) \approx \frac{-3 f(x) + 4 f(x + h) - f(x + 2h )}{2h}$$</p>
+
+        <p>A esta fórmula la llamamos fórmula progresiva de segundo orden, si reemplazamos $h$ por $-h$ obtenemos una fórmula regresiva de segundo orden:
+
+        $$f'(x) \approx \frac{3 f(x) - 4 f(x - h) + f(x - 2h )}{2h}$$
+
+        <p>Si realizamos las siguientes substituciones, $x_1 = x$, $x_2 = x - h$, $x_3 = x + h$, obtenemos una fórmula centrada de segundo orden:
+
+        $$f'(x) \approx \frac{f(x + h) - f(x - h)}{2h}$$
+
+        </p>
+
+        </p>
       </div>
 
 
