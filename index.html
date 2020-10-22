@@ -2209,9 +2209,154 @@
 
         $$f'(x) \approx \frac{f(x + h) - f(x - h)}{2h}$$
 
+        Veamos un ejemplo, sea $f(x) = x^2 \ln x$ usemos las fórmulas de derivación númerica para calcular $f'(2)$ y compararemos los resultado sobtenidos con el resultado real $f'(x) = 4.772588$.
+
+        Primero, veamos las fórmulas de primer orden:
+
+        $$f'(x) \approx \frac{(2 + h)^2\sin (2 + h) - 4\sin (2)}{h}$$
+
+        $$f'(x) \approx \frac{2\ln (2)  - (2-h)^2\ln (2 - h)}{h}$$
+
         </p>
 
         </p>
+      </div>
+
+      <div class="page">
+        <style type="text/css">
+  .tg  {border-collapse:collapse;border-color:#9ABAD9;border-spacing:0;margin:0px auto;}
+  .tg td{background-color:#EBF5FF;border-color:#9ABAD9;border-style:solid;border-width:1px;color:#444;
+    font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
+  .tg th{background-color:#409cff;border-color:#9ABAD9;border-style:solid;border-width:1px;color:#fff;
+    font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+  .tg .tg-5cz4{background-color:#D2E4FC;border-color:inherit;text-align:center;vertical-align:middle}
+  .tg .tg-9wq8{border-color:inherit;text-align:center;vertical-align:middle}
+  .tg .tg-baqh{text-align:center;vertical-align:top}
+  .tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+  .tg .tg-wn3b{background-color:#D2E4FC;text-align:center;vertical-align:middle}
+  .tg .tg-nrix{text-align:center;vertical-align:middle}
+  @media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;margin: auto 0px;}}</style>
+  <div class="tg-wrap"><table class="tg">
+  <thead>
+    <tr>
+      <th class="tg-c3ow">h</th>
+      <th class="tg-c3ow">Progresiva</th>
+      <th class="tg-baqh">Error</th>
+      <th class="tg-c3ow">Regresiva</th>
+      <th class="tg-baqh">Error</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="tg-5cz4">1</td>
+      <td class="tg-5cz4">7.1149</td>
+      <td class="tg-wn3b">-2.3423</td>
+      <td class="tg-5cz4">2.7725</td>
+      <td class="tg-wn3b">2</td>
+    </tr>
+    <tr>
+      <td class="tg-9wq8">0.1</td>
+      <td class="tg-9wq8">4.9935</td>
+      <td class="tg-nrix">-0.2209</td>
+      <td class="tg-9wq8">4.5549</td>
+      <td class="tg-nrix">0.2176</td>
+    </tr>
+    <tr>
+      <td class="tg-5cz4">0.01</td>
+      <td class="tg-5cz4">4.7945</td>
+      <td class="tg-wn3b">-0.0219</td>
+      <td class="tg-5cz4">4.7506</td>
+      <td class="tg-wn3b">0.0219</td>
+    </tr>
+    <tr>
+      <td class="tg-9wq8">0.001</td>
+      <td class="tg-9wq8">4.7747</td>
+      <td class="tg-nrix">-0.0021</td>
+      <td class="tg-9wq8">4.7704</td>
+      <td class="tg-nrix">0.0021</td>
+    </tr>
+  </tbody>
+  </table></div>
+
+      <p>Ahora, veamos las funciones de segundo orden:
+
+      $$f'(x) \approx \frac{-12 \ln(2) + 4*(2 + h)^2 \ln(2 + h) - (2 +2 h)^2 \ln(2 + 2h )}{2h}$$
+
+      $$f'(x) \approx \frac{12 \ln(2) - 4*(2 - h)^2 \ln(2 - h) + 2*(2 - 2h)^2 \ln(2 - 2h )}{2h}$$
+
+      $$f'(x) \approx \frac{(2 + h)^2 \ln(2 + h) - (2 - h)^2 \ln(2 - h)}{2h}$$
+
+      <style type="text/css">
+.tg  {border-collapse:collapse;border-color:#9ABAD9;border-spacing:0;margin:0px auto;}
+.tg td{background-color:#EBF5FF;border-color:#9ABAD9;border-style:solid;border-width:1px;color:#444;
+  font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{background-color:#409cff;border-color:#9ABAD9;border-style:solid;border-width:1px;color:#fff;
+  font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-5cz4{background-color:#D2E4FC;border-color:inherit;text-align:center;vertical-align:middle}
+.tg .tg-9wq8{border-color:inherit;text-align:center;vertical-align:middle}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-wn3b{background-color:#D2E4FC;text-align:center;vertical-align:middle}
+.tg .tg-j0tj{background-color:#D2E4FC;text-align:center;vertical-align:top}
+.tg .tg-nrix{text-align:center;vertical-align:middle}
+@media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;margin: auto 0px;}}</style>
+<div class="tg-wrap"><table class="tg">
+<thead>
+  <tr>
+    <th class="tg-c3ow">h</th>
+    <th class="tg-c3ow">Progresiva</th>
+    <th class="tg-baqh">Error</th>
+    <th class="tg-c3ow">Regresiva</th>
+    <th class="tg-baqh">Error</th>
+    <th class="tg-baqh">Centrada</th>
+    <th class="tg-baqh">Error</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-5cz4">1</td>
+    <td class="tg-5cz4">4.5257</td>
+    <td class="tg-wn3b">0.2468</td>
+    <td class="tg-5cz4">-</td>
+    <td class="tg-wn3b">-</td>
+    <td class="tg-j0tj">4.9437</td>
+    <td class="tg-j0tj">-0.17</td>
+  </tr>
+  <tr>
+    <td class="tg-9wq8">0.1</td>
+    <td class="tg-9wq8">4.7693</td>
+    <td class="tg-nrix">0.0032</td>
+    <td class="tg-9wq8">4.7691</td>
+    <td class="tg-nrix">0.0034</td>
+    <td class="tg-baqh">4.7742</td>
+    <td class="tg-baqh">-0.0016</td>
+  </tr>
+  <tr>
+    <td class="tg-5cz4">0.01</td>
+    <td class="tg-5cz4">4.7725</td>
+    <td class="tg-wn3b">0.000028</td>
+    <td class="tg-5cz4">4.7725</td>
+    <td class="tg-wn3b">0.000028</td>
+    <td class="tg-j0tj">4.7726</td>
+    <td class="tg-j0tj">-0.000021</td>
+  </tr>
+  <tr>
+    <td class="tg-9wq8">0.001</td>
+    <td class="tg-9wq8">4.7725</td>
+    <td class="tg-nrix">-0.0000012</td>
+    <td class="tg-9wq8">4.7725</td>
+    <td class="tg-nrix">-0.0000012</td>
+    <td class="tg-baqh">4.7725</td>
+    <td class="tg-baqh">-0.0000012</td>
+  </tr>
+</tbody>
+</table></div>
+
+
+
+    </p>
+
+    <p>Notemos que el error disminuye al reducir el valor de $h$ y que las fórmulas de segundo orden son mucho más precisas que las fórmulas de primer orden y que entre las fórmulas de segundo orden la fórmula centrada es más precisa.</p>
       </div>
 
 
