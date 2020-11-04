@@ -2602,7 +2602,22 @@
           <div class="interactive" width="800" height="500" src="interactive/cap_4/trapezoides.html"></div>
           <figcaption>Regla del trapecio.</figcaption>
         </figure>
+
+        <p>A este método lo llamamos regla del trapecio. Recordemos que que el área de un trapecio con altura $h$ y bases de longitud $b_1$ y $b_2$ está dada por la fórmula $\text{ } a = \frac{(b_1 + b_2)h}{2}$.</p>
       </div>
+
+      <div class="page">
+        <p>En este caso, los trapecios tienen una altura de $\Delta x$ con bases de longitud $f(x_i)$ y $f(x_{i+1})$, por lo tanto, el área de cada trapecio está dada por: $$a_i = \frac{(f(x_i) + f(x_{i+1})) \Delta x}{2}$$</p>
+
+        <p>Si sumamos el área de los $n$ trapecios tenemos que:
+        $$\footnotesize\frac{(f(x_0) + f(x_{1})) \Delta x}{2} + \frac{(f(x_1) + f(x_{2})) \Delta x}{2} + \dots + \frac{(f(x_{n-1}) + f(x_{n})) \Delta x}{2}$$
+        $$\small\left(\frac{f(x_0) + f(x_1) + f(x_1) + f(x_2) + \dots + f(x_{n-1}) + f(x_{n-1}) + f(x_n)}{2}\right) \Delta x$$
+        $$\small T_n = \left(\frac{f(x_0)}{2} + f(x_1) + f(x_2) + \dots + f(x_{n-1}) + \frac{f(x_n)}{2}\right) \Delta x$$</p>
+
+        <p>Entonces, sea $f(x)$ una función continua en el intervalo $[a,b]$ podemos aproximar su integral usando la regla del trapecio con la siguiente fórmula: $$\lim_{n \to \infty} T_n = \int_{a}^{b} f(x)dx$$</p>
+      </div>
+
+
 
       <!-- WHERE -->
 
