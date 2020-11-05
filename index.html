@@ -2615,6 +2615,36 @@
         $$\small T_n = \left(\frac{f(x_0)}{2} + f(x_1) + f(x_2) + \dots + f(x_{n-1}) + \frac{f(x_n)}{2}\right) \Delta x$$</p>
 
         <p>Entonces, sea $f(x)$ una función continua en el intervalo $[a,b]$ podemos aproximar su integral usando la regla del trapecio con la siguiente fórmula: $$\lim_{n \to \infty} T_n = \int_{a}^{b} f(x)dx$$</p>
+
+        <p>Veamos un ejemplo, usaremos la regla del trapecio para aproximar la integral $\int_{0}^{2} 3x^2 - 2 dx$ utilizando $5$ subintervalos. Utilizando la fórmula de la regla del trapecio tenemos que:
+
+        $$\small T_5 = \left(\frac{f(x_0)}{2} + f(x_1) + f(x_2) + f(x_3) + f(x_4) + \frac{f(x_5)}{2}\right) \Delta x$$
+
+        </p>
+      </div>
+
+      <div class="page">
+        <p>Recordemos que $\Delta x = \frac{b - a}{n}$, en este caso $\Delta x$  es igual a: $$\Delta x = \frac{2 - 0}{5} = \frac{2}{5}$$</p>
+
+        <p>Los valores de la función en cada punto $x_i$ serán los siguientes: $$f(0) = 3(0)^2 - 2 = -2$$
+        $$f(\frac{2}{5}) = 3(\frac{2}{5})^2 - 2 = -\frac{38}{25}$$
+        $$f(\frac{4}{5}) = 3(\frac{4}{5})^2 - 2 = -\frac{2}{25}$$
+        $$f(\frac{6}{5}) = 3(\frac{6}{5})^2 - 2 = \frac{58}{25}$$
+        $$f(\frac{8}{5}) = 3(\frac{8}{5})^2 - 2 = \frac{142}{25}$$
+        $$f(2) = 3(2)^2 - 2 = 10$$</p>
+
+        <p>Sustituyendo estos valores obtenemos:
+        $$\small T_5 = \left(-\frac{2}{2} - \frac{38}{25} - \frac{2}{25} + \frac{58}{25} + \frac{142}{25} + \frac{10}{2}\right) \frac{2}{5}$$
+        $$\small T_5 = \frac{104}{25} = 4.16$$
+        $$\therefore \int_{0}^{2} 3x^2 - 2 dx \approx 4.16$$
+      </p>
+      </div>
+
+      <div class="page">
+        <h3>Método de Simpson</h3>
+
+        <p>El método de Simpson es similar a la regla del trapecio, sólo que en lugar de utilizar trapecios para aproximar el área bajo la curva utilizamos polinomios de segundo grado. Para obtener una aproximación de la integral $\int_a^b f(x) dx$ primero dividimos el intervalo $[a,b]$
+          en un número par $n$ de subintervalos de longitud $\Delta x$.</p>
       </div>
 
 
