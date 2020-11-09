@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>TITULO</title>
+  
+  <script type="text/javascript" src="lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="970" height="550">
+      <param name="tamaño" value="970x550">
+      <param name="decimal_symbol" value=".">
+      <param name="nombre" value="">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=40 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='100' O.x='0' O.y='150' despl_imagen='arr-izq' fondo='ffffff' red='c0c0c0' red10='808080' ejes='404040' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='i' tipo='numérico' interfaz='pulsador' región='sur' espacio='E1' nombre='Par de intervalos' expresión='(0,0,150,40)' valor='0' incr='1' min='1' max='3' discreto='no' decimales='0' fijo='sí' visible='sí' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' btn_pos='v_left' ">
+      <param name="A_01" value="id='y(x)' algoritmo='no' expresión='2x^3-4x^2 +3' tipo='función' ">
+      <param name="A_02" value="id='y2(x)' algoritmo='no' expresión='2x^3-4x^2 +3' dominio='(x >= 0) && (x <= 2*(2/6))' tipo='función' ">
+      <param name="A_03" value="id='y3(x)' algoritmo='no' expresión='2x^3-4x^2 +3' dominio='(x >= 2*(2/6)) && (x <= 4*(2/6))' tipo='función' ">
+      <param name="A_04" value="id='y4(x)' algoritmo='no' expresión='2x^3-4x^2 +3' dominio='(x >= 4*(2/6)) && (x <= 2)' tipo='función' ">
+      <param name="A_05" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' ">
+      <param name="A_06" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="G_01" value="espacio='E1' tipo='ecuación' fondo='no' color='20303a' dibujar-si='(i == 3)' coord_abs='no' expresión='y = y4(x)' relleno+='64ff66' ancho='1' visible='no' editable='no' ">
+      <param name="G_02" value="espacio='E1' tipo='ecuación' fondo='no' color='20303a' dibujar-si='(i == 2)' coord_abs='no' expresión='y = y3(x)' relleno+='64ff66' ancho='1' visible='no' editable='no' ">
+      <param name="G_03" value="espacio='E1' tipo='ecuación' fondo='no' color='20303a' dibujar-si='(i == 1)' coord_abs='no' expresión='y = y2(x)' relleno+='64ff66' ancho='1' visible='no' editable='no' ">
+      <param name="G_04" value="espacio='E1' tipo='ecuación' fondo='no' color='20303a' coord_abs='no' expresión='y = y(x)' ancho='1' visible='no' editable='no' ">
+      <param name="G_05" value="espacio='E1' tipo='segmento' fondo='no' color='20303a' coord_abs='no' expresión='(s,0)(s,y(s))' familia='s' s.intervalo='[0,2]' s.pasos='6' decimales='2' fijo='sí' tamaño='0' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' lineDash='solid' ">
+      <param name="G_06" value="espacio='E1' tipo='texto' fondo='no' color='20303a' coord_abs='no' expresión='(0,y(0) + .3)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;}\f0\fs42 {\*\mjaformula\i x\i0{\subix\i 0\i0}}}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_07" value="espacio='E1' tipo='texto' fondo='no' color='20303a' coord_abs='no' expresión='((2/6),y(0 + (2/6)) + .3)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;}\f0\fs42 {\*\mjaformula\i x\i0{\subix\i 1\i0}}}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_08" value="espacio='E1' tipo='texto' fondo='no' color='20303a' coord_abs='no' expresión='(2*(2/6),y(0 + 2*(2/6)) + .3)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;}\f0\fs42 {\*\mjaformula\i x\i0{\subix\i 2\i0}}}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_09" value="espacio='E1' tipo='texto' fondo='no' color='20303a' coord_abs='no' expresión='(3*(2/6),y(0 + 3*(2/6)) + .3)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;}\f0\fs42 {\*\mjaformula\i x\i0{\subix\i 3\i0}}}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_10" value="espacio='E1' tipo='texto' fondo='no' color='20303a' coord_abs='no' expresión='(4*(2/6),y(0 + 4*(2/6)) + .4)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;}\f0\fs42 {\*\mjaformula\i x\i0{\subix\i 4\i0}}}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_11" value="espacio='E1' tipo='texto' fondo='no' color='20303a' coord_abs='no' expresión='(5*(2/6) - .05,y(0 + 5*(2/6)) + .3)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;}\f0\fs42 {\*\mjaformula\i x\i0{\subix\i 5\i0}}}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_12" value="espacio='E1' tipo='texto' fondo='no' color='20303a' coord_abs='no' expresión='(6*(2/6) - .05,y(0 + 6*(2/6)) + .3)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;}\f0\fs42 {\*\mjaformula\i x\i0{\subix\i 6\i0}}}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='18' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

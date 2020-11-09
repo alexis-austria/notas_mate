@@ -1028,7 +1028,7 @@
         <h3>Difusión</h3>
 
         <p>La difusión es un proceso que consiste en el movimiento de moléculas dentro de un material de una región de alta concentración a una región de baja concentración. La velocidad en la que las moléculas se difunden por un material está dada por la primera ley de Flick:
-        $$J = -D(\frac{dc}{dc})$$ Donde $J$ es el flujo, $D$ es el coeficiente de difusión y \frac{dc}{dc} es el gradiente de concentración.</p>
+        $$J = -D\left(\frac{d}{dx}c\right)$$ Donde $J$ es el flujo, $D$ es el coeficiente de difusión y $\frac{d}{dx}c$ es el gradiente de concentración.</p>
 
       </div>
 
@@ -2184,7 +2184,7 @@
       <div class = "page">
         <p>Para obtener una aproximación de segundo orden de la derivada necesitaremos un polinomio de interpolación cuadrático $L_2 (x)$, para esto utilizaremos tres puntos: $$(x_1, f(x_1)) \quad (x_2, f(x_2)) \quad (x_3, f(x_3))$$</p>
 
-        <p>El polinomio de interpolación será igual a: $$f(x) \approx L_2(x)$$ $$f(x) \approx P_1 f(x_1) + P_2 f(x_2) + P_3 f(x_2)$$ $$P_1 = \frac{(x - x_2) (x - x_3)}{(x_1 - x_2) (x_1 - x_3)}$$
+        <p>El polinomio de interpolación será igual a: $$f(x) \approx L_2(x)$$ $$f(x) \approx P_1 f(x_1) + P_2 f(x_2) + P_3 f(x_3)$$ $$P_1 = \frac{(x - x_2) (x - x_3)}{(x_1 - x_2) (x_1 - x_3)}$$
         $$P_2 = \frac{(x - x_1) (x - x_3)}{(x_2 - x_1) (x_2 - x_3)}$$
         $$P_3 = \frac{(x - x_1) (x - x_2)}{(x_3 - x_1) (x_3 - x_2)}$$</p>
 
@@ -2209,7 +2209,7 @@
 
         $$f'(x) \approx \frac{f(x + h) - f(x - h)}{2h}$$
 
-        Veamos un ejemplo, sea $f(x) = x^2 \ln x$ usemos las fórmulas de derivación númerica para calcular $f'(2)$ y compararemos los resultado sobtenidos con el resultado real $f'(x) = 4.772588$.
+        Veamos un ejemplo, sea $f(x) = x^2 \ln x$ usemos las fórmulas de derivación númerica para calcular $f'(2)$ y compararemos los resultados obtenidos con el resultado real $f'(x) = 4.772588$.
 
         Primero, veamos las fórmulas de primer orden:
 
@@ -2390,7 +2390,7 @@
       <div class="page">
         <h2 id="sec_c4_funciones_trigonométricas">Funciones trigonométricas y sus inversas.</h2>
 
-        <p>Para calcular las derivadas de las funciones seno y coseno primero consideremos las siguientes propiedades: $$\lim_{\theta\to\infty} \frac{\sin \theta}{\theta} = 1 \qquad \lim_{\theta\to\infty} \frac{\cos \theta - 1}{\theta} = 0$$</p>
+        <p>Para calcular las derivadas de las funciones seno y coseno, primero consideremos las siguientes propiedades: $$\lim_{\theta\to\infty} \frac{\sin \theta}{\theta} = 1 \qquad \lim_{\theta\to\infty} \frac{\cos \theta - 1}{\theta} = 0$$</p>
 
         <p>Entonces, utilizando la definición de derivada tenemos que: $$\frac{d}{dx} \sin x = \lim_{h \to 0} \frac{\sin(x + h) - \sin x}{h}$$</p>
 
@@ -2436,21 +2436,21 @@
         <h3>Funciones trigonométricas inversas</h3>
 
         <p>Las funciones trigonométricas inversas, como su nombre lo indica, son las funciones inversas de las funciones trigonométricas, son utilizadas cuando queremos obtener el ángulo
-        a partir del seno, coseno, etc.</p>
+        a partir del seno, coseno, etc. Se denotan de manera similar a las funciones inversas: $\sin^{-1}, \text{ } \cos^{-1},\text{ } \tan^{-1},\text{ } \text{etc.}$, y se leen como: seno inverso, coseno inverso, tangente inversa, etc., también podemos denotarlas agregando el prefijo “arco”: $\arcsin,\text{ } \arccos,\text{ } \arctan, \text{ etc.}$ , y se leen como: “arcoseno, arcocoseno, arcotangente, etc.”</p>
 
         <p>Recordemos que la derivadada de una función inversa es igual a: $$\frac{d}{dx}f^{-1}(x) = \frac{1}{f'(f^{-1}(x))}$$</p>
 
         <p>Empezemos con la derivada del seno inverso: $$\frac{d}{dx}\sin^{-1}(x) = \frac{1}{\cos(\sin^{-1}(x))}$$</p>
 
-        <p>Podemos utilizar la siguiente identidad trigonométrica para sutituir la función coseno en la ecuación: $$\sin^2 \theta + \cos^2 \theta = 1$$
+        <p>Podemos utilizar la siguiente identidad trigonométrica para sustituir la función coseno en la ecuación: $$\sin^2 \theta + \cos^2 \theta = 1$$
         $$\cos^2 \theta = 1 - \sin^2 \theta$$
         $$\cos \theta = \sqrt{1 - \sin^2 \theta}$$</p>
 
-        <p>Sustituyendo en la ecuación tenemos: $$\frac{d}{dx}\sin^{-1}(x) = \frac{1}{\sqrt{1 - \sin^2 (\sin^{-1}(x))}}$$</p>
+        <p>Sustituyendo en la ecuación tenemos: </p>
       </div>
 
       <div class="page">
-        <p> $$\frac{d}{dx}\sin^{-1}(x) = \frac{1}{\sqrt{1 - x^2}}$$</p>
+        <p>$$\frac{d}{dx}\sin^{-1}(x) = \frac{1}{\sqrt{1 - \sin^2 (\sin^{-1}(x))}}$$ $$\frac{d}{dx}\sin^{-1}(x) = \frac{1}{\sqrt{1 - x^2}}$$</p>
 
         <p>Podemos obtener la derivada de la función coseno inverso de manera similar: $$\frac{d}{dx}\cos^{-1}(x) = \frac{1}{-\sin(\cos^{-1}(x))}$$
         $$\sin \theta = \sqrt{1 - \cos^2 \theta}$$
@@ -2603,7 +2603,7 @@
           <figcaption>Regla del trapecio.</figcaption>
         </figure>
 
-        <p>A este método lo llamamos regla del trapecio. Recordemos que que el área de un trapecio con altura $h$ y bases de longitud $b_1$ y $b_2$ está dada por la fórmula $\text{ } a = \frac{(b_1 + b_2)h}{2}$.</p>
+        <p>A este método lo llamamos regla del trapecio. Recordemos que el área de un trapecio con altura $h$ y bases de longitud $b_1$ y $b_2$ está dada por la fórmula $\text{ } a = \frac{(b_1 + b_2)h}{2}$.</p>
       </div>
 
       <div class="page">
@@ -2627,10 +2627,10 @@
         <p>Recordemos que $\Delta x = \frac{b - a}{n}$, en este caso $\Delta x$  es igual a: $$\Delta x = \frac{2 - 0}{5} = \frac{2}{5}$$</p>
 
         <p>Los valores de la función en cada punto $x_i$ serán los siguientes: $$f(0) = 3(0)^2 - 2 = -2$$
-        $$f(\frac{2}{5}) = 3(\frac{2}{5})^2 - 2 = -\frac{38}{25}$$
-        $$f(\frac{4}{5}) = 3(\frac{4}{5})^2 - 2 = -\frac{2}{25}$$
-        $$f(\frac{6}{5}) = 3(\frac{6}{5})^2 - 2 = \frac{58}{25}$$
-        $$f(\frac{8}{5}) = 3(\frac{8}{5})^2 - 2 = \frac{142}{25}$$
+        $$f\left(\frac{2}{5}\right) = 3 \left(\frac{2}{5}\right)^2 - 2 = -\frac{38}{25}$$
+        $$f\left(\frac{4}{5}\right) = 3 \left(\frac{4}{5}\right)^2 - 2 = -\frac{2}{25}$$
+        $$f\left(\frac{6}{5}\right) = 3\left(\frac{6}{5}\right)^2 - 2 = \frac{58}{25}$$
+        $$f\left(\frac{8}{5}\right) = 3\left(\frac{8}{5}\right)^2 - 2 = \frac{142}{25}$$
         $$f(2) = 3(2)^2 - 2 = 10$$</p>
 
         <p>Sustituyendo estos valores obtenemos:
@@ -2643,8 +2643,10 @@
       <div class="page">
         <h3>Método de Simpson</h3>
 
-        <p>El método de Simpson es similar a la regla del trapecio, sólo que en lugar de utilizar trapecios para aproximar el área bajo la curva utilizamos polinomios de segundo grado. Para obtener una aproximación de la integral $\int_a^b f(x) dx$ primero dividimos el intervalo $[a,b]$
-          en un número par $n$ de subintervalos de longitud $\Delta x$.</p>
+        <p>El método de Simpson es similar a la regla del trapecio, sólo que en lugar de utilizar trapecios para aproximar el área bajo la curva se utilizan polinomios de segundo grado. Para obtener una aproximación de la integral $\int_a^b f(x) dx$ primero dividimos el intervalo $[a,b]$
+          en un número par $n$ de subintervalos de longitud $\Delta x$. Por cada par de intervalos consecutivos $[x_{i-1}, x_i]\text{, } [x_{i}, x_{i+1}]$ aproximamos $\int_{x_{i-1}}^{x_{i+1}} f(x) dx$ con la integral $\int_{x_{i-1}}^{x_{i+1}} p(x) dx$, siendo
+          $p(x)$ la función cuadrática $p(x) = ax^2 + bx + c$ que pasa por los puntos $(x_{i-1}, f(x_{i-1}))\text{, } (x_{i}, f(x_{i}))\text{, } (x_{i+1}, f(x_{i+1}))$
+        </p>
       </div>
 
 
