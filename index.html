@@ -2645,8 +2645,15 @@
 
         <p>El método de Simpson es similar a la regla del trapecio, sólo que en lugar de utilizar trapecios para aproximar el área bajo la curva se utilizan polinomios de segundo grado. Para obtener una aproximación de la integral $\int_a^b f(x) dx$ primero dividimos el intervalo $[a,b]$
           en un número par $n$ de subintervalos de longitud $\Delta x$. Por cada par de intervalos consecutivos $[x_{i-1}, x_i]\text{, } [x_{i}, x_{i+1}]$ aproximamos $\int_{x_{i-1}}^{x_{i+1}} f(x) dx$ con la integral $\int_{x_{i-1}}^{x_{i+1}} p(x) dx$, siendo
-          $p(x)$ la función cuadrática $p(x) = ax^2 + bx + c$ que pasa por los puntos $(x_{i-1}, f(x_{i-1}))\text{, } (x_{i}, f(x_{i}))\text{, } (x_{i+1}, f(x_{i+1}))$
+          $p(x)$ la función cuadrática $p(x) = ax^2 + bx + c$ que pasa por los puntos $(x_{i-1}, f(x_{i-1}))\text{, } (x_{i}, f(x_{i}))\text{, } (x_{i+1}, f(x_{i+1}))$.
+
+
         </p>
+
+        <figure>
+          <div class="interactive" width="800" height="500" src="interactive/cap_4/simpson.html"></div>
+          <figcaption>Método de Simpson.</figcaption>
+        </figure>
       </div>
 
 
