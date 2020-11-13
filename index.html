@@ -47,7 +47,7 @@
     <div id="btn_back_page"></div>
     <div id="btn_next_page"></div>
     <button id="go_to_table_of_content"></button>
-    
+
     <button id="btn_config"></button>
     <div id="config_options">
       <div id="dark_light_mode"></div>
@@ -2661,6 +2661,23 @@
         </figure>
       </div>
 
+      <div class="page">
+        <div class="num_block" prefix="Definición"><text style="color: red"><b>Método de Simpson:</b></text> Sea $f(x)$ una función continua en el intervalo $[a,b]$. Sea el intervalo $[a,b]$ dividido
+        en un número par $n$ de intervalos, cada uno de longitud $\Delta x = \frac{b - a}{n}$ con sus extremos en los puntos $P = \{ x_0, x_1, \dots, x_n \}$. Definiendo la siguiente ecuación:
+        $$\footnotesize S_n = \frac{\Delta x}{3} ( f(x_0) + 4f(x_1) + 2f(x_2) + \dots + 2f(x_{n - 2}) + 4f(x_{n-1}) + f(x_n) )$$
+
+        Entonces,
+
+        $$\lim_{n \to \infty} S_n = \int_{a}^{b} f(x) dx$$
+      </div>
+
+      <p>Veamos un ejemplo, utilizemos el método de Simpson con $n = 6$ intervalos para aproximar la integral $\int_{0}^{5} x^2$. Notemos que los coeficientes de la ecuación del método de Simpson siguen el siguiente patrón: $$1, 4, 2, 4, 2, \dots, 4, 2, 4, 1$$
+      Entonces, aplicando el método de Simpson tenemos que: $$\Delta x = \frac{5}{6}$$
+      $$\scriptsize S_6 = \frac{5}{18} \left( f(0) + 4f\left( \frac{5}{6} \right) + 2f\left( \frac{10}{6} \right) + 4f\left( \frac{15}{6} \right) + 2f\left( \frac{20}{6} \right) + 4f\left( \frac{25}{6} \right) + f\left( \frac{30}{6} \right) \right)$$
+      $$S_6 = \frac{125}{3}$$
+      $$\therefore \int_{0}^{5} x^2 = \frac{125}{3}$$
+    </p>
+      </div>
 
 
       <!-- WHERE -->
