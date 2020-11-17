@@ -2568,7 +2568,7 @@
       <div class="page">
         <h3>Integración por substitución</h3>
 
-        <p>La integración por substitución es una técnica de integración relacionada con la regla de la cadena que nos ayuda a encontrar antiderivadas. Para aplicar la integración por substitución lo primero que haremos es buscar que la integral este escrita de la siguiente forma:
+        <p>La integración por substitución, también llamada integración por cambio de variable, es una técnica de integración relacionada con la regla de la cadena que nos ayuda a encontrar antiderivadas. Para aplicar la integración por substitución lo primero que haremos es buscar que la integral este escrita de la siguiente forma:
         $$\int f(g(x))g'(x)dx$$</p>
 
         <p>Por ejemplo, en la siguiente integral: $$\int 2x \sqrt{1 + x^2} dx$$</p>
@@ -2594,6 +2594,65 @@
       <div class="page">
         <h2 id="sec_c5_cambio_de_variable">Cambio de variable.</h2>
 
+        <p>Los pasos a seguir para integrar una función por cambio de variable son los siguientes:</p>
+
+        <ol>
+          <li>Escoger una substitución tal que $u = g(x)$.</li>
+
+          <li>Obtener $du = g'(x)$.</li>
+
+          <li>Utilizando las ecuaciones obtenidas en los dos pasos anteriores, reescribir la integral tal que sólo quede la variable $u$.</li>
+
+          <li>Evaluar la nueva integral obtenida.</li>
+
+          <li>Reemplazar $u$ por $g(x)$ en el resultado obtenido en el paso anterior.</li>
+        </ol>
+
+        <h3>Cambios de variable comunes</h3>
+
+        <ul>
+          <li><text style="color: red">Funciones exponenciales:</text> En el caso de una función exponencial escogemos $u$ como el exponente y calculamos la integral $\int e^u du$. <b>Ejemplo:</b> $$\int e^{5x}dx$$ $$u = 5x \quad du = 5 dx$$
+            $$\int e^{5x}dx = \int e^{u} \frac{du}{10}$$
+            $$\int e^{5x}dx = \frac{1}{10}\int e^{u} du$$
+          </li>
+        </ul>
+
+      </div>
+
+      <div class="page">
+        $$\int e^{5x}dx = \frac{e^{u}}{10}$$
+        $$\int e^{5x}dx = \frac{e^{5x}}{10} + C$$
+
+        <ul>
+          <li><text style="color: red">Fracciones:</text> Generalmente, es conveniente escoger $u$ como el denominador de la fracción. <b>Ejemplo:</b> $$\int \frac{3x}{2x^2 + 7}dx$$ $$u = 2x^2 + 7 \quad du = 4x dx$$
+            $$\int \frac{3x}{2x^2 + 7}dx = \int \frac{3x}{u}\frac{du}{4x}$$
+            $$\int \frac{3x}{2x^2 + 7}dx = \frac{3}{4}\int \frac{1}{u} du$$
+            $$\int \frac{3x}{2x^2 + 7}dx = \frac{3}{4} \ln u$$
+            $$\int \frac{3x}{2x^2 + 7}dx = \frac{3 \ln (2x^2 + 7)}{4} + C$$
+          </li>
+
+          <li><text style="color: red">Funciones bajo un radical:</text> Las funciones que se encuentren bajo un radical son una buena opción para escoger como $u$. <b>Ejemplo:</b> $$\int 4x^2\sqrt{x^3 + 2}dx$$
+
+          </li>
+        </ul>
+      </div>
+
+      <div class="page">
+        <p>$$u = x^3 + 2 \quad du = 3x^2 dx$$
+           $$\int 4x^2\sqrt{x^3 + 2}dx = \int 4x^2\sqrt{u} \frac{du}{3x^2}$$
+           $$\int 4x^2\sqrt{x^3 + 2}dx = \frac{4}{3}\int \sqrt{u} du$$
+           $$\int 4x^2\sqrt{x^3 + 2}dx = \frac{8x^{\frac{3}{2}}}{9}$$
+        </p>
+
+        <ul><li><text style="color: red">Composición de funciones:</text> Si identificamos una composición de funciones en el integrando y conocemos una regla para integrar la función externa entonces escogemos $u$ como la función interna. <b>Ejemplo:</b>
+
+          $$\int\sin(7x + 6)dx$$
+          $$u = 7x + 6 \quad du = 7 dx$$
+          $$\int\sin(7x + 6)dx =  \frac{1}{7} \int\sin(u)du$$
+          $$\int\sin(7x + 6)dx =  \frac{1}{7} \int\sin(u)du$$
+          $$\int\sin(7x + 6)dx =  - \frac{1}{7} \cos(u)$$
+          $$\int\sin(7x + 6)dx =  - \frac{1}{7} \cos(7x + 6) + C$$</li>
+        </ul>
       </div>
 
       <div class="page">
