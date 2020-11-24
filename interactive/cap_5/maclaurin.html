@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>TITULO</title>
+  
+  <script type="text/javascript" src="lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="800" height="500">
+      <param name="tamaño" value="800x500">
+      <param name="decimal_symbol" value=".">
+      <param name="expand" value="fit">
+      <param name="nombre" value="">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=40 ">
+      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='sí' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='c0c0c0' red10='808080' ejes='404040' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
+      <param name="C_01" value="id='i' tipo='numérico' interfaz='pulsador' región='sur' espacio='E1' nombre='n' expresión='(0,0,150,40)' valor='0' incr='1' min='0' max='10' discreto='no' decimales='2' fijo='sí' visible='sí' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' btn_pos='v_left' ">
+      <param name="C_02" value="id='o' tipo='numérico' interfaz='menú' región='sur' espacio='E1' nombre='f(x) = ' expresión='(0,0,150,40)' valor='0' decimales='2' fijo='sí' visible='no' opciones='1/(1 - x), e^x, cos(x), sin(x), ln(1 + x), arctan(x)' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' ">
+      <param name="A_01" value="id='fact(y)' algoritmo='sí' expresión='(y >= 2) ? z : 1' local='z,l' inicio='z = 1; l = 2;' hacer='z = z*l;;l = l + 1;' mientras='l <= y' tipo='función' ">
+      <param name="A_02" value="id='f1(x)' algoritmo='sí' expresión='a' local='a,n' inicio='n = 0; a = 0;' hacer='a = a + x^n;;;n = n + 1;;' mientras='n <= i' tipo='función' ">
+      <param name="A_03" value="id='f2(x)' algoritmo='sí' expresión='a' local='a,n' inicio='n = 0; a = 0; b = 1;' hacer='a = a + ((x^n)/b);;n = n + 1;;b = b*n;' mientras='n <= i' tipo='función' ">
+      <param name="A_04" value="id='f3(x)' algoritmo='sí' expresión='a' local='a,n' inicio='n = 0; a = 0;' hacer='a = a + ((-1)^n)*((x^(2*n))/fact(2*n));;n = n + 1;;' mientras='n <= i' tipo='función' ">
+      <param name="A_05" value="id='f4(x)' algoritmo='sí' expresión='a' local='a,n' inicio='n = 0; a = 0;' hacer='a = a + ((-1)^n)*((x^(2*n + 1))/fact(2*n + 1));;n = n + 1;;' mientras='n <= i' tipo='función' ">
+      <param name="A_06" value="id='f5(x)' algoritmo='sí' expresión='a' local='a,n' inicio='n = 1; a = 0;' hacer='a = a + ((-1)^(n + 1))*((x^n)/n);;n = n + 1;;' mientras='n <= i' tipo='función' ">
+      <param name="A_07" value="id='f6(x)' algoritmo='sí' expresión='a' local='a,n' inicio='n = 0; a = 0;' hacer='a = a + ((-1)^(n))*((x^(2*n + 1))/(2*n + 1));;n = n + 1;;' mientras='n <= i' tipo='función' ">
+      <param name="A_08" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' ">
+      <param name="A_09" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="G_01" value="espacio='E1' tipo='ecuación' fondo='no' color='20303a' dibujar-si='o = 0' coord_abs='no' expresión='y=1/(1-x)' ancho='1' visible='no' editable='no' ">
+      <param name="G_02" value="espacio='E1' tipo='ecuación' fondo='no' color='0000ff' dibujar-si='o = 0' coord_abs='no' expresión='y=f1(x)' ancho='1' visible='no' editable='no' ">
+      <param name="G_03" value="espacio='E1' tipo='ecuación' fondo='no' color='20303a' dibujar-si='o = 1' coord_abs='no' expresión='y=e^x' ancho='1' visible='no' editable='no' ">
+      <param name="G_04" value="espacio='E1' tipo='ecuación' fondo='no' color='0000ff' dibujar-si='o = 1' coord_abs='no' expresión='y=f2(x)' ancho='1' visible='no' editable='no' ">
+      <param name="G_05" value="espacio='E1' tipo='ecuación' fondo='no' color='20303a' dibujar-si='o = 2' coord_abs='no' expresión='y=cos(x)' ancho='1' visible='no' editable='no' ">
+      <param name="G_06" value="espacio='E1' tipo='ecuación' fondo='no' color='0000ff' dibujar-si='o = 2' coord_abs='no' expresión='y=f3(x)' ancho='1' visible='no' editable='no' ">
+      <param name="G_07" value="espacio='E1' tipo='ecuación' fondo='no' color='20303a' dibujar-si='o = 3' coord_abs='no' expresión='y=sin(x)' ancho='1' visible='no' editable='no' ">
+      <param name="G_08" value="espacio='E1' tipo='ecuación' fondo='no' color='0000ff' dibujar-si='o = 3' coord_abs='no' expresión='y=f4(x)' ancho='1' visible='no' editable='no' ">
+      <param name="G_09" value="espacio='E1' tipo='ecuación' fondo='no' color='20303a' dibujar-si='o = 4' coord_abs='no' expresión='y=log(1 + x)' ancho='1' visible='no' editable='no' ">
+      <param name="G_10" value="espacio='E1' tipo='ecuación' fondo='no' color='0000ff' dibujar-si='o = 4' coord_abs='no' expresión='y=f5(x)' ancho='1' visible='no' editable='no' ">
+      <param name="G_11" value="espacio='E1' tipo='ecuación' fondo='no' color='20303a' dibujar-si='o = 5' coord_abs='no' expresión='y=atan(x)' ancho='1' visible='no' editable='no' ">
+      <param name="G_12" value="espacio='E1' tipo='ecuación' fondo='no' color='0000ff' dibujar-si='o = 5' coord_abs='no' expresión='y=f6(x)' ancho='1' visible='no' editable='no' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

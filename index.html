@@ -2739,7 +2739,7 @@
       </div>
 
 
-      <!-- WHERE -->
+
 
       <!------------------------------------------------------------>
       <!-- CAPITULO 6 -->
@@ -2750,11 +2750,81 @@
 
         <h2 id="sec_c6_polinomio_de_taylor">Polinomio de Taylor.</h2>
 
-        <h2 id="sec_c6_valores_de_una_función_con_series">Cálculo de valores de una función con ayuda de las series.</h2>
+        <div class="num_block" prefix="Definición"><text style="color: red"><b>Expansión en serie:</b></text> Llamamos expansión en serie al método de aproximación de una función por medio de la suma de un número $n$ de términos.</div>
+
+
+        <p>El polinomio de Taylor, también llamado serie de Taylor, es una expansión en serie de una función $f(x)$ en el punto $x = a$. Si $f(x)$ tiene $n$ derivadas en $a$, entonces el polinomio de Taylor de orden $n$ está dado por
+        la fórmula: $$\scriptsize p_n(x) = f(a) + f'(a) (x - a) + \frac{f''(a)}{2!} (x - a)^2 + \frac{f'''(a)}{3!} (x - a)^3 + \dots +\frac{f^{(n)}(a)}{n!} (x - a)^n$$</p>
+
+        <p>En caso de que $a = 0$ el polinomio $p_n(x)$ también es conocido como polinomio de Maclaurin. En la siguiente tabla se muestran algunos polinomios de Maclaurin usados comúnmente:</p>
+
       </div>
+
+      <div class="page">
+
+        <style type="text/css">
+        .tg  {border-collapse:collapse;border-color:#9ABAD9;border-spacing:0;margin:0px auto;}
+        .tg td{background-color:#EBF5FF;border-color:#9ABAD9;border-style:solid;border-width:1px;color:#444;
+          font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
+        .tg th{background-color:#409cff;border-color:#9ABAD9;border-style:solid;border-width:1px;color:#fff;
+          font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+        .tg .tg-j3py{background-color:#D2E4FC;border-color:#9ABAD9;text-align:left;vertical-align:top}
+        .tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+        .tg .tg-svo0{background-color:#D2E4FC;border-color:inherit;text-align:center;vertical-align:top}
+        .tg .tg-73oq{border-color:#9ABAD9;text-align:left;vertical-align:top}
+        @media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;margin: auto 0px;}}</style>
+        <div class="tg-wrap"><table class="tg">
+        <thead>
+          <tr>
+            <th class="tg-c3ow">Función</th>
+            <th class="tg-c3ow">Polinomio de Maclaurin</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="tg-svo0">$$\frac{1}{1-x}$$</td>
+            <td class="tg-svo0">$$p_n(x) = 1 + x + x^2 + x^3 + \dots + x^n$$</td>
+          </tr>
+          <tr>
+            <td class="tg-c3ow">$$e^x$$</td>
+            <td class="tg-c3ow">$$p_n(x) = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \dots + \frac{x^n}{n!}$$</td>
+          </tr>
+          <tr>
+            <td class="tg-svo0">$$\cos x$$</td>
+            <td class="tg-svo0">$$p_n(x) = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \dots + (-1)^n \frac{x^{2n}}{(2n)!}$$</td>
+          </tr>
+          <tr>
+            <td class="tg-c3ow">$$\sin x$$</td>
+            <td class="tg-c3ow">$$p_n(x) = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \dots + (-1)^n \frac{x^{2n + 1}}{(2n + 1)!}$$</td>
+          </tr>
+          <tr>
+            <td class="tg-j3py">$$\ln (1 + x)$$</td>
+            <td class="tg-j3py">$$p_n(x) = x - \frac{x^2}{2} + \frac{x^3}{3} - \dots + (-1)^{n - 1} \frac{x^n}{n}$$</td>
+          </tr>
+          <tr>
+            <td class="tg-73oq">$$\tan^{-1} x$$</td>
+            <td class="tg-73oq">$$p_n(x) = x - \frac{x^3}{3} + \frac{x^5}{5} - \dots + (-1)^{n-1} \frac{x^{2n - 1}}{2n - 1}$$</td>
+          </tr>
+        </tbody>
+        </table></div>
+
+        <p>En el siguiente interactivo se muestran las gráficas de las funciones de la tabla junto con las gráficas de sus respectivos polinomios de Maclaurin, aumenta el valor de la variable $n$ para aumentar el orden del polinomio y observa lo que sucede:</p>
+
+      </div>
+
+      <div class="page">
+        <figure>
+          <div class="interactive" width="800" height="500" src="interactive/cap_5/maclaurin.html"></div>
+          <figcaption>Polinomios de Maclaurin.</figcaption>
+        </figure>
+      </div>
+
+      <!-- WHERE -->
 
       <!--  -->
       <div class="page">
+        <h2 id="sec_c6_valores_de_una_función_con_series">Cálculo de valores de una función con ayuda de las series.</h2>
+
 
       </div>
 
