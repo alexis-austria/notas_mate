@@ -2840,9 +2840,25 @@
         Taylor para aproximar el valor de una función.</p>
 
         <div class="num_block" prefix="Teorema"><text style="color: red"><b>Teorema de Taylor:</b></text> Sea $f(x)$ una función que puede ser diferenciada $n + 1$ veces definida sobre el intervalo $I$ conteniendo el número real $a$, entonces para cada $x \in I$ se cumple que: $$\footnotesize f(x) = f(a) + f'(a)(x-a) + \frac{f''(a)}{2!}(x - a)^2 + \dots + \frac{f^{(n)}(a)}{n!}(x - a)^n + R_n(x)$$
-          Donde $$R_n(x) = \frac{f^{(n + 1)}(c)}{(n + 1)!}(x-a)^{n + 1}$$ Para algún número real $c$ entre $a$ y $x$.</div>
+          Donde $R_n$ es llamado el resto y está dado por $$R_n(x) = \frac{f^{(n + 1)}(c)}{(n + 1)!}(x-a)^{n + 1}$$ Para algún número real $c$ entre $a$ y $x$.</div>
+
+        <p>Si $R_n(x)$ se aproxima a $0$ conforme $n$ se aproxima a $\infty$ decimos que la serie de Taylor generada por $f(x)$ en $x = a$ converge a $f(x)$ en $I$. Si existe un número real $M$ tal que $|f^{(n + 1)}(x)| \leq M$ para toda $x \in I$ entonces $$|R_n(x)| \leq \frac{M}{(n + 1)!}|x-a|^{n+1}$$</p>
 
 
+
+      </div>
+
+
+      <div class="page">
+
+        <p>Veamos un ejemplo, utilizando el polinomio de Taylor obtenido en la en el ejemplo anterior para la función $f(x) = xe^x$ aproximemos el valor de $2e^2$: $$p_4(2) = e + 2e (2 - 1) + \frac{3e}{2} (2 - 1)^2 + \frac{4e}{3!} (2 - 1)^3 + \frac{5e}{4!} (2 - 1)^4$$
+        $$p_4(2) = 14.61076$$</p>
+
+        <p>El resto está dado por: $$R_4(2) = \frac{f^{(5)}(c)}{5!}(2-1)^{5}$$  $$R_4(2) = \frac{f^{(5)}(c)}{5!}$$</p>
+
+        <p>No conocemos el valor de $c$ pero podemos dar una cota superior para el resto, como la derivada $f^{(5)} = e^x(x + 5)$ alcanza su valor máximo en el intervalo [1,2] en $x = 2$, entonces: $$|R_4(2)| \leq \frac{f^{(5)}(2)}{5!}|2-1|^{5}$$
+        $$f^{(5)}(2) = 51.7233$$
+        $$|R_4(2)| \leq \frac{51.7233}{120} = 0.43$$</p>
 
       </div>
 
