@@ -2441,7 +2441,7 @@
         <h3>Funciones trigonométricas inversas</h3>
 
         <p>Las funciones trigonométricas inversas, como su nombre lo indica, son las funciones inversas de las funciones trigonométricas, son utilizadas cuando queremos obtener el ángulo
-        a partir del seno, coseno, etc. Se denotan de manera similar a las funciones inversas: $\sin^{-1}, \text{ } \cos^{-1},\text{ } \tan^{-1},\text{ } \text{etc.}$, y se leen como: seno inverso, coseno inverso, tangente inversa, etc., también podemos denotarlas agregando el prefijo “arco”: $\arcsin,\text{ } \arccos,\text{ } \arctan, \text{ etc.}$ , y se leen como: “arcoseno, arcocoseno, arcotangente, etc.”</p>
+        a partir del seno, coseno, etc. Se denotan de manera similar a las funciones inversas: $\sin^{-1}, \text{ } \cos^{-1},\text{ } \tan^{-1},\text{ } \text{etc.}$ y se leen como: seno inverso, coseno inverso, tangente inversa, etc., también podemos denotarlas agregando el prefijo “arco”: $\arcsin,\text{ } \arccos,\text{ } \arctan, \text{ etc.}$ , y se leen como: arcoseno, arcocoseno, arcotangente, etc.</p>
 
         <p>Recordemos que la derivadada de una función inversa es igual a: $$\frac{d}{dx}f^{-1}(x) = \frac{1}{f'(f^{-1}(x))}$$</p>
 
@@ -2471,7 +2471,7 @@
 
         <p>Las derivadas que hemos visto hasta ahora son para funciones de la forma $y = f(x)$ donde $y$ depende explícitamente de $x$. Por otro lado tenemos ecuaciones como esta: $$x^2 + y^2 = 9$$</p>
 
-        <p>Que es la ecuación que describe a un círculo de radio $3$. En este caso  $y$ no está expresada enteramente en términos de $x$, a este tipo de ecuaciones las llamamos ecuaciones o funciones implícitas. Para econtrar la derivada de la ecuación anterior
+        <p>Que es la ecuación que describe a un círculo de radio $3$. En este caso  $y$ no está expresada enteramente en términos de $x$, a este tipo de ecuaciones las llamamos ecuaciones o funciones implícitas. Para encontrar la derivada de la ecuación anterior
         podríamos despejar la ecuación para obtener $y$: $$y = \pm \sqrt{9 - x^2}$$</p>
 
         <p>El problema es que al despejar obtenemos $2$ soluciones diferentes: $y = \sqrt{9 - x^2} \text{ }$ y $\text{ } y = - \sqrt{9 - x^2}$, en el siguiente interactivo se muestran las gráficas de las tres ecuaciones:</p>
@@ -2601,7 +2601,7 @@
 
           <li>Obtener $du = g'(x)$.</li>
 
-          <li>Utilizando las ecuaciones obtenidas en los dos pasos anteriores, reescribir la integral tal que sólo quede la variable $u$.</li>
+          <li>Utilizando las ecuaciones de los dos pasos anteriores, reescribir la integral tal que sólo quede la variable $u$.</li>
 
           <li>Evaluar la nueva integral obtenida.</li>
 
@@ -2649,7 +2649,6 @@
           $$\int\sin(7x + 6)dx$$
           $$u = 7x + 6 \quad du = 7 dx$$
           $$\int\sin(7x + 6)dx =  \frac{1}{7} \int\sin(u)du$$
-          $$\int\sin(7x + 6)dx =  \frac{1}{7} \int\sin(u)du$$
           $$\int\sin(7x + 6)dx =  - \frac{1}{7} \cos(u)$$
           $$\int\sin(7x + 6)dx =  - \frac{1}{7} \cos(7x + 6) + C$$</li>
         </ul>
@@ -2659,7 +2658,7 @@
 
         <h2 id="sec_c5_métodos_numéricos">Métodos numéricos.</h2>
 
-        <p>Los métodos númericos de integración nos son útiles para aproximar el valor de la integral definida de funciones cuya antiderivada es difícil
+        <p>Los métodos númericos de integración son útiles para aproximar el valor de la integral definida de funciones cuya antiderivada es difícil
         de calcular. Anteriormente vimos una forma de aproximar derivadas definidas dividiendo el área bajo la curva en rectángulos y sumando el área de todos los rectángulos, podemos mejorar este método utilizando trapecios en vez de rectángulos.</p>
 
         <figure>
@@ -2754,7 +2753,7 @@
 
 
         <p>El polinomio de Taylor, también llamado serie de Taylor, es una expansión en serie de una función $f(x)$ en el punto $x = a$. Si $f(x)$ tiene $n$ derivadas en $a$, entonces el polinomio de Taylor de orden $n$ está dado por
-        la fórmula: $$\scriptsize p_n(x) = f(a) + f'(a) (x - a) + \frac{f''(a)}{2!} (x - a)^2 + \frac{f'''(a)}{3!} (x - a)^3 + \dots +\frac{f^{(n)}(a)}{n!} (x - a)^n$$</p>
+        la fórmula: $$\small p_n(x) = f(a) + f'(a) (x - a) + \frac{f''(a)}{2!} (x - a)^2 + \frac{f'''(a)}{3!} (x - a)^3 + \dots$$ $$ +\frac{f^{(n)}(a)}{n!} (x - a)^n$$</p>
 
         <p>En caso de que $a = 0$ el polinomio $p_n(x)$ también es conocido como polinomio de Maclaurin. En la siguiente tabla se muestran algunos polinomios de Maclaurin usados comúnmente:</p>
 
