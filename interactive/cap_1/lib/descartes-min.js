@@ -3,7 +3,7 @@
  jlongi@im.unam.mx
  https://github.com/jlongi/DescartesJS
  LGPL - http://www.gnu.org/licenses/lgpl.html
- 2021-01-19
+ 2021-01-20
 */
 var $jscomp=$jscomp||{};$jscomp.scope={};$jscomp.arrayIteratorImpl=function(a){var h=0;return function(){return h<a.length?{done:!1,value:a[h++]}:{done:!0}}};$jscomp.arrayIterator=function(a){return{next:$jscomp.arrayIteratorImpl(a)}};$jscomp.makeIterator=function(a){var h="undefined"!=typeof Symbol&&Symbol.iterator&&a[Symbol.iterator];return h?h.call(a):$jscomp.arrayIterator(a)};$jscomp.arrayFromIterator=function(a){for(var h,e=[];!(h=a.next()).done;)e.push(h.value);return e};
 $jscomp.arrayFromIterable=function(a){return a instanceof Array?a:$jscomp.arrayFromIterator($jscomp.makeIterator(a))};$jscomp.ASSUME_ES5=!1;$jscomp.ASSUME_NO_NATIVE_MAP=!1;$jscomp.ASSUME_NO_NATIVE_SET=!1;$jscomp.SIMPLE_FROUND_POLYFILL=!1;$jscomp.objectCreate=$jscomp.ASSUME_ES5||"function"==typeof Object.create?Object.create:function(a){var h=function(){};h.prototype=a;return new h};$jscomp.underscoreProtoCanBeSet=function(){var a={a:!0},h={};try{return h.__proto__=a,h.a}catch(e){}return!1};
