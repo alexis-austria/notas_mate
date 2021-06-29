@@ -3,38 +3,37 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <title>TITULO</title>
-  
   <script type="text/javascript" src="lib/descartes-min.js" charset="utf-8"></script>
 </head>
 
 <body style="padding:0; margin:0; background:#eff0f1;">
 
   <div align="center">
-    <ajs name="Descartes" code="Descartes" width="819" height="588">
-      <param name="tamaño" value="819x588">
+    <ajs name="Descartes" code="Descartes" width="819" height="788">
+      <param name="tamaño" value="819x788">
       <param name="decimal_symbol" value=".">
       <param name="expand" value="fit">
       <param name="nombre" value="">
       <param name="Versión" value="5.5">
       <param name="editable" value="no">
       <param name="Idioma" value="español">
-      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=300 alto=40 ">
-      <param name="E_01" value="tipo='R2' id='E1' x='0' y='0' ancho='100%' alto='100%' dibujar-si='1' fijo='no' escala='48' O.x='0' O.y='0' despl_imagen='arr-izq' fondo='ffffff' red='c0c0c0' red10='808080' ejes='404040' texto='no' números='no' resizable='false' sensible_a_los_movimientos_del_ratón='no' border_width='0' border_color='000000' border_radius='0' ">
-      <param name="C_01" value="id='g' tipo='numérico' interfaz='menú' región='oeste' espacio='E1' nombre='Grado de la función' expresión='(0,0,150,40)' valor='0' decimales='2' fijo='sí' visible='no' opciones='0,1,2,3' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' ">
-      <param name="C_02" value="id='a' tipo='numérico' interfaz='pulsador' región='oeste' espacio='E1' nombre='Coeficiente var grado 0' expresión='(0,0,150,40)' valor='3' incr='0.1' discreto='no' decimales='2' fijo='sí' visible='sí' dibujar-si='g=0' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' image_inc='img/inc.svg' image_dec='img/dec.svg' btn_pos='v_right' ">
-      <param name="C_03" value="id='b' tipo='numérico' interfaz='pulsador' región='oeste' espacio='E1' nombre='Coeficiente var grado 1' expresión='(0,0,150,40)' valor='2' incr='0.1' discreto='no' decimales='2' fijo='sí' visible='sí' activo-si='g>=1' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' image_inc='img/inc.svg' image_dec='img/dec.svg' btn_pos='v_right' ">
-      <param name="C_04" value="id='c' tipo='numérico' interfaz='pulsador' región='oeste' espacio='E1' nombre='Coeficiente var grado 2' expresión='(0,0,150,40)' valor='2' incr='0.1' discreto='no' decimales='2' fijo='sí' visible='sí' activo-si='g>=2' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' image_inc='img/inc.svg' image_dec='img/dec.svg' btn_pos='v_right' ">
-      <param name="C_05" value="id='d' tipo='numérico' interfaz='pulsador' región='oeste' espacio='E1' nombre='Coeficiente var grado 3' expresión='(0,0,150,40)' valor='2' incr='0.1' discreto='no' decimales='2' fijo='sí' visible='sí' activo-si='g>=3' label_color='e0e4e8' label_text_color='000000' font_family='SansSerif' fuente puntos='0' negrita='no' cursiva='no' image_inc='img/inc.svg' image_dec='img/dec.svg' btn_pos='v_right' ">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=5 ancho_este=150 ancho_oeste=300 alto=40 ">
+      <param name="E_01" value="tipo='R2' id='E1' red='c0c0c0' red10='808080' ejes='404040' ">
+      <param name="C_01" value="id='g' tipo='numérico' interfaz='menú' región='sur' espacio='E1' nombre='Grado de la función' expresión='(0,0,150,40)' visible='no' opciones='0,1,2,3' ">
+      <param name="C_02" value="id='a' tipo='numérico' interfaz='pulsador' región='sur' espacio='E1' nombre='Coeficiente var grado 0' expresión='(0,0,150,40)' valor='2.5' visible='sí' dibujar-si='g=0' image_inc='img/inc.svg' image_dec='img/dec.svg' btn_pos='h_left_right' ">
+      <param name="C_03" value="id='b' tipo='numérico' interfaz='pulsador' región='sur' espacio='E1' nombre='Coeficiente var grado 1' expresión='(0,0,150,40)' valor='2' visible='sí' activo-si='g>=1' image_inc='img/inc.svg' image_dec='img/dec.svg' btn_pos='h_left_right' ">
+      <param name="C_04" value="id='c' tipo='numérico' interfaz='pulsador' región='sur' espacio='E1' nombre='Coeficiente var grado 2' expresión='(0,0,150,40)' valor='2' visible='sí' activo-si='g>=2' image_inc='img/inc.svg' image_dec='img/dec.svg' btn_pos='h_left_right' ">
+      <param name="C_05" value="id='d' tipo='numérico' interfaz='pulsador' región='sur' espacio='E1' nombre='Coeficiente var grado 3' expresión='(0,0,150,40)' valor='2' visible='sí' activo-si='g>=3' image_inc='img/inc.svg' image_dec='img/dec.svg' btn_pos='h_left_right' ">
       <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' ">
       <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
-      <param name="G_01" value="espacio='E1' tipo='ecuación' fondo='no' color='20303a' dibujar-si='g=0' coord_abs='no' expresión='y=a' ancho='1' visible='no' editable='no' ">
-      <param name="G_02" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='g=0' coord_abs='sí' expresión='(20,20)' texto='Ecuación: y = [a]' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='22' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
-      <param name="G_03" value="espacio='E1' tipo='ecuación' fondo='no' color='20303a' dibujar-si='g=1' coord_abs='no' expresión='y=b*x + a' ancho='1' visible='no' editable='no' ">
-      <param name="G_04" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='g=1' coord_abs='sí' expresión='(20,20)' texto='Ecuación: y = [b]x + [a]' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='22' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
-      <param name="G_05" value="espacio='E1' tipo='ecuación' fondo='no' color='20303a' dibujar-si='g=2' coord_abs='no' expresión='y=c*x^2 + b*x - a' ancho='1' visible='no' editable='no' ">
-      <param name="G_06" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='g=2' coord_abs='sí' expresión='(20,20)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs44 Ecuación: y = {\*\mjaformula{\expr c\decimals 2\fixed1}}{\*\mjaformula\i x\i0{\supix\i 2\i0}} + {\*\mjaformula{\expr b\decimals 2\fixed1}}{\*\mjaformula\i x\i0} - {\*\mjaformula{\expr a\decimals 2\fixed1}}}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='22' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
-      <param name="G_07" value="espacio='E1' tipo='ecuación' fondo='no' color='20303a' dibujar-si='g=3' coord_abs='no' expresión='y = d*x^3 + c*x^2 - b*x + a' ancho='1' visible='no' editable='no' ">
-      <param name="G_08" value="espacio='E1' tipo='texto' fondo='no' color='20303a' dibujar-si='g=3' coord_abs='sí' expresión='(20,20)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs44 Ecuación: y = {\*\mjaformula{\expr d\decimals 2\fixed1}}\i{\*\mjaformula\i x\i0{\supix\i 3\i0}}\i0  + {\*\mjaformula{\expr c\decimals 2\fixed1}}\i{\*\mjaformula\i x\i0{\supix\i 2\i0}}\i0   - {\*\mjaformula{\expr b\decimals 2\fixed1}}\i{\*\mjaformula\i x\i0}\i0  + {\*\mjaformula{\expr a\decimals 2\fixed1}}}' decimales='2' fijo='sí' ancho='1' negrita='no' cursiva='no' font_family='SansSerif' fuente puntos='22' align='a_left' anchor='a_top_left' border_size='0' shadowColor='false' shadowBlur='0' shadowOffsetX='0' shadowOffsetY='0' ">
+      <param name="G_01" value="espacio='E1' tipo='ecuación' color='20303a' dibujar-si='g=0' coord_abs='no' expresión='y=a' ancho='3' ">
+      <param name="G_02" value="espacio='E1' tipo='texto' color='20303a' dibujar-si='g=0' coord_abs='sí' expresión='(20,20)' texto='Ecuación: y = [a]' ancho='1' fuente puntos='22' align='a_left' anchor='a_top_left' ">
+      <param name="G_03" value="espacio='E1' tipo='ecuación' color='20303a' dibujar-si='g=1' coord_abs='no' expresión='y=b*x + a' ancho='3' ">
+      <param name="G_04" value="espacio='E1' tipo='texto' color='20303a' dibujar-si='g=1' coord_abs='sí' expresión='(20,20)' texto='Ecuación: y = [b]x + [a]' ancho='1' fuente puntos='22' align='a_left' anchor='a_top_left' ">
+      <param name="G_05" value="espacio='E1' tipo='ecuación' color='20303a' dibujar-si='g=2' coord_abs='no' expresión='y=c*x^2 + b*x - a' ancho='3' ">
+      <param name="G_06" value="espacio='E1' tipo='texto' color='20303a' dibujar-si='g=2' coord_abs='sí' expresión='(20,20)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs44 Ecuación: y = {\*\mjaformula{\expr c\decimals 2\fixed1}}{\*\mjaformula\i x\i0{\supix\i 2\i0}} + {\*\mjaformula{\expr b\decimals 2\fixed1}}{\*\mjaformula\i x\i0} - {\*\mjaformula{\expr a\decimals 2\fixed1}}}' ancho='1' fuente puntos='22' align='a_left' anchor='a_top_left' ">
+      <param name="G_07" value="espacio='E1' tipo='ecuación' color='20303a' dibujar-si='g=3' coord_abs='no' expresión='y = d*x^3 + c*x^2 - b*x + a' ancho='3' ">
+      <param name="G_08" value="espacio='E1' tipo='texto' color='20303a' dibujar-si='g=3' coord_abs='sí' expresión='(20,20)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs44 Ecuación: y = {\*\mjaformula{\expr d\decimals 2\fixed1}}\i{\*\mjaformula\i x\i0{\supix\i 3\i0}}\i0  + {\*\mjaformula{\expr c\decimals 2\fixed1}}\i{\*\mjaformula\i x\i0{\supix\i 2\i0}}\i0   - {\*\mjaformula{\expr b\decimals 2\fixed1}}\i{\*\mjaformula\i x\i0}\i0  + {\*\mjaformula{\expr a\decimals 2\fixed1}}}' ancho='1' fuente puntos='22' align='a_left' anchor='a_top_left' ">
     </ajs>
   </div>
 
