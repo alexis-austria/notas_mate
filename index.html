@@ -2518,6 +2518,8 @@
 
         <p>Por último despejamos $\frac{d}{dx}y$: $$\frac{d}{dx}y = \frac{-2x}{2y} = -\frac{x}{y}$$</p>
 
+        <p>Con lo que obtenemos la derivada de la función implícita $x^2 + y^2 = 9$ que es igual a: $$\frac{d}{dx}y = -\frac{x}{y}$$</p>
+
       </div>
 
 
@@ -2656,7 +2658,8 @@
         <p>$$u = x^3 + 2 \quad du = 3x^2 dx$$
            $$\int 4x^2\sqrt{x^3 + 2}dx = \int 4x^2\sqrt{u} \frac{du}{3x^2}$$
            $$\int 4x^2\sqrt{x^3 + 2}dx = \frac{4}{3}\int \sqrt{u} du$$
-           $$\int 4x^2\sqrt{x^3 + 2}dx = \frac{8x^{\frac{3}{2}}}{9}$$
+           $$\int 4x^2\sqrt{x^3 + 2}dx = \frac{8u^{\frac{3}{2}}}{9}$$
+           $$\int 4x^2\sqrt{x^3 + 2}dx = \frac{8( x^3 + 2)^{\frac{3}{2}}}{9} + C$$
         </p>
 
         <ul><li><text style="color: red">Composición de funciones:</text> Si identificamos una composición de funciones en el integrando y conocemos una regla para integrar la función externa entonces escogemos $u$ como la función interna. <b>Ejemplo:</b>
@@ -2747,6 +2750,7 @@
       <p>Veamos un ejemplo, utilizemos el método de Simpson con $n = 6$ intervalos para aproximar la integral $\int_{0}^{5} x^2$. Notemos que los coeficientes de la ecuación del método de Simpson siguen el siguiente patrón: $$1, 4, 2, 4, 2, \dots, 4, 2, 4, 1$$
       Entonces, aplicando el método de Simpson tenemos que: $$\Delta x = \frac{5}{6}$$
       $$\scriptsize S_6 = \frac{5}{18} \left( f(0) + 4f\left( \frac{5}{6} \right) + 2f\left( \frac{10}{6} \right) + 4f\left( \frac{15}{6} \right) + 2f\left( \frac{20}{6} \right) + 4f\left( \frac{25}{6} \right) + f\left( \frac{30}{6} \right) \right)$$
+      $$\scriptsize S_6 = \frac{5}{18} \left( 0 + \frac{100}{36} + \frac{200}{36} + 25 + \frac{200}{9} + \frac{625}{9} + 25 \right)$$
       $$S_6 = \frac{125}{3}$$
       $$\therefore \int_{0}^{5} x^2 = \frac{125}{3}$$
     </p>
