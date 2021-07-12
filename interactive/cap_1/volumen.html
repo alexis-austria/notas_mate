@@ -18,12 +18,12 @@
       <param name="editable" value="no">
       <param name="Idioma" value="español">
       <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=40 ">
-      <param name="E_01" value="tipo='R2' id='E1' fijo='sí' imagen='img/road.jpg' red='no' red10='no' ejes='no' ">
-      <param name="C_01" value="id='v' tipo='numérico' interfaz='barra' región='sur' espacio='E1' nombre='Velocidad' expresión='(0,0,150,40)' incr='0.2' min='0' max='2' visible='no' ">
+      <param name="E_01" value="tipo='R3' R3='sí' id='E1' ">
+      <param name="C_01" value="id='x' tipo='numérico' interfaz='pulsador' región='sur' espacio='E1' nombre='Longitud de las aristas' expresión='(0,0,150,40)' valor='2' min='1' max='15' visible='sí' image_inc='img/inc.svg' image_dec='img/dec.svg' btn_pos='h_left_right' ">
       <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' ">
       <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
-      <param name="G_01" value="espacio='E1' tipo='imagen' coord_abs='no' expresión='(x,-1)' archivo='img/car.svg' ">
-      <param name="Animación" value="pausa='40' controles='sí' auto='sí' repetir='sí' inicio='x = -7.5; v=0' hacer='x = x + v;x = (x >= 10) ? -8.5 : x' mientras='x < 10' ">
+      <param name="S_01" value="espacio='E1' tipo='cubo' color='ff0000' color_reverso='6090a0' expresión='Cubo' rotini='(0,-50,-30)' modelo='luz' ancho='x' ">
+      <param name="S_02" value="espacio='E1' tipo='texto' color='0000ff' expresión='[20,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs36 Volumen del cubo: {\*\mjaformula\i{\expr x\decimals 2\fixed0}\i0{\supix\i 3\i0}} = {\*\mjaformula\i{\expr x^3\decimals 2\fixed0}\i0}}' decimales='2' ancho='1' align='a_left' anchor='a_top_left' ">
     </ajs>
   </div>
 
