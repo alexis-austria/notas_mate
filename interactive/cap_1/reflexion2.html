@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>TITULO</title>
+  <script type="text/javascript" src="lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="819" height="588">
+      <param name="tamaño" value="819x588">
+      <param name="decimal_symbol" value=".">
+      <param name="expand" value="fit">
+      <param name="nombre" value="">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=40 ">
+      <param name="E_01" value="tipo='R2' id='E1' red='c0c0c0' red10='808080' ejes='404040' números='sí' ">
+      <param name="C_01" value="id='x' interfaz='botón' tipo='numérico' región='sur' espacio='E1' nombre='Reflexión horizontal' expresión='(0,0,150,40)' color='222222' color-int='f0f8ff' fuente puntos='19' acción='calcular' parámetro='h=h*-1;' ">
+      <param name="C_02" value="id='y' interfaz='botón' tipo='numérico' región='sur' espacio='E1' nombre='Reflexión vertical' expresión='(0,0,150,40)' color='222222' color-int='f0f8ff' fuente puntos='19' acción='calcular' parámetro='v = v*-1;' ">
+      <param name="C_03" value="id='f' tipo='numérico' interfaz='campo de texto' solo_texto='sí' región='interior' espacio='E1' nombre='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;}\f0\fs36 \fs40{\*\mjaformula\i f(x) =  }' expresión='(20,20,250,40)' valor='(2x - 5)^2' visible='sí' cursiva='sí' ">
+      <param name="A_01" value="id='f(x)' algoritmo='no' expresión='_Eval_(f)' tipo='función' ">
+      <param name="A_02" value="id='fh(x)' algoritmo='no' expresión='_Eval_(replace(f,&squot;x&squot;,&squot;(-x)&squot;))' tipo='función' ">
+      <param name="A_03" value="id='fv(x)' algoritmo='no' expresión='_Eval_(&squot;-(&squot; + f + &squot;)&squot;)' tipo='función' ">
+      <param name="A_04" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='a = sgn(0.5-rnd)*(2+ent(4*rnd));b = sgn(0.5-rnd)*(1+ent(5*rnd));c = sgn(0.5-rnd)*(.5+ent(2*rnd));h = -1;v = -1;' ">
+      <param name="A_05" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer='vy = (v=1) ? 120:75' ">
+      <param name="G_01" value="espacio='E1' tipo='ecuación' color='000000' dibujar-si='i=0' coord_abs='no' expresión='y = f(x)' ancho='1' ">
+      <param name="G_02" value="espacio='E1' tipo='ecuación' color='ff0000' dibujar-si='(i=0) & (v=1)' coord_abs='no' expresión='y=fv(x)' ancho='1' ">
+      <param name="G_03" value="espacio='E1' tipo='ecuación' color='0000ff' dibujar-si='(i=0) & (h=1)' coord_abs='no' expresión='y=fh(x)' ancho='1' ">
+      <param name="G_04" value="espacio='E1' tipo='texto' color='000000' dibujar-si='i=0' coord_abs='sí' expresión='(20,20)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs36 {\*\mjaformula{\expr f\decimals 0\fixed1}}}' decimales='0' ancho='1' align='a_left' anchor='a_top_left' ">
+      <param name="G_05" value="espacio='E1' tipo='texto' color='ff0000' dibujar-si='(i=0) & (v=1)' coord_abs='sí' expresión='(20,75)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;}\f0\fs36 \fs40{\*\mjaformula\i f(x) = \i0\i{\expr [&squot;-(&squot; + f + &squot;)&squot;]\decimals 2\fixed0}\i0}\fs36 }' decimales='0' ancho='1' align='a_left' anchor='a_top_left' ">
+      <param name="G_06" value="espacio='E1' tipo='texto' color='0000ff' dibujar-si='(i=0) & (h=1)' coord_abs='sí' expresión='(20,vy)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;}\f0\fs36 \fs40{\*\mjaformula\i f(x) = \i0\i{\expr [replace(f,&squot;x&squot;,&squot;(-x)&squot;)]\decimals 2\fixed0}\i0}\fs36 }' decimales='0' ancho='1' align='a_left' anchor='a_top_left' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>
