@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>TITULO</title>
+  <script type="text/javascript" src="lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="819" height="588">
+      <param name="tamaño" value="819x588">
+      <param name="decimal_symbol" value=".">
+      <param name="expand" value="fit">
+      <param name="nombre" value="">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=40 ">
+      <param name="E_01" value="tipo='R2' id='E1' red='c0c0c0' red10='808080' ejes='404040' números='sí' ">
+      <param name="C_01" value="id='min' tipo='numérico' interfaz='pulsador' región='sur' espacio='E1' nombre='s2' expresión='(0,0,150,40)' valor='-10' incr='1' min='-100' max='max - 1' discreto='sí' decimales='0' visible='sí' acción='calcular' image_inc='img/inc.svg' image_dec='img/dec.svg' btn_pos='h_left_right' ">
+      <param name="C_02" value="id='max' tipo='numérico' interfaz='pulsador' región='sur' espacio='E1' nombre='s2' expresión='(0,0,150,40)' valor='10' incr='1' min='min + 1' max='100' discreto='sí' decimales='0' visible='sí' image_inc='img/inc.svg' image_dec='img/dec.svg' btn_pos='h_left_right' ">
+      <param name="C_03" value="id='fun' tipo='numérico' interfaz='campo de texto' solo_texto='sí' región='interior' espacio='E1' nombre='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;}\f0\fs36 \fs40{\*\mjaformula\i f(x) =  }' expresión='(20,20,250,40)' valor='2*x^3+5' visible='sí' ">
+      <param name="C_04" value="id='g4' tipo='gráfico' espacio='E1' color='222222' color-int='f0f8ff' tamaño='4' expresión='(0,0)' constricción='y = f(x)' ">
+      <param name="A_01" value="id='f(x)' algoritmo='no' expresión='_Eval_(fun)' dominio='(x >= min) && (x <= max)' tipo='función' ">
+      <param name="A_02" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' inicio='a = sgn(0.5-rnd)*(2+ent(4*rnd)); b = sgn(0.5-rnd)*(1+ent(5*rnd));' ">
+      <param name="A_03" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer=';' ">
+      <param name="G_01" value="espacio='E1' tipo='ecuación' color='ff0000' coord_abs='no' expresión='y=f(x)' ancho='1' ">
+      <param name="G_02" value="espacio='E1' tipo='ecuación' color='0000ff' coord_abs='no' expresión='x=f(y)' ancho='1' ">
+      <param name="G_03" value="espacio='E1' tipo='ecuación' color='000000' coord_abs='no' expresión='y=x' ancho='1' ">
+      <param name="G_04" value="espacio='E1' tipo='punto' color='20303a' dibujar-si='i=0' coord_abs='no' expresión='(0,-b)' texto='(0,[-b])' decimales='0' tamaño='4' ">
+      <param name="G_05" value="espacio='E1' tipo='punto' color='20303a' dibujar-si='i=0' coord_abs='no' expresión='(-b,0)' texto='([-b],0)' decimales='0' tamaño='4' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>
