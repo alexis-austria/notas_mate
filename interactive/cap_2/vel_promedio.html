@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>TITULO</title>
+  <script type="text/javascript" src="lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="800" height="500">
+      <param name="tamaño" value="800x500">
+      <param name="decimal_symbol" value=".">
+      <param name="expand" value="fit">
+      <param name="nombre" value="">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=40 ">
+      <param name="E_01" value="tipo='R2' id='E1' O.x='-300' O.y='238' números='sí' eje-x='Tiempo (s)' eje-y='Posición (m)' sensible_a_los_movimientos_del_ratón='sí' ">
+      <param name="C_01" value="id='g1' tipo='gráfico' espacio='E1' color='0000ff' color-int='0000ff' tamaño='8' expresión='(0,0)' constricción='y = 0' ">
+      <param name="C_02" value="id='g1.x' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='n2' expresión='(0,0,150,40)' incr='1' min='0' max='g2.x -1' discreto='sí' visible='no' dibujar-si='0' ">
+      <param name="C_03" value="id='g2' tipo='gráfico' espacio='E1' color='0000ff' color-int='0000ff' tamaño='8' expresión='(5,0)' constricción='y = 0' ">
+      <param name="C_04" value="id='g2.x' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='n2' expresión='(0,0,150,40)' valor='5' incr='1' min='1' max='14' discreto='sí' visible='no' acción='calcular' parámetro='g2.x = (g2.x <= g1.x+1) ? g1.x+1 : g2.x' dibujar-si='0' ">
+      <param name="A_01" value="id='V1' vector='sí' evaluar='una-sola-vez' tamaño='15' expresión='V1[0]=0;V1[1]=1;V1[2]=2;V1[3]=3;V1[4]=3;V1[5]=3;V1[6]=4;V1[7]=5;V1[8]=6;V1[9]=7;V1[10]=8;V1[11]=8;V1[12]=8;V1[13]=8;V1[14]=8;' tipo='vector' ">
+      <param name="A_02" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' ">
+      <param name="A_03" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="G_01" value="espacio='E1' tipo='segmento' color='ff0000' coord_abs='no' expresión='(0,0)(3,3)' tamaño='0' ancho='3' ">
+      <param name="G_02" value="espacio='E1' tipo='segmento' color='ff0000' coord_abs='no' expresión='(3,3)(5,3)' tamaño='0' ancho='3' ">
+      <param name="G_03" value="espacio='E1' tipo='segmento' color='ff0000' coord_abs='no' expresión='(5,3)(10,8)' tamaño='0' ancho='3' ">
+      <param name="G_04" value="espacio='E1' tipo='segmento' color='ff0000' coord_abs='no' expresión='(10,8)(15,8)' tamaño='0' ancho='3' ">
+      <param name="G_05" value="espacio='E1' tipo='segmento' color='0000ff' coord_abs='no' expresión='(g1.x,0)(g1.x,15)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;}\f0\fs40    {\*\mjaformula\i t\i0{\subix\i 0\i0}}}' tamaño='0' ancho='2' lineDash='dash' ">
+      <param name="G_06" value="espacio='E1' tipo='segmento' color='0000ff' coord_abs='no' expresión='(g2.x,0)(g2.x,15)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;}\f0\fs40    {\*\mjaformula\i t\i0{\subix\i 1\i0}}}' tamaño='0' ancho='2' lineDash='dash' ">
+      <param name="G_07" value="espacio='E1' tipo='texto' color='000000' coord_abs='no' expresión='(1,9)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs36\b \b0\b{\*\mjaformula\i\b v = \b0\i0{\fraction{\num\i\b Δs\b0\i0}{\den\i\b Δt\b0\i0}}\i\b  = \b0\i0{\fraction{\num\i\b{\expr  V1[g2.x]\decimals 2\fixed0}\b0\i0\b  - \b0\b{\expr V1[g1.x]\decimals 2\fixed0}\b0}{\den\b{\expr g2.x\decimals 2\fixed0}\b0\b  - \b0\b{\expr g1.x\decimals 2\fixed0}\b0}}\b  = \b0\b{\expr (V1[g2.x] -  V1[g1.x])/(g2.x - g1.x)\decimals 2\fixed0}\b0\b m/s\b0}\b0\b \b0}' ancho='1' negrita='sí' align='a_left' anchor='a_top_left' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>
