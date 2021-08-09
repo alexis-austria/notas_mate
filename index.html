@@ -1694,27 +1694,43 @@
       </div>
 
       <div class="page">
+        <h3>Interpretación geométrica del teorema fundamental del cálculo</h3>
 
-        <h3>Segundo teorema fundamental del cálculo</h3>
+        <figure>
+          <div class="interactive" width="800" height="500" src="interactive/cap_3/teorema_fundamental.html"></div>
+          <figcaption>Interpretación geométrica del teorema fundamental del cálculo.</figcaption>
+        </figure>
 
-        <p>El segundo teorema fundamental del cálculo nos permite evaluar integrales definidas sin la necesidad de utilizar sumas de Riemann.</p>
+        <p>En el interactivo anterior se muestra la gráfica de una función continua $f(x)$, si queremos calcular el área bajo la curva en el intervalo $[x, x+ h]$ podemos realizar la substracción $A(x - h) - A(x)$, siendo
+        $A(x)$ el área bajo la función $f(x)$ entre $0$ y $x$. Otra forma de aproximar el valor del área en ese intervalo sería calculando el área marcada por las líneas punteadas que sería igual a $hf(x)$, es decir: $$A(x - h) - A(x) \approx hf(x)$$</p>
+      </div>
 
-        <div class="num_block" prefix="Teorema"><text style="color: red"><b>Segundo teorema fundamental del cálculo:</b></text> Sea $f(x)$ una función continua sobre un intervalo $[a,b]$, y sea $F(x)$ una antiderivada de $f(x)$ entonces $$\int_{a}^{b} f(x)dx = F(b) - F(a)$$</div>
+      <div class="page">
+        <p>Notemos que al mover el punto rojo para disminuir el valor de $h$ esta aproximación mejora y cuando $h$ se acerca a $0$ esta aproximación se convierte en una igualdad. Ahora, dividiendo ambos lados entre $h$ tenemos que $f(x) \approx \frac{A(x - h) - A(x)}{h}$, cuando $h$ tiende a $0$ tenemos que: $$f(x) = \lim_{h \to 0} \frac{A(x - h) - A(x)}{h}$$</p>
 
-        <p>La antiderivada de una función $f$ es una función diferenciable $F$ cuya derivada es igual a la función original $f$. El segundo teorema fundamental del cálculo nos dice que si podemos
-        encontrar una antiderivada para el integrando entonces podemos evaluar la integral definida evaluando la antiderivada en los límites de integración y restando los dos valores.</p>
+        <p>En el lado derecho de la ecuación se encuentra la fórmula de la derivada de la función $A(x)$, esto es, $f(x) = A'(x)$. Lo que quiere decir que la derivada de la función del área bajo la curva $A(x)$ es igual a la función $f(x)$, por lo tanto, la integración y la derivación son operaciones inversas.</p>
+
+                <h3>Segundo teorema fundamental del cálculo</h3>
+
+                <p>El segundo teorema fundamental del cálculo nos permite evaluar integrales definidas sin la necesidad de utilizar sumas de Riemann.</p>
+
+                <div class="num_block" prefix="Teorema"><text style="color: red"><b>Segundo teorema fundamental del cálculo:</b></text> Sea $f(x)$ una función continua sobre un intervalo $[a,b]$, y sea $F(x)$ una antiderivada de $f(x)$ entonces $$\int_{a}^{b} f(x)dx = F(b) - F(a)$$</div>
+
+                <p>La antiderivada de una función $f$ es una función diferenciable $F$ cuya derivada es igual a la función original $f$. El segundo teorema fundamental del cálculo nos dice que si podemos
+                encontrar una antiderivada para el integrando entonces podemos evaluar la integral definida evaluando la antiderivada en los límites de integración y restando los dos valores.</p>
+      </div>
+
+      <div class="page">
 
         <p>Por ejemplo,
         para evaluar la integral del ejemplo anterior $$\int_{1}^{3} 3x^2+1dx$$</p>
 
         <p>Como $$\frac{d}{dx}x^3 + x = 3x^2+1$$</p>
 
-      </div>
-
-      <div class="page">
         <p>El segundo teorema fundamental del cálculo nos dice que $$\int_{1}^{3} 3x^2+1dx = x^3 + x \Big\rvert_1^3$$ $$x^3 + x \Big\rvert_1^3 = (3^3 + 3) - (1^3 + 1) = 28$$ $$\int_{1}^{3} 3x^2+1dx = 28$$</p>
 
         <p>Como podemos ver, de esta manera es más fácil evaluar integrales definidas que utilizando la definición, aunque no siempre será sencillo encontrar una antiderivada para una función.</p>
+
 
       </div>
 
