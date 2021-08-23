@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>TITULO</title>
+  <script type="text/javascript" src="lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="800" height="500">
+      <param name="tamaño" value="800x500">
+      <param name="decimal_symbol" value=".">
+      <param name="expand" value="fit">
+      <param name="nombre" value="">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=40 ">
+      <param name="E_01" value="tipo='R2' id='E1' fijo='sí' escala='100' O.x='-250' O.y='120' red='c0c0c0' red10='808080' ejes='404040' ">
+      <param name="C_01" value="id='g' tipo='gráfico' espacio='E1' color='0000ff' color-int='0000ff' tamaño='8' expresión='(0.5,0)' constricción='y=f(x)' ">
+      <param name="C_02" value="id='h' tipo='numérico' interfaz='pulsador' región='sur' espacio='E1' nombre='h' expresión='(0,0,150,40)' valor='0.1' incr='0.05' visible='sí' ">
+      <param name="C_03" value="id='op' tipo='numérico' interfaz='menú' región='sur' espacio='E1' nombre='Tipo de función' expresión='(0,0,150,40)' visible='no' opciones='Progresiva primer orden, Regresiva primer orden, Progresiva segundo orden, Regresiva segundo orden, Centrada segundo orden' ">
+      <param name="C_04" value="id='g.x' tipo='numérico' interfaz='pulsador' región='exterior' espacio='E1' nombre='s4' expresión='(0,0,150,40)' valor='2' min='0.2' visible='sí' ">
+      <param name="A_01" value="id='f(x)' algoritmo='no' expresión='x^2*log(x)' tipo='función' ">
+      <param name="A_02" value="id='derivada(x)' algoritmo='no' expresión='_Eval_(&squot;2*x*log(x) + x&squot;)' tipo='función' ">
+      <param name="A_03" value="id='tangente(x,y,m,a)' algoritmo='no' expresión='_Eval_(&squot;y+m*(x-a)&squot;)' hacer=';;' tipo='función' ">
+      <param name="A_04" value="id='prog(x)' algoritmo='no' expresión='(f(x+h) - f(x))/h' tipo='función' ">
+      <param name="A_05" value="id='reg(x)' algoritmo='no' expresión='(f(x) - f(x-h))/h' tipo='función' ">
+      <param name="A_06" value="id='prog2(x)' algoritmo='no' expresión='(-3*f(x) + 4*f(x+h) - f(x + 2*h))/(2h)' tipo='función' ">
+      <param name="A_07" value="id='reg2(x)' algoritmo='no' expresión='(3*f(x) - 4*f(x-h) + f(x - 2*h))/(2h)' tipo='función' ">
+      <param name="A_08" value="id='cen(x)' algoritmo='no' expresión='(f(x+h) - f(x - h))/(2h)' tipo='función' ">
+      <param name="A_09" value="id='res(x)' algoritmo='sí' expresión='a' inicio='a = 0' hacer='a = (x == 0) ? prog(g.x) : ((x == 1) ? reg(g.x) : ((x == 2) ? prog2(g.x) : ((x == 3) ? reg2(g.x) : ((x == 4) ? cen(g.x))))));' tipo='función' ">
+      <param name="A_10" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' ">
+      <param name="A_11" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="G_01" value="espacio='E1' tipo='ecuación' color='20303a' coord_abs='no' expresión='y=f(x)' ancho='1' ">
+      <param name="G_02" value="espacio='E1' tipo='texto' color='0000ff' coord_abs='sí' expresión='(450,20)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs36 {\*\mjaformula\i Valor de la derivada en x = \i0\i{\expr g.x\decimals 2\fixed0}\i0\i : \i0\i{\expr derivada(g.x)\decimals 6\fixed0}\i0}}' ancho='1' align='a_left' anchor='a_top_left' ">
+      <param name="G_03" value="espacio='E1' tipo='ecuación' color='0000ff' coord_abs='no' expresión='y=tangente(x,f(g.x),derivada(g.x),g.x)' ancho='1' ">
+      <param name="G_04" value="espacio='E1' tipo='ecuación' color='ff0000' dibujar-si='op=0' coord_abs='no' expresión='y=tangente(x,f(g.x),prog(g.x),g.x)' ancho='1' ">
+      <param name="G_05" value="espacio='E1' tipo='ecuación' color='ff0000' dibujar-si='op=1' coord_abs='no' expresión='y=tangente(x,f(g.x),reg(g.x),g.x)' ancho='1' ">
+      <param name="G_06" value="espacio='E1' tipo='ecuación' color='ff0000' dibujar-si='op=2' coord_abs='no' expresión='y=tangente(x,f(g.x),prog2(g.x),g.x)' ancho='1' ">
+      <param name="G_07" value="espacio='E1' tipo='ecuación' color='ff0000' dibujar-si='op=3' coord_abs='no' expresión='y=tangente(x,f(g.x),reg2(g.x),g.x)' ancho='1' ">
+      <param name="G_08" value="espacio='E1' tipo='ecuación' color='ff0000' dibujar-si='op=4' coord_abs='no' expresión='y=tangente(x,f(g.x),cen(g.x),g.x)' ancho='1' ">
+      <param name="G_09" value="espacio='E1' tipo='texto' color='ff0000' coord_abs='sí' expresión='(390,60)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}\f0\fs36 {\*\mjaformula\i Valor obtenido con derivación numérica: \i0\i{\expr res(op)\decimals 6\fixed0}\i0}}' ancho='1' align='a_left' anchor='a_top_left' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>
