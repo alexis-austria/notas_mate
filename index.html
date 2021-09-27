@@ -2469,7 +2469,24 @@
         <div class="num_block" prefix="Definición"><text style="color: red"><b>Cambio de base de un logaritmo:</b></text> Sean $b$, $x$ y $k$ números reales positivos tenemos que: $$\log_b(x) = \frac{\log_k(x)}{\log_k(b)}$$
         </div>
 
+        <p>Entonces, aplicando la fórmula de cambio de base reescribimos al logaritmo de la siguiente manera: $$\log_a(x) = \frac{\ln(x)}{\ln(a)}$$</p>
 
+        <p>Derivamos ambos lados de la ecuación: $$\frac{d}{dx}\log_a(x) = \frac{d}{dx}\frac{\ln(x)}{\ln(a)}$$
+        Factorizamos la constante:
+        $$\frac{d}{dx}\log_a(x) = \frac{1}{\ln(a)}\frac{d}{dx}\ln(x)$$
+        Por lo tanto, la derivada del logaritmo de base $a$ es igual a:
+        $$\frac{d}{dx}\log_a(x) = \frac{1}{x\ln(a)}$$</p>
+
+        <p>Veamos un ejemplo, sea la función $f(x) = e^{2x^3}\log_4(2x-5)$ calculemos la derivada de $f(x)$:
+        $$f'(x) = (e^{2x^3}\log_4(2x-5))'$$
+        $$f'(x) = (e^{2x^3})'\log_4(2x-5) + e^{2x^3}(\log_4(2x-5))'$$</p>
+
+
+      </div>
+
+      <div class="page">
+        <p>$$f'(x) = (6x^2*e^{2x^3})\log_4(2x-5) + e^{2x^3}\left(\frac{2}{(2x-5)\ln4}\right)$$
+        $$\therefore f'(x) = (6x^2*e^{2x^3})\log_4(2x-5) + \frac{2e^{2x^3}}{(2x-5)\ln4}$$</p>
       </div>
 
       <div class="page">
