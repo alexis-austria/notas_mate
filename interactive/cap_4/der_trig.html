@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>TITULO</title>
+  <script type="text/javascript" src="lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="800" height="500">
+      <param name="tamaño" value="800x500">
+      <param name="decimal_symbol" value=".">
+      <param name="expand" value="fit">
+      <param name="nombre" value="">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=40 ">
+      <param name="E_01" value="tipo='R2' id='E1' ">
+      <param name="C_01" value="id='op' tipo='numérico' interfaz='menú' región='sur' espacio='E1' nombre='Función' expresión='(0,0,150,40)' visible='no' opciones='seno,coseno,tangente' ">
+      <param name="C_02" value="id='a' tipo='numérico' interfaz='pulsador' región='sur' espacio='E1' nombre='a' expresión='(0,0,150,40)' valor='1' visible='sí' image_inc='img/inc.svg' image_dec='img/dec.svg' btn_pos='h_left_right' ">
+      <param name="C_03" value="id='b' tipo='numérico' interfaz='pulsador' región='sur' espacio='E1' nombre='b' expresión='(0,0,150,40)' valor='1' visible='sí' image_inc='img/inc.svg' image_dec='img/dec.svg' btn_pos='h_left_right' ">
+      <param name="C_04" value="id='gsin' tipo='gráfico' espacio='E1' color='000000' color-int='ff0000' tamaño='8' expresión='(0,0)' constricción='y=a*sin(b*x)' dibujar-si='op = 0' ">
+      <param name="C_05" value="id='gcos' tipo='gráfico' espacio='E1' color='000000' color-int='ff0000' tamaño='8' expresión='(0,0)' constricción='y=a*cos(b*x)' dibujar-si='op = 1' ">
+      <param name="C_06" value="id='gtan' tipo='gráfico' espacio='E1' color='000000' color-int='ff0000' tamaño='8' expresión='(0,0)' constricción='y=a*tan(b*x)' dibujar-si='op = 2' ">
+      <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' ">
+      <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="G_01" value="espacio='E1' tipo='ecuación' color='00ff00' dibujar-si='op = 0' coord_abs='no' expresión='y=a*sin(b*x)' ancho='1' ">
+      <param name="G_02" value="espacio='E1' tipo='ecuación' color='008000' dibujar-si='op = 0' coord_abs='no' expresión='y=(a*b)*cos(b*x)' ancho='1' ">
+      <param name="G_03" value="espacio='E1' tipo='texto' color='00ff00' dibujar-si='op = 0' coord_abs='sí' expresión='(20,20)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;}{\colortbl\red0\green255\blue0;}\cf0\f0\fs40 {\*\mjaformula\i f(x) = \i0\i{\expr (abs(a) != 1) ? a : ((a == -1) ? &squot;-&squot;:&squot;&squot;)\decimals 2\fixed0}\i0\i sin(\i0\i{\expr (abs(b) != 1) ? b : ((b == -1) ? &squot;-&squot;:&squot;&squot;)\decimals 2\fixed0}\i0\i x)\i0}}' ancho='1' align='a_left' anchor='a_top_left' ">
+      <param name="G_04" value="espacio='E1' tipo='texto' color='008000' dibujar-si='op = 0' coord_abs='sí' expresión='(20,60)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;}{\colortbl\red0\green128\blue0;}\cf0\f0\fs40 {\*\mjaformula\i f&squot;(x) = \i0\i{\expr (abs(a*b) != 1) ? a*b : ((a*b == -1) ? &squot;-&squot;:&squot;&squot;)\decimals 2\fixed0}\i0\i cos(\i0\i{\expr (abs(b) != 1) ? b : ((b == -1) ? &squot;-&squot;:&squot;&squot;)\decimals 2\fixed0}\i0\i x)\i0}}' ancho='1' align='a_left' anchor='a_top_left' ">
+      <param name="G_05" value="espacio='E1' tipo='ecuación' color='00ffff' dibujar-si='op = 1' coord_abs='no' expresión='y=a*cos(b*x)' ancho='1' ">
+      <param name="G_06" value="espacio='E1' tipo='ecuación' color='0000ff' dibujar-si='op = 1' coord_abs='no' expresión='y=-(a*b)*sin(b*x)' ancho='1' ">
+      <param name="G_07" value="espacio='E1' tipo='texto' color='00ff00' dibujar-si='op = 1' coord_abs='sí' expresión='(20,20)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;}{\colortbl\red0\green255\blue255;}\cf0\f0\fs40 {\*\mjaformula\i f(x) = \i0\i{\expr (abs(a) != 1) ? a : ((a == -1) ? &squot;-&squot;:&squot;&squot;)\decimals 2\fixed0}\i0\i cos(\i0\i{\expr (abs(b) != 1) ? b : ((b == -1) ? &squot;-&squot;:&squot;&squot;)\decimals 2\fixed0}\i0\i x)\i0}}' ancho='1' align='a_left' anchor='a_top_left' ">
+      <param name="G_08" value="espacio='E1' tipo='texto' color='008000' dibujar-si='op = 1' coord_abs='sí' expresión='(20,60)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;}{\colortbl\red0\green0\blue255;}\cf0\f0\fs40 {\*\mjaformula\i f&squot;(x) = \i0\i{\expr (abs(a*b) != 1) ? -a*b : ((-a*b == -1) ? &squot;-&squot;:&squot;&squot;)\decimals 2\fixed0}\i0\i sin(\i0\i{\expr (abs(b) != 1) ? b : ((b == -1) ? &squot;-&squot;:&squot;&squot;)\decimals 2\fixed0}\i0\i x)\i0}}' ancho='1' align='a_left' anchor='a_top_left' ">
+      <param name="G_09" value="espacio='E1' tipo='ecuación' color='ff0000' dibujar-si='op = 2' coord_abs='no' expresión='y=a*tan(b*x)' ancho='1' ">
+      <param name="G_10" value="espacio='E1' tipo='ecuación' color='ff00ff' dibujar-si='op = 2' coord_abs='no' expresión='y=a*b*(sec(b*x))^2' ancho='1' ">
+      <param name="G_11" value="espacio='E1' tipo='texto' color='00ff00' dibujar-si='op = 2' coord_abs='sí' expresión='(20,20)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;}{\colortbl\red255\green0\blue0;}\cf0\f0\fs40 {\*\mjaformula\i f(x) = \i0\i{\expr (abs(a) != 1) ? a : ((a == -1) ? &squot;-&squot;:&squot;&squot;)\decimals 2\fixed0}\i0\i tan(\i0\i{\expr (abs(b) != 1) ? b : ((b == -1) ? &squot;-&squot;:&squot;&squot;)\decimals 2\fixed0}\i0\i x)\i0}}' ancho='1' align='a_left' anchor='a_top_left' ">
+      <param name="G_12" value="espacio='E1' tipo='texto' color='008000' dibujar-si='op = 2' coord_abs='sí' expresión='(20,60)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;}{\colortbl\red255\green0\blue255;}\cf0\f0\fs40 {\*\mjaformula\i f&squot;(x) = \i0\i{\expr (abs(a*b) != 1) ? a*b : ((a*b == -1) ? &squot;-&squot;:&squot;&squot;)\decimals 2\fixed0}\i0\i sec\i0{\supix\i 2\i0}\i (\i0\i{\expr (abs(b) != 1) ? b : ((b == -1) ? &squot;-&squot;:&squot;&squot;)\decimals 2\fixed0}\i0\i x)\i0}}' ancho='1' align='a_left' anchor='a_top_left' ">
+      <param name="G_13" value="espacio='E1' tipo='punto' color='008000' dibujar-si='op = 0' coord_abs='no' expresión='(gsin.x, (a*b)*cos(b*gsin.x))' tamaño='8' ">
+      <param name="G_14" value="espacio='E1' tipo='texto' color='20303a' dibujar-si='op = 0' coord_abs='sí' expresión='(470,20)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;}\f0\fs40 {\*\mjaformula\i Valor de la pendiente en \i0\i{\expr gsin.x\decimals 2\fixed0}\i0\i : \i0\i{\expr (a*b)*cos(b*gsin.x)\decimals 3\fixed0}\i0}}' ancho='1' align='a_left' anchor='a_top_left' ">
+      <param name="G_15" value="espacio='E1' tipo='punto' color='0000ff' dibujar-si='op = 1' coord_abs='no' expresión='(gcos.x, -(a*b)*sin(b*gcos.x))' tamaño='8' ">
+      <param name="G_16" value="espacio='E1' tipo='texto' color='20303a' dibujar-si='op = 1' coord_abs='sí' expresión='(470,20)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;}\f0\fs40 {\*\mjaformula\i Valor de la pendiente en \i0\i{\expr gcos.x\decimals 2\fixed0}\i0\i : \i0\i{\expr -(a*b)*sin(b*gcos.x)\decimals 3\fixed0}\i0}}' ancho='1' align='a_left' anchor='a_top_left' ">
+      <param name="G_17" value="espacio='E1' tipo='punto' color='ff00ff' dibujar-si='op = 2' coord_abs='no' expresión='(gtan.x, a*b*(sec(b*gtan.x))^2)' tamaño='8' ">
+      <param name="G_18" value="espacio='E1' tipo='texto' color='20303a' dibujar-si='op = 2' coord_abs='sí' expresión='(470,20)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;}\f0\fs40 {\*\mjaformula\i Valor de la pendiente en \i0\i{\expr gtan.x\decimals 2\fixed0}\i0\i : \i0\i{\expr a*b*(sec(b*gtan.x))^2\decimals 3\fixed0}\i0}}' ancho='1' align='a_left' anchor='a_top_left' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>
